@@ -32,10 +32,14 @@ evalCBN (EIf e1 e2 e3 e4) = if (evalCBN e1) == (evalCBN e2) then evalCBN e3 else
 evalCBN (ELet i e1 e2) = evalCBN (EApp (EAbs i e2) e1) 
 evalCBN (ERec i e1 e2) = evalCBN (EApp (EAbs i e2) (EFix (EAbs i e1)))
 evalCBN (EFix e) = evalCBN (EApp e (EFix e)) 
-evalCBN (EHd e6) = EHd (evalCBN e6)
-evalCBN (ETl e6) = ETl (evalCBN e6)
-evalCBN ENil = ENil --I doubt this is right
-evalCBN (ECons e9 e10) = ECons (evalCBN e10) (evalCBN e9)
+evalCBN (EHd e6) = case (evalCBN e6) of 
+    ENil -> ENil
+    (ECons e1 e2) -> e1
+evalCBN (ETl e6) = case (evalCBN e6) of
+    ENil -> ENil
+    (ECons e1 e2) -> e2
+--evalCBN ENil = ENil --I doubt this is right
+--evalCBN (ECons e9 e10) = ECons (evalCBN e10) (evalCBN e9)
 evalCBN (EMinusOne e) = case (evalCBN e) of
     ENat0 -> ENat0
     (ENatS e) -> e
