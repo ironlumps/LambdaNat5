@@ -35,22 +35,20 @@ import ErrM
   'S' { PT _ (TS _ 8) }
   '\\' { PT _ (TS _ 9) }
   'else' { PT _ (TS _ 10) }
-  'fix' { PT _ (TS _ 11) }
-  'hd' { PT _ (TS _ 12) }
-  'if' { PT _ (TS _ 13) }
-  'in' { PT _ (TS _ 14) }
-  'let' { PT _ (TS _ 15) }
-  'let rec' { PT _ (TS _ 16) }
-  'minus_one' { PT _ (TS _ 17) }
-  'then' { PT _ (TS _ 18) }
-  'tl' { PT _ (TS _ 19) }
-
-L_Id { PT _ (T_Id $$) }
-
+  'hd' { PT _ (TS _ 11) }
+  'if' { PT _ (TS _ 12) }
+  'in' { PT _ (TS _ 13) }
+  'let' { PT _ (TS _ 14) }
+  'minus_one' { PT _ (TS _ 15) }
+  'rec' { PT _ (TS _ 16) }
+  'then' { PT _ (TS _ 17) }
+  'tl' { PT _ (TS _ 18) }
+  L_Id { PT _ (T_Id $$) }
 
 %%
 
-Id    :: { Id} : L_Id { Id ($1)}
+Id :: { Id}
+Id  : L_Id { Id ($1)}
 
 Program :: { Program }
 Program : Exp { AbsLambdaNat.Prog $1 }
@@ -63,7 +61,7 @@ Exp3 :: { Exp }
 Exp3 : 'let' Id '=' Exp 'in' Exp { AbsLambdaNat.ELet $2 $4 $6 }
      | Exp4 { $1 }
 Exp4 :: { Exp }
-Exp4 : 'let rec' Id '=' Exp 'in' Exp { AbsLambdaNat.ERec $2 $4 $6 }
+Exp4 : 'let' 'rec' Id '=' Exp 'in' Exp { AbsLambdaNat.ERec $3 $5 $7 }
      | Exp5 { $1 }
 Exp6 :: { Exp }
 Exp6 : 'hd' Exp { AbsLambdaNat.EHd $2 }
@@ -97,11 +95,11 @@ thenM = (>>=)
 
 happyError :: [Token] -> Err a
 happyError ts =
-  Bad $ "syntax error at " ++ tokenPos ts ++ 
+  Bad $ "syntax error at " ++ tokenPos ts ++
   case ts of
-    [] -> []
+    []      -> []
     [Err _] -> " due to lexer error"
-    _ -> " before " ++ unwords (map (id . prToken) (take 4 ts))
+    t:_     -> " before `" ++ id(prToken t) ++ "'"
 
 myLexer = tokens
 }
