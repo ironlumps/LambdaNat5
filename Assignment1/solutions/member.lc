@@ -1,0 +1,3 @@
+let rec member = \x. \l.
+	if Hd(l)=x then S -- if the value of the first object in the list is equal to the value we are looking for, return 1 
+	else member( tl(l) ) -- if the value of the first object in the list is not equal to the value we are searching for, then call the member function on the remainder of the list

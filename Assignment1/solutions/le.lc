@@ -1,0 +1,5 @@
+let rec le= \n. \m.
+	if n=0 then 	
+		if m=0 then 0
+		else then 1  -- if n is equal to 0 but m is not equal to zero then n was greater than m and we return 0. Else return 1
+	else le( minusOne(n) minusOne(m) ) -- if n isnt equal to 0 then subtract from n and m again

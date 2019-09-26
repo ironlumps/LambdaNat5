@@ -1,0 +1,3 @@
+let rec even = \l. -- takes in a list
+	if Hd(l)= Nil then 0 -- if there are no values left in the list return 0
+	else minusOne (S even tl(l) ) -- if there are more values, subtract 1 from the result of minusOne 

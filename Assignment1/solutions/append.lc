@@ -1,0 +1,3 @@
+let rec append= \l1. \l2.
+	if Hd(l1)=Nil then l2 -- if l1 is now empty add the list l2 to the end of the current list we are making
+	else Hd(l1) : append( Tl(l1, l2) ) -- if this isnt the end then add the first element of this list to the function called again
