@@ -1,5 +1,25 @@
-let rec le= \n. \m.
-	if n=0 then 	
-		if m=0 then 0
-		else then 1  -- if n is equal to 0 but m is not equal to zero then n was greater than m and we return 0. Else return 1
-	else le( minusOne(n) minusOne(m) ) -- if n isnt equal to 0 then subtract from n and m again
+let not = \k. if k = 0 then 0 else S 0 in
+let rec sub = \x.\y. if y = 0 then x else  minus_one (sub x (minus_one y)) in
+let le = \a.\b. if not (sub a b) = 0 then S 0
+                else if not (sub a b) = S 0 then 0
+                else if a = b then S 0
+                else S 0 in le S S 0 S 0
+
+
+/*
+sub = x - y if y = 0 then x else minus_one(sub x (minus_one y))
+sub S S 0 S 0 = 2 - 1
+minus(sub S S 0 0)
+minus S S 0
+S 0
+
+sub S 0 S S 0
+minus_one(sub S 0 S 0)
+minus_one(minus_one(S 0))
+minus_one(0)
+0
+
+a = b 4 = 4 -> S 0
+a < b 2 - 4 != 0 False -> S 0
+a > b 4 - 2 != 0 True - > S 0
+*/

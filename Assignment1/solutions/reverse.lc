@@ -1,3 +1,12 @@
-let rec reverse= \l.
-	if Hd(l)=Nil then # -- if this is the end of the list then put the end symbol
-	else (reverse( tl(l) ) : Hd(l) -- if this is not the end of the list call reverse again while placing hte current head of the list at the end.
+let rec append = \l1.\l2. if l1 = # then l2
+                          else if l2 = # then l1
+                          else (hd l1):(append (tl l1) (l2)) in
+let rec reverse = \l. if l = # then # else append (reverse(tl l)) (hd l):# in reverse a:b:c:d:e:#
+
+
+/*
+append(reverse(b:c:#) a:#)
+append(append(reverse(c:#) b:#)a:#)
+append(append(append(reverse(#) c:#)b:#)a:#)
+append(append(append(append(#) c:#)b:#)a:#)
+*/

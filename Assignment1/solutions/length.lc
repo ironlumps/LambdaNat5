@@ -1,3 +1,9 @@
-let rec even = \l. -- takes in a list
-        if Hd(l)= Nil then 0 -- if there are no values left in the list return 0
-        else S length( tl(l) ) -- then return 1 plus the return value of length with the list minus the first element
+let rec length = \l. if l=# then 0 else S(length(tl l)) in length a:b:c:d:e:f:#
+
+
+/*length # = 0
+length l = S length((tl l))
+ex. length a:b:# = S length(b:#)
+                   S S length(#)
+                   S S 0
+*/
