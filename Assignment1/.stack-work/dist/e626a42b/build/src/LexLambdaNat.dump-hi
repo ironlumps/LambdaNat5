@@ -1,0 +1,3260 @@
+
+==================== FINAL INTERFACE ====================
+2019-10-02 22:50:45.5715181 UTC
+
+interface LambdaNat-0.1.0.0-EvitBjaHhSP7BnBJ5PUt9C:LexLambdaNat 8064
+  interface hash: c480630fb135fe57503051beff864a93
+  ABI hash: 5a8c26dcb5d1f2dc2ce648634f0b4213
+  export-list hash: 86ed9270f3b67e6d02545a92ce4e7156
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 496c9499810fa3b0b1a41a9abbc801b4
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  LexLambdaNat.alexGetByte
+  LexLambdaNat.alexIndexInt16OffAddr
+  LexLambdaNat.alexIndexInt32OffAddr
+  LexLambdaNat.alexInputPrevChar
+  LexLambdaNat.alexMove
+  LexLambdaNat.alexScan
+  LexLambdaNat.alexScanUser
+  LexLambdaNat.alexStartPos
+  LexLambdaNat.alex_accept
+  LexLambdaNat.alex_action_3
+  LexLambdaNat.alex_action_4
+  LexLambdaNat.alex_action_5
+  LexLambdaNat.alex_actions
+  LexLambdaNat.alex_base
+  LexLambdaNat.alex_check
+  LexLambdaNat.alex_deflt
+  LexLambdaNat.alex_scan_tkn
+  LexLambdaNat.alex_tab_size
+  LexLambdaNat.alex_table
+  LexLambdaNat.eitherResIdent
+  LexLambdaNat.mkPosToken
+  LexLambdaNat.posLineCol
+  LexLambdaNat.prToken
+  LexLambdaNat.quickIndex
+  LexLambdaNat.resWords
+  LexLambdaNat.share
+  LexLambdaNat.tok
+  LexLambdaNat.tokenLineCol
+  LexLambdaNat.tokenPos
+  LexLambdaNat.tokenPosn
+  LexLambdaNat.tokens
+  LexLambdaNat.unescapeInitTail
+  LexLambdaNat.utf8Encode
+  LexLambdaNat.AlexAcc{LexLambdaNat.AlexAcc LexLambdaNat.AlexAccNone LexLambdaNat.AlexAccSkip}
+  LexLambdaNat.AlexAddr{LexLambdaNat.AlexA#}
+  LexLambdaNat.AlexInput
+  LexLambdaNat.AlexLastAcc{LexLambdaNat.AlexLastAcc LexLambdaNat.AlexLastSkip LexLambdaNat.AlexNone}
+  LexLambdaNat.AlexReturn{LexLambdaNat.AlexEOF LexLambdaNat.AlexError LexLambdaNat.AlexSkip LexLambdaNat.AlexToken}
+  LexLambdaNat.BTree{LexLambdaNat.B LexLambdaNat.N}
+  LexLambdaNat.Byte
+  LexLambdaNat.Posn{LexLambdaNat.Pn}
+  LexLambdaNat.Tok{LexLambdaNat.TC LexLambdaNat.TD LexLambdaNat.TI LexLambdaNat.TL LexLambdaNat.TS LexLambdaNat.TV LexLambdaNat.T_Id}
+  LexLambdaNat.Token{LexLambdaNat.Err LexLambdaNat.PT}
+module dependencies:
+package dependencies: array-0.5.3.0 base-4.12.0.0 ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:GHC.Exts base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  array-0.5.3.0:Data.Array eb98d3d0a7cdc641243ed1ccfa67944e
+import  -/  array-0.5.3.0:Data.Array.Base 13aceaa558bbe016180541fa27c9139f
+import  -/  base-4.12.0.0:Data.Bits b78d81b5d1c57d0d83cdd8fc7d67f6e7
+import  -/  base-4.12.0.0:Data.Char 2904a5c9a61cd1905998d0ede824665e
+import  -/  base-4.12.0.0:Data.Foldable 6673f41a7644ecd4dda455d741d47ef8
+import  -/  base-4.12.0.0:Data.Word f7744509e38999850935edacbb9799b9
+import  -/  base-4.12.0.0:GHC.Arr 5c8976bdf1d7504d59c707054115617e
+import  -/  base-4.12.0.0:GHC.Base 954f4c258d193fab7048a63bfeb56dcf
+import  -/  base-4.12.0.0:GHC.Err 3a680f55541fe399f95f794018fc3593
+import  -/  base-4.12.0.0:GHC.Exts 1506064f1ef8de9c81d05bf0196ab254
+import  -/  base-4.12.0.0:GHC.List 63f1dc438c14c2ecfce50219fbb7ff35
+import  -/  base-4.12.0.0:GHC.Num 009f4fca9200daff9e3ffbe2d7676a2f
+import  -/  base-4.12.0.0:GHC.Real 2becc15d35863665b039224a7445f8b0
+import  -/  base-4.12.0.0:GHC.Show 48dce8b8129312101170e57c24f3ecbd
+import  -/  base-4.12.0.0:Prelude aea9afd24db8aed3563d7d850ea453c0
+import  -/  ghc-prim-0.5.3:GHC.Classes 6002495dc43e58d28c87e5e5e058752a
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+addDependentFile "C:\Users\Charlie Story\AppData\Local\Programs\stack\x86_64-windows\ghc-8.6.4\lib\include\ghcconfig.h" 83d1bd0114cd44e9fff29c5f0a098afa
+addDependentFile "C:\Users\Charlie Story\AppData\Local\Programs\stack\x86_64-windows\ghc-8.6.4\lib\include\ghcplatform.h" 1df9aa8c1098d1c5b9a5a056f31877ee
+addDependentFile "C:\Users\Charlie Story\AppData\Local\Programs\stack\x86_64-windows\ghc-8.6.4\lib\include\ghcautoconf.h" c9b2142e9fcf42769d3e8e2e5d8ef9a4
+addDependentFile "C:\Users\Charlie Story\AppData\Local\Programs\stack\x86_64-windows\ghc-8.6.4\lib\include\ghcversion.h" a0ce8aeb7f525f4d70decd6c1d3ca2dd
+addDependentFile ".stack-work\dist\e626a42b\build\autogen\cabal_macros.h" d06ee0050c9b13795ed17be7333a365e
+1370768abee82ed4ce1eca768b6e96c7
+  $fEqPosn :: GHC.Classes.Eq LexLambdaNat.Posn
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ LexLambdaNat.Posn
+                  LexLambdaNat.$fEqPosn_$c==
+                  LexLambdaNat.$fEqPosn_$c/= -}
+1370768abee82ed4ce1eca768b6e96c7
+  $fEqPosn_$c/= ::
+    LexLambdaNat.Posn -> LexLambdaNat.Posn -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLL),1*U(U,U,U)><S(SLL),1*U(U,U,U)>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: LexLambdaNat.Posn) (y :: LexLambdaNat.Posn) ->
+                 case x of wild { LexLambdaNat.Pn dt dt1 dt2 ->
+                 case y of wild1 { LexLambdaNat.Pn dt3 dt4 dt5 ->
+                 case GHC.Prim.==# dt dt3 of lwild {
+                   DEFAULT -> GHC.Types.True
+                   1#
+                   -> case GHC.Prim.==# dt1 dt4 of lwild1 {
+                        DEFAULT -> GHC.Types.True
+                        1#
+                        -> case GHC.Prim.==# dt2 dt5 of lwild2 {
+                             DEFAULT -> GHC.Types.True 1# -> GHC.Types.False } } } } }) -}
+1370768abee82ed4ce1eca768b6e96c7
+  $fEqPosn_$c== ::
+    LexLambdaNat.Posn -> LexLambdaNat.Posn -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLL),1*U(U,U,U)><S(SLL),1*U(U,U,U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: LexLambdaNat.Posn) (ds1 :: LexLambdaNat.Posn) ->
+                 case ds of wild { LexLambdaNat.Pn dt dt1 dt2 ->
+                 case ds1 of wild1 { LexLambdaNat.Pn dt3 dt4 dt5 ->
+                 case GHC.Prim.==# dt dt3 of lwild {
+                   DEFAULT -> GHC.Types.False
+                   1#
+                   -> case GHC.Prim.==# dt1 dt4 of lwild1 {
+                        DEFAULT -> GHC.Types.False
+                        1#
+                        -> GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.==# dt2 dt5) } } } }) -}
+ca3c8d152d21c6310544b16467db4933
+  $fEqTok :: GHC.Classes.Eq LexLambdaNat.Tok
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ LexLambdaNat.Tok
+                  LexLambdaNat.$fEqTok_$c==
+                  LexLambdaNat.$fEqTok_$c/= -}
+ca3c8d152d21c6310544b16467db4933
+  $fEqTok_$c/= ::
+    LexLambdaNat.Tok -> LexLambdaNat.Tok -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: LexLambdaNat.Tok) (y :: LexLambdaNat.Tok) ->
+                 case LexLambdaNat.$fEqTok_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+ca3c8d152d21c6310544b16467db4933
+  $fEqTok_$c== ::
+    LexLambdaNat.Tok -> LexLambdaNat.Tok -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: LexLambdaNat.Tok) (ds1 :: LexLambdaNat.Tok) ->
+                 case ds of wild {
+                   LexLambdaNat.TS a1 dt
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        LexLambdaNat.TS b1 dt1
+                        -> case GHC.Base.eqString a1 b1 of wild2 {
+                             GHC.Types.False -> GHC.Types.False
+                             GHC.Types.True
+                             -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.==# dt dt1) } }
+                   LexLambdaNat.TL a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        LexLambdaNat.TL b1 -> GHC.Base.eqString a1 b1 }
+                   LexLambdaNat.TI a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        LexLambdaNat.TI b1 -> GHC.Base.eqString a1 b1 }
+                   LexLambdaNat.TV a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        LexLambdaNat.TV b1 -> GHC.Base.eqString a1 b1 }
+                   LexLambdaNat.TD a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        LexLambdaNat.TD b1 -> GHC.Base.eqString a1 b1 }
+                   LexLambdaNat.TC a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        LexLambdaNat.TC b1 -> GHC.Base.eqString a1 b1 }
+                   LexLambdaNat.T_Id a1
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        LexLambdaNat.T_Id b1 -> GHC.Base.eqString a1 b1 } }) -}
+8bc1160a8cf61dbb1ffdddbfeb3169fb
+  $fEqToken :: GHC.Classes.Eq LexLambdaNat.Token
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ LexLambdaNat.Token
+                  LexLambdaNat.$fEqToken_$c==
+                  LexLambdaNat.$fEqToken_$c/= -}
+8bc1160a8cf61dbb1ffdddbfeb3169fb
+  $fEqToken_$c/= ::
+    LexLambdaNat.Token -> LexLambdaNat.Token -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: LexLambdaNat.Token) (y :: LexLambdaNat.Token) ->
+                 case LexLambdaNat.$fEqToken_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+8bc1160a8cf61dbb1ffdddbfeb3169fb
+  $fEqToken_$c== ::
+    LexLambdaNat.Token -> LexLambdaNat.Token -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: LexLambdaNat.Token)
+                   (ds1 :: LexLambdaNat.Token) ->
+                 case ds of wild {
+                   LexLambdaNat.PT a1 a2
+                   -> case ds1 of wild1 {
+                        LexLambdaNat.PT b1 b2
+                        -> case a1 of wild2 { LexLambdaNat.Pn dt dt1 dt2 ->
+                           case b1 of wild3 { LexLambdaNat.Pn dt3 dt4 dt5 ->
+                           case GHC.Prim.==# dt dt3 of lwild {
+                             DEFAULT -> GHC.Types.False
+                             1#
+                             -> case GHC.Prim.==# dt1 dt4 of lwild1 {
+                                  DEFAULT -> GHC.Types.False
+                                  1#
+                                  -> case GHC.Prim.==# dt2 dt5 of lwild2 {
+                                       DEFAULT -> GHC.Types.False
+                                       1# -> LexLambdaNat.$fEqTok_$c== a2 b2 } } } } }
+                        LexLambdaNat.Err ipv -> GHC.Types.False }
+                   LexLambdaNat.Err a1
+                   -> case ds1 of wild1 {
+                        LexLambdaNat.PT ipv ipv1 -> GHC.Types.False
+                        LexLambdaNat.Err b1 -> LexLambdaNat.$fEqPosn_$c== a1 b1 } }) -}
+1370768abee82ed4ce1eca768b6e96c7
+  $fOrdPosn :: GHC.Classes.Ord LexLambdaNat.Posn
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ LexLambdaNat.Posn
+                  LexLambdaNat.$fEqPosn
+                  LexLambdaNat.$fOrdPosn_$ccompare
+                  LexLambdaNat.$fOrdPosn_$c<
+                  LexLambdaNat.$fOrdPosn_$c<=
+                  LexLambdaNat.$fOrdPosn_$c>
+                  LexLambdaNat.$fOrdPosn_$c>=
+                  LexLambdaNat.$fOrdPosn_$cmax
+                  LexLambdaNat.$fOrdPosn_$cmin -}
+1370768abee82ed4ce1eca768b6e96c7
+  $fOrdPosn_$c< ::
+    LexLambdaNat.Posn -> LexLambdaNat.Posn -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SSS),1*U(U,U,U)><S(SSS),1*U(U,U,U)>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: LexLambdaNat.Posn) (w1 :: LexLambdaNat.Posn) ->
+                 case w of ww { LexLambdaNat.Pn ww1 ww2 ww3 ->
+                 case w1 of ww4 { LexLambdaNat.Pn ww5 ww6 ww7 ->
+                 LexLambdaNat.$w$c< ww1 ww2 ww3 ww5 ww6 ww7 } }) -}
+1370768abee82ed4ce1eca768b6e96c7
+  $fOrdPosn_$c<= ::
+    LexLambdaNat.Posn -> LexLambdaNat.Posn -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SSS),1*U(U,U,U)><S(SSS),1*U(U,U,U)>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: LexLambdaNat.Posn) (w1 :: LexLambdaNat.Posn) ->
+                 case w of ww { LexLambdaNat.Pn ww1 ww2 ww3 ->
+                 case w1 of ww4 { LexLambdaNat.Pn ww5 ww6 ww7 ->
+                 LexLambdaNat.$w$c<= ww1 ww2 ww3 ww5 ww6 ww7 } }) -}
+1370768abee82ed4ce1eca768b6e96c7
+  $fOrdPosn_$c> ::
+    LexLambdaNat.Posn -> LexLambdaNat.Posn -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SSS),1*U(U,U,U)><S(SSS),1*U(U,U,U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (a :: LexLambdaNat.Posn) (b :: LexLambdaNat.Posn) ->
+                 LexLambdaNat.$fOrdPosn_$c< b a) -}
+1370768abee82ed4ce1eca768b6e96c7
+  $fOrdPosn_$c>= ::
+    LexLambdaNat.Posn -> LexLambdaNat.Posn -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SSS),1*U(U,U,U)><S(SSS),1*U(U,U,U)>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: LexLambdaNat.Posn) (w1 :: LexLambdaNat.Posn) ->
+                 case w of ww { LexLambdaNat.Pn ww1 ww2 ww3 ->
+                 case w1 of ww4 { LexLambdaNat.Pn ww5 ww6 ww7 ->
+                 LexLambdaNat.$w$c>= ww1 ww2 ww3 ww5 ww6 ww7 } }) -}
+1370768abee82ed4ce1eca768b6e96c7
+  $fOrdPosn_$ccompare ::
+    LexLambdaNat.Posn -> LexLambdaNat.Posn -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SSS),1*U(U,U,U)><S(SSS),1*U(U,U,U)>, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: LexLambdaNat.Posn) (w1 :: LexLambdaNat.Posn) ->
+                 case w of ww { LexLambdaNat.Pn ww1 ww2 ww3 ->
+                 case w1 of ww4 { LexLambdaNat.Pn ww5 ww6 ww7 ->
+                 LexLambdaNat.$w$ccompare ww1 ww2 ww3 ww5 ww6 ww7 } }) -}
+1370768abee82ed4ce1eca768b6e96c7
+  $fOrdPosn_$cmax ::
+    LexLambdaNat.Posn -> LexLambdaNat.Posn -> LexLambdaNat.Posn
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLL),1*U(U,U,U)><S(SLL),1*U(U,U,U)>m, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: LexLambdaNat.Posn) (w1 :: LexLambdaNat.Posn) ->
+                 case w of ww { LexLambdaNat.Pn ww1 ww2 ww3 ->
+                 case w1 of ww4 { LexLambdaNat.Pn ww5 ww6 ww7 ->
+                 case GHC.Prim.<# ww5 ww1 of lwild {
+                   DEFAULT
+                   -> case GHC.Prim.==# ww5 ww1 of lwild1 {
+                        DEFAULT -> LexLambdaNat.Pn ww5 ww6 ww7
+                        1#
+                        -> case GHC.Prim.<# ww6 ww2 of lwild2 {
+                             DEFAULT
+                             -> case GHC.Prim.==# ww6 ww2 of lwild3 {
+                                  DEFAULT -> LexLambdaNat.Pn ww5 ww6 ww7
+                                  1#
+                                  -> case GHC.Prim.<# ww7 ww3 of lwild4 {
+                                       DEFAULT -> LexLambdaNat.Pn ww5 ww6 ww7
+                                       1# -> LexLambdaNat.Pn ww1 ww2 ww3 } }
+                             1# -> LexLambdaNat.Pn ww1 ww2 ww3 } }
+                   1# -> LexLambdaNat.Pn ww1 ww2 ww3 } } }) -}
+1370768abee82ed4ce1eca768b6e96c7
+  $fOrdPosn_$cmin ::
+    LexLambdaNat.Posn -> LexLambdaNat.Posn -> LexLambdaNat.Posn
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLL),1*U(U,U,U)><S(SLL),1*U(U,U,U)>m, Inline: [2],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: LexLambdaNat.Posn) (w1 :: LexLambdaNat.Posn) ->
+                 case w of ww { LexLambdaNat.Pn ww1 ww2 ww3 ->
+                 case w1 of ww4 { LexLambdaNat.Pn ww5 ww6 ww7 ->
+                 case GHC.Prim.<# ww5 ww1 of lwild {
+                   DEFAULT
+                   -> case GHC.Prim.==# ww5 ww1 of lwild1 {
+                        DEFAULT -> LexLambdaNat.Pn ww1 ww2 ww3
+                        1#
+                        -> case GHC.Prim.<# ww6 ww2 of lwild2 {
+                             DEFAULT
+                             -> case GHC.Prim.==# ww6 ww2 of lwild3 {
+                                  DEFAULT -> LexLambdaNat.Pn ww1 ww2 ww3
+                                  1#
+                                  -> case GHC.Prim.<# ww7 ww3 of lwild4 {
+                                       DEFAULT -> LexLambdaNat.Pn ww1 ww2 ww3
+                                       1# -> LexLambdaNat.Pn ww5 ww6 ww7 } }
+                             1# -> LexLambdaNat.Pn ww5 ww6 ww7 } }
+                   1# -> LexLambdaNat.Pn ww5 ww6 ww7 } } }) -}
+ca3c8d152d21c6310544b16467db4933
+  $fOrdTok :: GHC.Classes.Ord LexLambdaNat.Tok
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ LexLambdaNat.Tok
+                  LexLambdaNat.$fEqTok
+                  LexLambdaNat.$fOrdTok_$ccompare
+                  LexLambdaNat.$fOrdTok_$c<
+                  LexLambdaNat.$fOrdTok_$c<=
+                  LexLambdaNat.$fOrdTok_$c>
+                  LexLambdaNat.$fOrdTok_$c>=
+                  LexLambdaNat.$fOrdTok_$cmax
+                  LexLambdaNat.$fOrdTok_$cmin -}
+ca3c8d152d21c6310544b16467db4933
+  $fOrdTok_$c< ::
+    LexLambdaNat.Tok -> LexLambdaNat.Tok -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: LexLambdaNat.Tok) (y :: LexLambdaNat.Tok) ->
+                 case LexLambdaNat.$fOrdTok_$ccompare x y of wild {
+                   DEFAULT -> GHC.Types.False GHC.Types.LT -> GHC.Types.True }) -}
+ca3c8d152d21c6310544b16467db4933
+  $fOrdTok_$c<= ::
+    LexLambdaNat.Tok -> LexLambdaNat.Tok -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: LexLambdaNat.Tok) (y :: LexLambdaNat.Tok) ->
+                 case LexLambdaNat.$fOrdTok_$ccompare x y of wild {
+                   DEFAULT -> GHC.Types.True GHC.Types.GT -> GHC.Types.False }) -}
+ca3c8d152d21c6310544b16467db4933
+  $fOrdTok_$c> ::
+    LexLambdaNat.Tok -> LexLambdaNat.Tok -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: LexLambdaNat.Tok) (y :: LexLambdaNat.Tok) ->
+                 case LexLambdaNat.$fOrdTok_$ccompare x y of wild {
+                   DEFAULT -> GHC.Types.False GHC.Types.GT -> GHC.Types.True }) -}
+ca3c8d152d21c6310544b16467db4933
+  $fOrdTok_$c>= ::
+    LexLambdaNat.Tok -> LexLambdaNat.Tok -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: LexLambdaNat.Tok) (y :: LexLambdaNat.Tok) ->
+                 case LexLambdaNat.$fOrdTok_$ccompare x y of wild {
+                   DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False }) -}
+ca3c8d152d21c6310544b16467db4933
+  $fOrdTok_$ccompare ::
+    LexLambdaNat.Tok -> LexLambdaNat.Tok -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: LexLambdaNat.Tok) (b :: LexLambdaNat.Tok) ->
+                 case a of wild {
+                   LexLambdaNat.TS a1 dt
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.LT
+                        LexLambdaNat.TS b1 dt1
+                        -> case GHC.Classes.$fOrd[]_$s$ccompare1 a1 b1 of wild2 {
+                             GHC.Types.LT -> GHC.Types.LT
+                             GHC.Types.EQ -> GHC.Classes.compareInt# dt dt1
+                             GHC.Types.GT -> GHC.Types.GT } }
+                   LexLambdaNat.TL a1
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.LT
+                        LexLambdaNat.TS ds dt -> GHC.Types.GT
+                        LexLambdaNat.TL b1 -> GHC.Classes.$fOrd[]_$s$ccompare1 a1 b1 }
+                   LexLambdaNat.TI a1
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.GT
+                        LexLambdaNat.TI ds -> GHC.Classes.$fOrd[]_$s$ccompare1 a1 ds
+                        LexLambdaNat.TV ds -> GHC.Types.LT
+                        LexLambdaNat.TD ds -> GHC.Types.LT
+                        LexLambdaNat.TC ds -> GHC.Types.LT
+                        LexLambdaNat.T_Id ds -> GHC.Types.LT }
+                   LexLambdaNat.TV a1
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.GT
+                        LexLambdaNat.TV ds -> GHC.Classes.$fOrd[]_$s$ccompare1 a1 ds
+                        LexLambdaNat.TD ds -> GHC.Types.LT
+                        LexLambdaNat.TC ds -> GHC.Types.LT
+                        LexLambdaNat.T_Id ds -> GHC.Types.LT }
+                   LexLambdaNat.TD a1
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.GT
+                        LexLambdaNat.TD ds -> GHC.Classes.$fOrd[]_$s$ccompare1 a1 ds
+                        LexLambdaNat.TC ds -> GHC.Types.LT
+                        LexLambdaNat.T_Id ds -> GHC.Types.LT }
+                   LexLambdaNat.TC a1
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.GT
+                        LexLambdaNat.TC b1 -> GHC.Classes.$fOrd[]_$s$ccompare1 a1 b1
+                        LexLambdaNat.T_Id ds -> GHC.Types.LT }
+                   LexLambdaNat.T_Id a1
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.GT
+                        LexLambdaNat.T_Id b1
+                        -> GHC.Classes.$fOrd[]_$s$ccompare1 a1 b1 } }) -}
+ca3c8d152d21c6310544b16467db4933
+  $fOrdTok_$cmax ::
+    LexLambdaNat.Tok -> LexLambdaNat.Tok -> LexLambdaNat.Tok
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: LexLambdaNat.Tok) (y :: LexLambdaNat.Tok) ->
+                 case LexLambdaNat.$fOrdTok_$ccompare x y of wild {
+                   DEFAULT -> y GHC.Types.GT -> x }) -}
+ca3c8d152d21c6310544b16467db4933
+  $fOrdTok_$cmin ::
+    LexLambdaNat.Tok -> LexLambdaNat.Tok -> LexLambdaNat.Tok
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: LexLambdaNat.Tok) (y :: LexLambdaNat.Tok) ->
+                 case LexLambdaNat.$fOrdTok_$ccompare x y of wild {
+                   DEFAULT -> x GHC.Types.GT -> y }) -}
+8bc1160a8cf61dbb1ffdddbfeb3169fb
+  $fOrdToken :: GHC.Classes.Ord LexLambdaNat.Token
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ LexLambdaNat.Token
+                  LexLambdaNat.$fEqToken
+                  LexLambdaNat.$fOrdToken_$ccompare
+                  LexLambdaNat.$fOrdToken_$c<
+                  LexLambdaNat.$fOrdToken_$c<=
+                  LexLambdaNat.$fOrdToken_$c>
+                  LexLambdaNat.$fOrdToken_$c>=
+                  LexLambdaNat.$fOrdToken_$cmax
+                  LexLambdaNat.$fOrdToken_$cmin -}
+8bc1160a8cf61dbb1ffdddbfeb3169fb
+  $fOrdToken_$c< ::
+    LexLambdaNat.Token -> LexLambdaNat.Token -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: LexLambdaNat.Token)
+                   (b :: LexLambdaNat.Token) ->
+                 case a of wild {
+                   LexLambdaNat.PT a1 a2
+                   -> case b of wild1 {
+                        LexLambdaNat.PT b1 b2
+                        -> case a1 of wild2 { LexLambdaNat.Pn dt dt1 dt2 ->
+                           case b1 of wild3 { LexLambdaNat.Pn dt3 dt4 dt5 ->
+                           case GHC.Prim.<# dt dt3 of lwild {
+                             DEFAULT
+                             -> case GHC.Prim.==# dt dt3 of lwild1 {
+                                  DEFAULT -> GHC.Types.False
+                                  1#
+                                  -> case GHC.Prim.<# dt1 dt4 of lwild2 {
+                                       DEFAULT
+                                       -> case GHC.Prim.==# dt1 dt4 of lwild3 {
+                                            DEFAULT -> GHC.Types.False
+                                            1#
+                                            -> case GHC.Prim.<# dt2 dt5 of lwild4 {
+                                                 DEFAULT
+                                                 -> case GHC.Prim.==# dt2 dt5 of lwild5 {
+                                                      DEFAULT -> GHC.Types.False
+                                                      1# -> LexLambdaNat.$fOrdTok_$c< a2 b2 }
+                                                 1# -> GHC.Types.True } }
+                                       1# -> GHC.Types.True } }
+                             1# -> GHC.Types.True } } }
+                        LexLambdaNat.Err ipv -> GHC.Types.True }
+                   LexLambdaNat.Err a1
+                   -> case b of wild1 {
+                        LexLambdaNat.PT ipv ipv1 -> GHC.Types.False
+                        LexLambdaNat.Err b1 -> LexLambdaNat.$fOrdPosn_$c< a1 b1 } }) -}
+8bc1160a8cf61dbb1ffdddbfeb3169fb
+  $fOrdToken_$c<= ::
+    LexLambdaNat.Token -> LexLambdaNat.Token -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: LexLambdaNat.Token) (b :: LexLambdaNat.Token) ->
+                 case LexLambdaNat.$fOrdToken_$c< b a of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+8bc1160a8cf61dbb1ffdddbfeb3169fb
+  $fOrdToken_$c> ::
+    LexLambdaNat.Token -> LexLambdaNat.Token -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (a :: LexLambdaNat.Token) (b :: LexLambdaNat.Token) ->
+                 LexLambdaNat.$fOrdToken_$c< b a) -}
+8bc1160a8cf61dbb1ffdddbfeb3169fb
+  $fOrdToken_$c>= ::
+    LexLambdaNat.Token -> LexLambdaNat.Token -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: LexLambdaNat.Token) (b :: LexLambdaNat.Token) ->
+                 case LexLambdaNat.$fOrdToken_$c< a b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+8bc1160a8cf61dbb1ffdddbfeb3169fb
+  $fOrdToken_$ccompare ::
+    LexLambdaNat.Token -> LexLambdaNat.Token -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: LexLambdaNat.Token)
+                   (b :: LexLambdaNat.Token) ->
+                 case a of wild {
+                   LexLambdaNat.PT a1 a2
+                   -> case b of wild1 {
+                        LexLambdaNat.PT b1 b2
+                        -> case a1 of wild2 { LexLambdaNat.Pn dt dt1 dt2 ->
+                           case b1 of wild3 { LexLambdaNat.Pn dt3 dt4 dt5 ->
+                           case GHC.Prim.<# dt dt3 of lwild {
+                             DEFAULT
+                             -> case GHC.Prim.==# dt dt3 of lwild1 {
+                                  DEFAULT -> GHC.Types.GT
+                                  1#
+                                  -> case GHC.Prim.<# dt1 dt4 of lwild2 {
+                                       DEFAULT
+                                       -> case GHC.Prim.==# dt1 dt4 of lwild3 {
+                                            DEFAULT -> GHC.Types.GT
+                                            1#
+                                            -> case GHC.Prim.<# dt2 dt5 of lwild4 {
+                                                 DEFAULT
+                                                 -> case GHC.Prim.==# dt2 dt5 of lwild5 {
+                                                      DEFAULT -> GHC.Types.GT
+                                                      1# -> LexLambdaNat.$fOrdTok_$ccompare a2 b2 }
+                                                 1# -> GHC.Types.LT } }
+                                       1# -> GHC.Types.LT } }
+                             1# -> GHC.Types.LT } } }
+                        LexLambdaNat.Err ipv -> GHC.Types.LT }
+                   LexLambdaNat.Err a1
+                   -> case b of wild1 {
+                        LexLambdaNat.PT ipv ipv1 -> GHC.Types.GT
+                        LexLambdaNat.Err b1
+                        -> LexLambdaNat.$fOrdPosn_$ccompare a1 b1 } }) -}
+8bc1160a8cf61dbb1ffdddbfeb3169fb
+  $fOrdToken_$cmax ::
+    LexLambdaNat.Token -> LexLambdaNat.Token -> LexLambdaNat.Token
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: LexLambdaNat.Token) (y :: LexLambdaNat.Token) ->
+                 case LexLambdaNat.$fOrdToken_$c< y x of wild {
+                   GHC.Types.False -> y GHC.Types.True -> x }) -}
+8bc1160a8cf61dbb1ffdddbfeb3169fb
+  $fOrdToken_$cmin ::
+    LexLambdaNat.Token -> LexLambdaNat.Token -> LexLambdaNat.Token
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: LexLambdaNat.Token) (y :: LexLambdaNat.Token) ->
+                 case LexLambdaNat.$fOrdToken_$c< y x of wild {
+                   GHC.Types.False -> x GHC.Types.True -> y }) -}
+ee72ced7513726814524b888256c5a99
+  $fShowBTree :: GHC.Show.Show LexLambdaNat.BTree
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ LexLambdaNat.BTree
+                  LexLambdaNat.$fShowBTree_$cshowsPrec
+                  LexLambdaNat.$fShowBTree_$cshow
+                  LexLambdaNat.$fShowBTree_$cshowList -}
+ee72ced7513726814524b888256c5a99
+  $fShowBTree1 :: LexLambdaNat.BTree -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (LexLambdaNat.$fShowBTree_$cshowsPrec
+                   LexLambdaNat.$fShowBTree2) -}
+71a591a8bd73840f99cbd6c7c4e8693a
+  $fShowBTree2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+ee72ced7513726814524b888256c5a99
+  $fShowBTree_$cshow :: LexLambdaNat.BTree -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: LexLambdaNat.BTree) ->
+                 LexLambdaNat.$fShowBTree_$cshowsPrec
+                   LexLambdaNat.$fShowBTree2
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+ee72ced7513726814524b888256c5a99
+  $fShowBTree_$cshowList :: [LexLambdaNat.BTree] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [LexLambdaNat.BTree]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ LexLambdaNat.BTree
+                   LexLambdaNat.$fShowBTree1
+                   ls
+                   s) -}
+ee72ced7513726814524b888256c5a99
+  $fShowBTree_$cshowsPrec ::
+    GHC.Types.Int -> LexLambdaNat.BTree -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U> -}
+1370768abee82ed4ce1eca768b6e96c7
+  $fShowPosn :: GHC.Show.Show LexLambdaNat.Posn
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ LexLambdaNat.Posn
+                  LexLambdaNat.$fShowPosn_$cshowsPrec
+                  LexLambdaNat.$fShowPosn_$cshow
+                  LexLambdaNat.$fShowPosn_$cshowList -}
+1370768abee82ed4ce1eca768b6e96c7
+  $fShowPosn1 :: LexLambdaNat.Posn -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(SSS),1*U(U,U,U)><L,U>,
+     Unfolding: (\ (w :: LexLambdaNat.Posn) (w1 :: GHC.Base.String) ->
+                 case w of ww { LexLambdaNat.Pn ww1 ww2 ww3 ->
+                 LexLambdaNat.$w$cshowsPrec 0# ww1 ww2 ww3 w1 }) -}
+05bb398b0b78e05a0eedc716d9d6a4e8
+  $fShowPosn2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Pn "#) -}
+1370768abee82ed4ce1eca768b6e96c7
+  $fShowPosn_$cshow :: LexLambdaNat.Posn -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SSS),1*U(U,U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: LexLambdaNat.Posn) ->
+                 LexLambdaNat.$fShowPosn_$cshowsPrec
+                   LexLambdaNat.$fShowBTree2
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+1370768abee82ed4ce1eca768b6e96c7
+  $fShowPosn_$cshowList :: [LexLambdaNat.Posn] -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [LexLambdaNat.Posn]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ LexLambdaNat.Posn
+                   LexLambdaNat.$fShowPosn1
+                   ls
+                   s) -}
+1370768abee82ed4ce1eca768b6e96c7
+  $fShowPosn_$cshowsPrec ::
+    GHC.Types.Int -> LexLambdaNat.Posn -> GHC.Show.ShowS
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(SSS),1*U(U,U,U)><L,U>, Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: LexLambdaNat.Posn)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { LexLambdaNat.Pn ww3 ww4 ww5 ->
+                 LexLambdaNat.$w$cshowsPrec ww1 ww3 ww4 ww5 w2 } }) -}
+ca3c8d152d21c6310544b16467db4933
+  $fShowTok :: GHC.Show.Show LexLambdaNat.Tok
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ LexLambdaNat.Tok
+                  LexLambdaNat.$fShowTok_$cshowsPrec
+                  LexLambdaNat.$fShowTok_$cshow
+                  LexLambdaNat.$fShowTok_$cshowList -}
+ca3c8d152d21c6310544b16467db4933
+  $fShowTok1 :: LexLambdaNat.Tok -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ (w :: LexLambdaNat.Tok) (w1 :: GHC.Base.String) ->
+                 LexLambdaNat.$w$cshowsPrec1 0# w w1) -}
+ca3c8d152d21c6310544b16467db4933
+  $fShowTok_$cshow :: LexLambdaNat.Tok -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: LexLambdaNat.Tok) ->
+                 LexLambdaNat.$fShowTok_$cshowsPrec
+                   LexLambdaNat.$fShowBTree2
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+ca3c8d152d21c6310544b16467db4933
+  $fShowTok_$cshowList :: [LexLambdaNat.Tok] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [LexLambdaNat.Tok]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ LexLambdaNat.Tok
+                   LexLambdaNat.$fShowTok1
+                   ls
+                   s) -}
+ca3c8d152d21c6310544b16467db4933
+  $fShowTok_$cshowsPrec ::
+    GHC.Types.Int -> LexLambdaNat.Tok -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U><L,U>, Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: LexLambdaNat.Tok)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 LexLambdaNat.$w$cshowsPrec1 ww1 w1 w2 }) -}
+8bc1160a8cf61dbb1ffdddbfeb3169fb
+  $fShowToken :: GHC.Show.Show LexLambdaNat.Token
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ LexLambdaNat.Token
+                  LexLambdaNat.$fShowToken_$cshowsPrec
+                  LexLambdaNat.$fShowToken_$cshow
+                  LexLambdaNat.$fShowToken_$cshowList -}
+8bc1160a8cf61dbb1ffdddbfeb3169fb
+  $fShowToken1 :: LexLambdaNat.Token -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ (w :: LexLambdaNat.Token) (w1 :: GHC.Base.String) ->
+                 LexLambdaNat.$w$cshowsPrec2 0# w w1) -}
+1dbfcac3c7bfc035665af6c7c8dc2e33
+  $fShowToken2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LexLambdaNat.$fShowToken3) -}
+7aa406b224eba058a239bbdb77f4b80a
+  $fShowToken3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Err "#) -}
+c89f45b67dfa730fb8cf979c496167f0
+  $fShowToken4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("PT "#) -}
+8bc1160a8cf61dbb1ffdddbfeb3169fb
+  $fShowToken_$cshow :: LexLambdaNat.Token -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: LexLambdaNat.Token) ->
+                 LexLambdaNat.$fShowToken_$cshowsPrec
+                   LexLambdaNat.$fShowBTree2
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+8bc1160a8cf61dbb1ffdddbfeb3169fb
+  $fShowToken_$cshowList :: [LexLambdaNat.Token] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [LexLambdaNat.Token]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ LexLambdaNat.Token
+                   LexLambdaNat.$fShowToken1
+                   ls
+                   s) -}
+8bc1160a8cf61dbb1ffdddbfeb3169fb
+  $fShowToken_$cshowsPrec ::
+    GHC.Types.Int -> LexLambdaNat.Token -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U><L,U>, Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: LexLambdaNat.Token)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 LexLambdaNat.$w$cshowsPrec2 ww1 w1 w2 }) -}
+728ff13ebaf2158fc7178e97d7765a2a
+  $tc'AlexA# :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10645753828438988667##
+                   3611135407546738348##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tc'AlexA#2
+                   0#
+                   LexLambdaNat.$tc'AlexA#1) -}
+399efe4f832f846b3ab8b7a1461ac6b3
+  $tc'AlexA#1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+d1acd010fa8b31129b9f7196ac5e8c67
+  $tc'AlexA#2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tc'AlexA#3) -}
+81f247aed9181c101f42dba4f0d10b64
+  $tc'AlexA#3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'AlexA#"#) -}
+ef8c330cd9b13e6609e7a7480fe50436
+  $tc'AlexAcc :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1870918242446550730##
+                   5067861539409581790##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tc'AlexAcc2
+                   1#
+                   LexLambdaNat.$tc'AlexAcc1) -}
+9a4a8fa80e229395fb8cae56c348c461
+  $tc'AlexAcc1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+555bc11bd9ee03ca7fa219eb5f7c8372
+  $tc'AlexAcc2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tc'AlexAcc3) -}
+530ae3fa75303c795a4b18f4bc81183d
+  $tc'AlexAcc3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'AlexAcc"#) -}
+782f157042c898e9d39443a268915c48
+  $tc'AlexAccNone :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13352047763874411870##
+                   2428821423592205515##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tc'AlexAccNone2
+                   1#
+                   LexLambdaNat.$tc'AlexAccNone1) -}
+8954595055c56a1e82a5cbc0d2133ce6
+  $tc'AlexAccNone1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+68848d380da60159d31b4628a6626f80
+  $tc'AlexAccNone2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tc'AlexAccNone3) -}
+79cdb387cd3745000ec7eda38a949e35
+  $tc'AlexAccNone3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'AlexAccNone"#) -}
+f018a25504fbe8dad237058302328540
+  $tc'AlexAccSkip :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5966735405355701661##
+                   17754902746705000088##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tc'AlexAccSkip1
+                   1#
+                   LexLambdaNat.$tc'AlexAccNone1) -}
+54f4967a07e30e31cd5317dee6a7cb57
+  $tc'AlexAccSkip1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tc'AlexAccSkip2) -}
+3114238385c67bfed3651fca6aa578c3
+  $tc'AlexAccSkip2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'AlexAccSkip"#) -}
+94f588e01153d2dbdff6aa01ec334133
+  $tc'AlexEOF :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7850243811901633043##
+                   13741333825521824318##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tc'AlexEOF2
+                   1#
+                   LexLambdaNat.$tc'AlexEOF1) -}
+2721e8154ecb2696216e4b79b1ef432e
+  $tc'AlexEOF1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+e063a2fbddbf579cf90172bd08e3a203
+  $tc'AlexEOF2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tc'AlexEOF3) -}
+2dda050d61713a800e11c7477934a76d
+  $tc'AlexEOF3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'AlexEOF"#) -}
+277c9ce82bc719a91aa2c255d29b6ca8
+  $tc'AlexError :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17098687812675366939##
+                   410993801151292933##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tc'AlexError2
+                   1#
+                   LexLambdaNat.$tc'AlexError1) -}
+4abbbc8c11d5e999cda93af3184c16ef
+  $tc'AlexError1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+6037cefa374b9d299aab6603423f1930
+  $tc'AlexError2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tc'AlexError3) -}
+eb6daf060b85cfa088e4122cd931600b
+  $tc'AlexError3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'AlexError"#) -}
+04bb7182bbf9040398ffc32629230c8a
+  $tc'AlexLastAcc :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9856884032859125293##
+                   1913451734288262827##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tc'AlexLastAcc2
+                   0#
+                   LexLambdaNat.$tc'AlexLastAcc1) -}
+d4ddab73eb4309cf696547f16a404954
+  $tc'AlexLastAcc1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+435481b3f72a54c280c574a22d6e4128
+  $tc'AlexLastAcc2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tc'AlexLastAcc3) -}
+d9773331ed774c40a4e37453eeedeee9
+  $tc'AlexLastAcc3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'AlexLastAcc"#) -}
+514414e2519ca010006ea9d2ac299216
+  $tc'AlexLastSkip :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18335630435416034579##
+                   7259306113293200995##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tc'AlexLastSkip2
+                   0#
+                   LexLambdaNat.$tc'AlexLastSkip1) -}
+2590a08696e9875311e58677c8f6f5ff
+  $tc'AlexLastSkip1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+2a964d70f93b842de4f898b42fa630df
+  $tc'AlexLastSkip2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tc'AlexLastSkip3) -}
+29324becf681b289867dde8910e990d1
+  $tc'AlexLastSkip3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'AlexLastSkip"#) -}
+79218cb50b80ff6739748f3cae2afa96
+  $tc'AlexNone :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   356796997789693234##
+                   18254830427289957858##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tc'AlexNone2
+                   0#
+                   LexLambdaNat.$tc'AlexNone1) -}
+02b49cad45ece6e6bf6d018e58a0ae49
+  $tc'AlexNone1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+0171be47a9b9440c3680007cdb0654f7
+  $tc'AlexNone2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tc'AlexNone3) -}
+1a79d60ecb681e7dbade2d79fa3ab6e5
+  $tc'AlexNone3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'AlexNone"#) -}
+9d24c0642990c8d8dbc23f520a0be4d2
+  $tc'AlexSkip :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10283749620159664726##
+                   5851209607041759409##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tc'AlexSkip2
+                   1#
+                   LexLambdaNat.$tc'AlexSkip1) -}
+45cb4931b51738686002f207f7d7a44a
+  $tc'AlexSkip1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+f8277dedab9d7e6e1c094534abd7e03b
+  $tc'AlexSkip2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tc'AlexSkip3) -}
+b225efc90147ecde90098e2cd8bb3ef3
+  $tc'AlexSkip3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'AlexSkip"#) -}
+8847ef279847a92f1601bc9b2aec4a21
+  $tc'AlexToken :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17651750628118024485##
+                   4171765664810079527##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tc'AlexToken2
+                   1#
+                   LexLambdaNat.$tc'AlexToken1) -}
+373ddebd9c487594ffe2de533605200b
+  $tc'AlexToken1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+52641b847388da56ef235a7eac9a4dc8
+  $tc'AlexToken2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tc'AlexToken3) -}
+1912e1761cff2efcbc25b094ff4a4c47
+  $tc'AlexToken3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'AlexToken"#) -}
+b681b5c8ff989d1e1bc12de8375dab4d
+  $tc'B :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8325556139202051927##
+                   3907117053920756477##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tc'B2
+                   0#
+                   LexLambdaNat.$tc'B1) -}
+c688dcbdd3b56feb8d5a9ef8344f0445
+  $tc'B1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+e8d86660b18773991ab2712be395165b
+  $tc'B2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tc'B3) -}
+c3a865ef7ef157be6dc3dab4f190da12
+  $tc'B3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'B"#) -}
+87f3cc752517e9cb4eea99d0c0bf70fc
+  $tc'Err :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7854025836216821455##
+                   9458430935580972180##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tc'Err2
+                   0#
+                   LexLambdaNat.$tc'Err1) -}
+7bc18cf6d86951e48e3b38ba5ad2369d
+  $tc'Err1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+201d4b55d56580f24e20dfcd78f9951f
+  $tc'Err2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tc'Err3) -}
+4a1a5868e5d1359d6a861d2109b2bdb9
+  $tc'Err3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Err"#) -}
+a2ee87a54311f8d537077588ca802f76
+  $tc'N :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4941824101631087519##
+                   16290775207369918066##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tc'N2
+                   0#
+                   LexLambdaNat.$tc'N1) -}
+448081cc15a455934bcac7107930182d
+  $tc'N1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+4490a1babe9aed474e1276e21a7631f0
+  $tc'N2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tc'N3) -}
+c5fdbc8622ca5a06f746ce6a4c9f05e1
+  $tc'N3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'N"#) -}
+6cd7ec2fb6f798eb6750fd07e23453df
+  $tc'PT :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9521496449147979513##
+                   12027360809500190620##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tc'PT2
+                   0#
+                   LexLambdaNat.$tc'PT1) -}
+06f04f5423b1df74e772ce74e4ab1bed
+  $tc'PT1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+22d00e6681a8af5a0e049c21dd9a5f25
+  $tc'PT2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tc'PT3) -}
+b39d3e8f779737647289889cf3b65bc3
+  $tc'PT3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PT"#) -}
+eeaa27b2d67b25f8aff44d6d5ae8acdf
+  $tc'Pn :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5051234662734716385##
+                   766358421217772218##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tc'Pn2
+                   0#
+                   LexLambdaNat.$tc'Pn1) -}
+538ed3140583c818b231e8fb145e1b8b
+  $tc'Pn1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+c699a579deda8220eab6578f16fd2f8a
+  $tc'Pn2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tc'Pn3) -}
+b2051fd25f7c0ec0a32eaffdf2ec45a0
+  $tc'Pn3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Pn"#) -}
+b611751c80e4e5f41a1f4001dc0af126
+  $tc'TC :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8462156533610750068##
+                   17214821305362952861##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tc'TC2
+                   0#
+                   LexLambdaNat.$tc'TC1) -}
+55de0a112c1f79547ee31e9594ba939c
+  $tc'TC1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+a820d8d69554a2fa837aaf4a254b0ae9
+  $tc'TC2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tc'TC3) -}
+0dc81db5a38b80decda89c2beaeb1172
+  $tc'TC3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'TC"#) -}
+a401c95908cd83b186dd2df025eb65e7
+  $tc'TD :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5698749450548989143##
+                   18040670023376347402##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tc'TD1
+                   0#
+                   LexLambdaNat.$tc'TC1) -}
+beaa8d8143aef694688e6018295a3fca
+  $tc'TD1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tc'TD2) -}
+1b6936026c4007b5c5c00472adc19b0d
+  $tc'TD2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'TD"#) -}
+b69a1a376db543da1755decdbf8937e2
+  $tc'TI :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7418657338222538994##
+                   16772782947374354198##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tc'TI1
+                   0#
+                   LexLambdaNat.$tc'TC1) -}
+4c2cdeabd6e1d6906ea57dd7df296b50
+  $tc'TI1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tc'TI2) -}
+3483178cf482b9159478e707bef09a80
+  $tc'TI2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'TI"#) -}
+6dbff9fa06b812b295b4b0b4c13747d7
+  $tc'TL :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2416906561497443042##
+                   2212526842277867450##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tc'TL1
+                   0#
+                   LexLambdaNat.$tc'TC1) -}
+9e6dd69c978fbbdecdc6bc64021e85b5
+  $tc'TL1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tc'TL2) -}
+a2c83c17927e6fe73ddde197f43c57c9
+  $tc'TL2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'TL"#) -}
+cd7f19cf72a919eb6813372eba828821
+  $tc'TS :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9381219930173893411##
+                   11251709959963816749##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tc'TS2
+                   0#
+                   LexLambdaNat.$tc'TS1) -}
+fe2e2d3319c792e0af5e612736fa10fc
+  $tc'TS1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+c7b51fd6a1e646557b03055545832098
+  $tc'TS2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tc'TS3) -}
+6c6b43429a3058286743fe0cd97b4b0e
+  $tc'TS3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'TS"#) -}
+642b75399bea4ba248b0f696add39202
+  $tc'TV :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15414192076237171818##
+                   5425272103432056484##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tc'TV1
+                   0#
+                   LexLambdaNat.$tc'TC1) -}
+3b9667dae7475a9286a5d6cfdc085a56
+  $tc'TV1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tc'TV2) -}
+73c707ae5b4af01f1c07ef3c485e5d94
+  $tc'TV2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'TV"#) -}
+8b1118075dc74837e42c953d8ac2e561
+  $tc'T_Id :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13503343758363774351##
+                   1730900851853206220##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tc'T_Id1
+                   0#
+                   LexLambdaNat.$tc'TC1) -}
+8a65c4dc8f12b0917e0629abb87711ff
+  $tc'T_Id1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tc'T_Id2) -}
+26f3730c2092136f6ccf01523e21d525
+  $tc'T_Id2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'T_Id"#) -}
+467a63e1f9970b8cfc62aa762a3a8c16
+  $tcAlexAcc :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9927986199865536401##
+                   11163632930645407999##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tcAlexAcc1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+cb9082b27e39daecf3ff1c0a7743fd02
+  $tcAlexAcc1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tcAlexAcc2) -}
+31f2f63e381d45ab95791ad1d7db59ca
+  $tcAlexAcc2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("AlexAcc"#) -}
+a6f9a647c38055dfda823354c12179fd
+  $tcAlexAddr :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10890996291812292002##
+                   2544105878350855588##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tcAlexAddr1
+                   0#
+                   GHC.Types.krep$*) -}
+9d6d5d178813cc76308d68bc02b98453
+  $tcAlexAddr1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tcAlexAddr2) -}
+2a3bf880a5a31f9037198ece5ab1de75
+  $tcAlexAddr2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("AlexAddr"#) -}
+aa8444505635a4f2664ef42b56326417
+  $tcAlexLastAcc :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6857946203726122899##
+                   3100660914073063358##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tcAlexLastAcc1
+                   0#
+                   GHC.Types.krep$*) -}
+38b362df3acd09229bf8885c155fd19f
+  $tcAlexLastAcc1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tcAlexLastAcc2) -}
+cd6657424fefb11ab7bc6a28f7f2d77f
+  $tcAlexLastAcc2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("AlexLastAcc"#) -}
+292e655e0037d2041ae679a54084b6d6
+  $tcAlexReturn :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13784565554985383326##
+                   14680805877822146558##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tcAlexReturn1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+51e279ded30422fe6f0a57cc1ccf7b56
+  $tcAlexReturn1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tcAlexReturn2) -}
+feffad286e41fa3a6a5c29497c07e949
+  $tcAlexReturn2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("AlexReturn"#) -}
+8239b78191b69e8f81601114a8222d17
+  $tcBTree :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16245512277846982805##
+                   9610882675301518652##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tcBTree1
+                   0#
+                   GHC.Types.krep$*) -}
+e92a63bc150c61fd3a378df2e71da9e2
+  $tcBTree1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tcBTree2) -}
+5859c36b317488e2d9a40fb076a9d38a
+  $tcBTree2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("BTree"#) -}
+38262e2c31e629c65374e3c416682f3c
+  $tcPosn :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9046656911128347285##
+                   10368794174795855388##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tcPosn1
+                   0#
+                   GHC.Types.krep$*) -}
+750e2c17e726459b2612c5808b9102ce
+  $tcPosn1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tcPosn2) -}
+d4c3dc7ce9e7b30e390aeac4e6a88321
+  $tcPosn2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Posn"#) -}
+386240612cbeb8625280ed32ff132b0d
+  $tcTok :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   938570073575683162##
+                   6077107641152841191##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tcTok1
+                   0#
+                   GHC.Types.krep$*) -}
+7cb65ff71dfa8555317cd911e9ce7031
+  $tcTok1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tcTok2) -}
+3895e83fb80de3d1584f631644f2e76e
+  $tcTok2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Tok"#) -}
+7bc52a7974d0903e4d581df67d9d4dd9
+  $tcToken :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   341777525583941474##
+                   12012633241364484849##
+                   LexLambdaNat.$trModule
+                   LexLambdaNat.$tcToken1
+                   0#
+                   GHC.Types.krep$*) -}
+c96edf6db041ed968b177864345b6171
+  $tcToken1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$tcToken2) -}
+dca9cb52b1d352c6424021c140949ab2
+  $tcToken2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Token"#) -}
+95f83e563978cf7aa65ebb0771d36703
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   LexLambdaNat.$trModule3
+                   LexLambdaNat.$trModule1) -}
+c693b876d07ff381c49f6dc9a78864ae
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$trModule2) -}
+af8d63199860e6057e7f04d52f0649e6
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("LexLambdaNat"#) -}
+d31aba7f5ace2daed8b727d8671ab901
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LexLambdaNat.$trModule4) -}
+154f9340071a280368dfa5ff43ad8292
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("LambdaNat-0.1.0.0-EvitBjaHhSP7BnBJ5PUt9C"#) -}
+965e04ac52e7b081d562bf4d30136cc9
+  $w$c< ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Types.Bool
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <S,U><L,U><L,U><S,U><L,U><L,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: GHC.Prim.Int#)
+                   (ww3 :: GHC.Prim.Int#)
+                   (ww4 :: GHC.Prim.Int#)
+                   (ww5 :: GHC.Prim.Int#) ->
+                 case GHC.Prim.<# ww ww3 of lwild {
+                   DEFAULT
+                   -> case GHC.Prim.==# ww ww3 of lwild1 {
+                        DEFAULT -> GHC.Types.False
+                        1#
+                        -> case GHC.Prim.<# ww1 ww4 of lwild2 {
+                             DEFAULT
+                             -> case GHC.Prim.==# ww1 ww4 of lwild3 {
+                                  DEFAULT -> GHC.Types.False
+                                  1# -> GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.<# ww2 ww5) }
+                             1# -> GHC.Types.True } }
+                   1# -> GHC.Types.True }) -}
+3f16bf9e9f0a0754f1ab66f491b386e0
+  $w$c<= ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Types.Bool
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <S,U><L,U><L,U><S,U><L,U><L,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: GHC.Prim.Int#)
+                   (ww3 :: GHC.Prim.Int#)
+                   (ww4 :: GHC.Prim.Int#)
+                   (ww5 :: GHC.Prim.Int#) ->
+                 case GHC.Prim.<# ww3 ww of lwild {
+                   DEFAULT
+                   -> case GHC.Prim.==# ww3 ww of lwild1 {
+                        DEFAULT -> GHC.Types.True
+                        1#
+                        -> case GHC.Prim.<# ww4 ww1 of lwild2 {
+                             DEFAULT
+                             -> case GHC.Prim.==# ww4 ww1 of lwild3 {
+                                  DEFAULT -> GHC.Types.True
+                                  1#
+                                  -> case GHC.Prim.<# ww5 ww2 of lwild4 {
+                                       DEFAULT -> GHC.Types.True 1# -> GHC.Types.False } }
+                             1# -> GHC.Types.False } }
+                   1# -> GHC.Types.False }) -}
+daf73b9b3bb38b733d5c85253868ae80
+  $w$c>= ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Types.Bool
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <S,U><L,U><L,U><S,U><L,U><L,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: GHC.Prim.Int#)
+                   (ww3 :: GHC.Prim.Int#)
+                   (ww4 :: GHC.Prim.Int#)
+                   (ww5 :: GHC.Prim.Int#) ->
+                 case GHC.Prim.<# ww ww3 of lwild {
+                   DEFAULT
+                   -> case GHC.Prim.==# ww ww3 of lwild1 {
+                        DEFAULT -> GHC.Types.True
+                        1#
+                        -> case GHC.Prim.<# ww1 ww4 of lwild2 {
+                             DEFAULT
+                             -> case GHC.Prim.==# ww1 ww4 of lwild3 {
+                                  DEFAULT -> GHC.Types.True
+                                  1#
+                                  -> case GHC.Prim.<# ww2 ww5 of lwild4 {
+                                       DEFAULT -> GHC.Types.True 1# -> GHC.Types.False } }
+                             1# -> GHC.Types.False } }
+                   1# -> GHC.Types.False }) -}
+4336aad693bbbe23fa7a722872168979
+  $w$ccompare ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Types.Ordering
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <S,U><L,U><L,U><S,U><L,U><L,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: GHC.Prim.Int#)
+                   (ww3 :: GHC.Prim.Int#)
+                   (ww4 :: GHC.Prim.Int#)
+                   (ww5 :: GHC.Prim.Int#) ->
+                 case GHC.Prim.<# ww ww3 of lwild {
+                   DEFAULT
+                   -> case GHC.Prim.==# ww ww3 of lwild1 {
+                        DEFAULT -> GHC.Types.GT
+                        1#
+                        -> case GHC.Prim.<# ww1 ww4 of lwild2 {
+                             DEFAULT
+                             -> case GHC.Prim.==# ww1 ww4 of lwild3 {
+                                  DEFAULT -> GHC.Types.GT 1# -> GHC.Classes.compareInt# ww2 ww5 }
+                             1# -> GHC.Types.LT } }
+                   1# -> GHC.Types.LT }) -}
+793268c43825f6f9dddd46ca8a61fdfc
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 5, HasNoCafRefs, Strictness: <S,U><L,U><L,U><L,U><L,U>,
+     Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Prim.Int#)
+                   (ww2 :: GHC.Prim.Int#)
+                   (ww3 :: GHC.Prim.Int#)
+                   (w :: GHC.Base.String) ->
+                 let {
+                   p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,U> -}
+                   = \ (x :: GHC.Base.String)[OneShot] ->
+                     GHC.CString.unpackAppendCString#
+                       LexLambdaNat.$fShowPosn2
+                       (case GHC.Show.$wshowSignedInt
+                               11#
+                               ww1
+                               (GHC.Types.:
+                                  @ GHC.Types.Char
+                                  GHC.Show.showSpace1
+                                  (case GHC.Show.$wshowSignedInt
+                                          11#
+                                          ww2
+                                          (GHC.Types.:
+                                             @ GHC.Types.Char
+                                             GHC.Show.showSpace1
+                                             (case GHC.Show.$wshowSignedInt
+                                                     11#
+                                                     ww3
+                                                     x of ww4 { (#,#) ww5 ww6 ->
+                                              GHC.Types.:
+                                                @ GHC.Types.Char
+                                                ww5
+                                                ww6 })) of ww4 { (#,#) ww5 ww6 ->
+                                   GHC.Types.:
+                                     @ GHC.Types.Char
+                                     ww5
+                                     ww6 })) of ww4 { (#,#) ww5 ww6 ->
+                        GHC.Types.: @ GHC.Types.Char ww5 ww6 })
+                 } in
+                 case GHC.Prim.>=# ww 11# of lwild {
+                   DEFAULT -> p w
+                   1#
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.$fShow(,)4
+                        (p (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 w)) }) -}
+ca3c8d152d21c6310544b16467db4933
+  $w$cshowsPrec1 ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Tok -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 3, Strictness: <S,U><S,1*U><L,U>, Inline: [2] -}
+8bc1160a8cf61dbb1ffdddbfeb3169fb
+  $w$cshowsPrec2 ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 3, Strictness: <S,U><S,1*U><L,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (w :: LexLambdaNat.Token)
+                   (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   LexLambdaNat.PT b1 b2
+                   -> case GHC.Prim.>=# ww 11# of lwild {
+                        DEFAULT
+                        -> GHC.CString.unpackAppendCString#
+                             LexLambdaNat.$fShowToken4
+                             (case b1 of ww1 { LexLambdaNat.Pn ww2 ww3 ww4 ->
+                              LexLambdaNat.$w$cshowsPrec
+                                11#
+                                ww2
+                                ww3
+                                ww4
+                                (GHC.Types.:
+                                   @ GHC.Types.Char
+                                   GHC.Show.showSpace1
+                                   (LexLambdaNat.$w$cshowsPrec1 11# b2 w1)) })
+                        1#
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.$fShow(,)4
+                             (GHC.CString.unpackAppendCString#
+                                LexLambdaNat.$fShowToken4
+                                (case b1 of ww1 { LexLambdaNat.Pn ww2 ww3 ww4 ->
+                                 LexLambdaNat.$w$cshowsPrec
+                                   11#
+                                   ww2
+                                   ww3
+                                   ww4
+                                   (GHC.Types.:
+                                      @ GHC.Types.Char
+                                      GHC.Show.showSpace1
+                                      (LexLambdaNat.$w$cshowsPrec1
+                                         11#
+                                         b2
+                                         (GHC.Types.:
+                                            @ GHC.Types.Char
+                                            GHC.Show.$fShow(,)2
+                                            w1))) })) }
+                   LexLambdaNat.Err b1
+                   -> case GHC.Prim.>=# ww 11# of lwild {
+                        DEFAULT
+                        -> GHC.Base.++
+                             @ GHC.Types.Char
+                             LexLambdaNat.$fShowToken2
+                             (case b1 of ww1 { LexLambdaNat.Pn ww2 ww3 ww4 ->
+                              LexLambdaNat.$w$cshowsPrec 11# ww2 ww3 ww4 w1 })
+                        1#
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.$fShow(,)4
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                LexLambdaNat.$fShowToken2
+                                (case b1 of ww1 { LexLambdaNat.Pn ww2 ww3 ww4 ->
+                                 LexLambdaNat.$w$cshowsPrec
+                                   11#
+                                   ww2
+                                   ww3
+                                   ww4
+                                   (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 w1) })) } }) -}
+66eac14a96b9ee001255e7ae0d757ecb
+  $walexGetByte ::
+    LexLambdaNat.Posn
+    -> GHC.Types.Char
+    -> [LexLambdaNat.Byte]
+    -> GHC.Base.String
+    -> GHC.Maybe.Maybe (LexLambdaNat.Byte, LexLambdaNat.AlexInput)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(U,U,U)><L,U><S,1*U><L,U>, Inline: [2],
+     Unfolding: (\ (ww :: LexLambdaNat.Posn)
+                   (ww1 :: GHC.Types.Char)
+                   (ww2 :: [LexLambdaNat.Byte])
+                   (ww3 :: GHC.Base.String) ->
+                 case ww2 of wild {
+                   []
+                   -> case ww3 of wild1 {
+                        []
+                        -> GHC.Maybe.Nothing @ (LexLambdaNat.Byte, LexLambdaNat.AlexInput)
+                        : c s
+                        -> case ww of wild2 { LexLambdaNat.Pn dt dt1 dt2 ->
+                           case c of wild3 { GHC.Types.C# ds ->
+                           let {
+                             x :: GHC.Prim.Int# = GHC.Prim.ord# ds
+                           } in
+                           let {
+                             ds1 :: (GHC.Word.Word8, [GHC.Word.Word8])
+                             = case GHC.Prim.<=# x 127# of lwild {
+                                 DEFAULT
+                                 -> case GHC.Prim.<=# x 2047# of lwild1 {
+                                      DEFAULT
+                                      -> case GHC.Prim.<=# x 65535# of lwild2 {
+                                           DEFAULT
+                                           -> (GHC.Word.W8#
+                                                 (GHC.Prim.narrow8Word#
+                                                    (GHC.Prim.int2Word#
+                                                       (GHC.Prim.+#
+                                                          240#
+                                                          (GHC.Prim.uncheckedIShiftRA# x 18#)))),
+                                               GHC.Types.:
+                                                 @ GHC.Word.Word8
+                                                 (GHC.Word.W8#
+                                                    (GHC.Prim.narrow8Word#
+                                                       (GHC.Prim.int2Word#
+                                                          (GHC.Prim.+#
+                                                             128#
+                                                             (GHC.Prim.andI#
+                                                                (GHC.Prim.uncheckedIShiftRA# x 12#)
+                                                                63#)))))
+                                                 (GHC.Types.:
+                                                    @ GHC.Word.Word8
+                                                    (GHC.Word.W8#
+                                                       (GHC.Prim.narrow8Word#
+                                                          (GHC.Prim.int2Word#
+                                                             (GHC.Prim.+#
+                                                                128#
+                                                                (GHC.Prim.andI#
+                                                                   (GHC.Prim.uncheckedIShiftRA#
+                                                                      x
+                                                                      6#)
+                                                                   63#)))))
+                                                    (GHC.Types.:
+                                                       @ GHC.Word.Word8
+                                                       (GHC.Word.W8#
+                                                          (GHC.Prim.narrow8Word#
+                                                             (GHC.Prim.int2Word#
+                                                                (GHC.Prim.+#
+                                                                   128#
+                                                                   (GHC.Prim.andI# x 63#)))))
+                                                       (GHC.Types.[] @ GHC.Word.Word8))))
+                                           1#
+                                           -> (GHC.Word.W8#
+                                                 (GHC.Prim.narrow8Word#
+                                                    (GHC.Prim.int2Word#
+                                                       (GHC.Prim.+#
+                                                          224#
+                                                          (GHC.Prim.uncheckedIShiftRA# x 12#)))),
+                                               GHC.Types.:
+                                                 @ GHC.Word.Word8
+                                                 (GHC.Word.W8#
+                                                    (GHC.Prim.narrow8Word#
+                                                       (GHC.Prim.int2Word#
+                                                          (GHC.Prim.+#
+                                                             128#
+                                                             (GHC.Prim.andI#
+                                                                (GHC.Prim.uncheckedIShiftRA# x 6#)
+                                                                63#)))))
+                                                 (GHC.Types.:
+                                                    @ GHC.Word.Word8
+                                                    (GHC.Word.W8#
+                                                       (GHC.Prim.narrow8Word#
+                                                          (GHC.Prim.int2Word#
+                                                             (GHC.Prim.+#
+                                                                128#
+                                                                (GHC.Prim.andI# x 63#)))))
+                                                    (GHC.Types.[] @ GHC.Word.Word8))) }
+                                      1#
+                                      -> (GHC.Word.W8#
+                                            (GHC.Prim.narrow8Word#
+                                               (GHC.Prim.int2Word#
+                                                  (GHC.Prim.+#
+                                                     192#
+                                                     (GHC.Prim.uncheckedIShiftRA# x 6#)))),
+                                          GHC.Types.:
+                                            @ GHC.Word.Word8
+                                            (GHC.Word.W8#
+                                               (GHC.Prim.narrow8Word#
+                                                  (GHC.Prim.int2Word#
+                                                     (GHC.Prim.+# 128# (GHC.Prim.andI# x 63#)))))
+                                            (GHC.Types.[] @ GHC.Word.Word8)) }
+                                 1#
+                                 -> (GHC.Word.W8# (GHC.Prim.narrow8Word# (GHC.Prim.int2Word# x)),
+                                     GHC.Types.[] @ GHC.Word.Word8) }
+                           } in
+                           case ds of ds2 {
+                             DEFAULT
+                             -> GHC.Maybe.Just
+                                  @ (GHC.Word.Word8,
+                                     (LexLambdaNat.Posn, GHC.Types.Char, [GHC.Word.Word8],
+                                      [GHC.Types.Char]))
+                                  (case ds1 of ds3 { (,) b bs -> b },
+                                   (LexLambdaNat.Pn (GHC.Prim.+# dt 1#) dt1 (GHC.Prim.+# dt2 1#),
+                                    wild3, case ds1 of ds3 { (,) b bs -> bs }, s))
+                             '\t'#
+                             -> GHC.Maybe.Just
+                                  @ (GHC.Word.Word8,
+                                     (LexLambdaNat.Posn, GHC.Types.Char, [GHC.Word.Word8],
+                                      [GHC.Types.Char]))
+                                  (case ds1 of ds3 { (,) b bs -> b },
+                                   (LexLambdaNat.Pn
+                                      (GHC.Prim.+# dt 1#)
+                                      dt1
+                                      (GHC.Prim.+#
+                                         (GHC.Prim.*#
+                                            (GHC.Prim.uncheckedIShiftRA# (GHC.Prim.+# dt2 7#) 3#)
+                                            8#)
+                                         1#),
+                                    wild3, case ds1 of ds3 { (,) b bs -> bs }, s))
+                             '\n'#
+                             -> GHC.Maybe.Just
+                                  @ (GHC.Word.Word8,
+                                     (LexLambdaNat.Posn, GHC.Types.Char, [GHC.Word.Word8],
+                                      [GHC.Types.Char]))
+                                  (case ds1 of ds3 { (,) b bs -> b },
+                                   (LexLambdaNat.Pn (GHC.Prim.+# dt 1#) (GHC.Prim.+# dt1 1#) 1#,
+                                    wild3, case ds1 of ds3 { (,) b bs -> bs }, s)) } } } }
+                   : b bs
+                   -> GHC.Maybe.Just
+                        @ (LexLambdaNat.Byte,
+                           (LexLambdaNat.Posn, GHC.Types.Char, [LexLambdaNat.Byte],
+                            GHC.Base.String))
+                        (b, (ww, ww1, bs, ww3)) }) -}
+f647934f9d3edd4516ab6da3efa1fad5
+  $walexScanUser ::
+    LexLambdaNat.Posn
+    -> GHC.Types.Char
+    -> [LexLambdaNat.Byte]
+    -> GHC.Base.String
+    -> GHC.Prim.Int#
+    -> LexLambdaNat.AlexReturn
+         (LexLambdaNat.Posn -> GHC.Base.String -> LexLambdaNat.Token)
+  {- Arity: 5, Strictness: <L,U(U,U,U)><L,U><S,U><L,U><S,U>,
+     Inline: [2],
+     Unfolding: (\ @ t
+                   (ww :: LexLambdaNat.Posn)
+                   (ww1 :: GHC.Types.Char)
+                   (ww2 :: [LexLambdaNat.Byte])
+                   (ww3 :: GHC.Base.String)
+                   (ww4 :: GHC.Prim.Int#) ->
+                 case LexLambdaNat.$walex_scan_tkn
+                        @ t
+                        @ (LexLambdaNat.Posn, GHC.Types.Char, [LexLambdaNat.Byte],
+                           GHC.Base.String)
+                        0#
+                        ww
+                        ww1
+                        ww2
+                        ww3
+                        ww4
+                        LexLambdaNat.AlexNone of ww5 { (#,#) ww6 ww7 ->
+                 case ww6 of wild {
+                   LexLambdaNat.AlexNone
+                   -> case LexLambdaNat.$walexGetByte ww ww1 ww2 ww3 of wild1 {
+                        GHC.Maybe.Nothing
+                        -> LexLambdaNat.AlexEOF
+                             @ (LexLambdaNat.Posn -> GHC.Base.String -> LexLambdaNat.Token)
+                        GHC.Maybe.Just ds
+                        -> LexLambdaNat.$WAlexError
+                             @ (LexLambdaNat.Posn -> GHC.Base.String -> LexLambdaNat.Token)
+                             ww7 }
+                   LexLambdaNat.AlexLastAcc dt input__''' dt1
+                   -> LexLambdaNat.AlexToken
+                        @ (LexLambdaNat.Posn -> GHC.Base.String -> LexLambdaNat.Token)
+                        input__'''
+                        dt1
+                        (case LexLambdaNat.alex_actions of wild1 { GHC.Arr.Array l u dt2 ds ->
+                         case l of wild2 { GHC.Types.I# m ->
+                         case u of wild3 { GHC.Types.I# n ->
+                         case GHC.Prim.<=# m dt of lwild {
+                           DEFAULT
+                           -> case LexLambdaNat.alexScanUser1 dt wild2 wild3
+                              ret_ty (LexLambdaNat.Posn -> GHC.Base.String -> LexLambdaNat.Token)
+                              of {}
+                           1#
+                           -> case GHC.Prim.<=# dt n of lwild1 {
+                                DEFAULT
+                                -> case LexLambdaNat.alexScanUser1 dt wild2 wild3
+                                   ret_ty (LexLambdaNat.Posn
+                                           -> GHC.Base.String -> LexLambdaNat.Token)
+                                   of {}
+                                1#
+                                -> case GHC.Prim.indexArray#
+                                          @ (LexLambdaNat.Posn
+                                             -> GHC.Base.String -> LexLambdaNat.Token)
+                                          ds
+                                          (GHC.Prim.-# dt m) of ds1 { Unit# ipv ->
+                                   ipv } } } } } })
+                   LexLambdaNat.AlexLastSkip input__'' dt
+                   -> LexLambdaNat.AlexSkip
+                        @ (LexLambdaNat.Posn -> GHC.Base.String -> LexLambdaNat.Token)
+                        input__''
+                        dt } }) -}
+ee9af7b71fefa3a4d9631880da1b9112
+  $walex_scan_tkn ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Posn
+    -> GHC.Types.Char
+    -> [LexLambdaNat.Byte]
+    -> GHC.Base.String
+    -> GHC.Prim.Int#
+    -> LexLambdaNat.AlexLastAcc
+    -> (# LexLambdaNat.AlexLastAcc,
+          (LexLambdaNat.Posn, GHC.Types.Char, [LexLambdaNat.Byte],
+           GHC.Base.String) #)
+  {- Arity: 7,
+     Strictness: <L,U><L,U(U,U,U)><L,U><S,U><L,U><S,U><L,1*U>,
+     Inline: [2] -}
+8397ae82863b1755042f9f650d08f9ef
+  $wgo ::
+    LexLambdaNat.Posn
+    -> GHC.Types.Char
+    -> [LexLambdaNat.Byte]
+    -> GHC.Base.String
+    -> [LexLambdaNat.Token]
+  {- Arity: 4, Strictness: <L,U(U,U,U)><L,U><S,U><L,U>,
+     Inline: [2] -}
+74670545895a8db1ae0725cef40251d2
+  $wmkPosToken ::
+    LexLambdaNat.Token
+    -> (# (GHC.Types.Int, GHC.Types.Int), GHC.Base.String #)
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [2],
+     Unfolding: (\ (w :: LexLambdaNat.Token) ->
+                 case w of wild {
+                   LexLambdaNat.PT p ds
+                   -> (# LexLambdaNat.posLineCol p,
+                         case ds of wild1 {
+                           LexLambdaNat.TS s dt -> s
+                           LexLambdaNat.TL s
+                           -> GHC.Types.:
+                                @ GHC.Types.Char
+                                GHC.Show.$fShow(,)3
+                                (GHC.Show.showLitString s GHC.Show.$fShow[]1)
+                           LexLambdaNat.TI s -> s
+                           LexLambdaNat.TV s -> s
+                           LexLambdaNat.TD s -> s
+                           LexLambdaNat.TC s -> s
+                           LexLambdaNat.T_Id s -> s } #)
+                   LexLambdaNat.Err ipv
+                   -> case LexLambdaNat.mkPosToken1
+                      ret_ty (# (GHC.Types.Int, GHC.Types.Int), GHC.Base.String #)
+                      of {} }) -}
+9b382fedf70b49a64da6e8e9620716a5
+  type role AlexAcc phantom
+  data AlexAcc user
+    = AlexAccNone | AlexAcc GHC.Types.Int | AlexAccSkip
+1ec7f0cbf275a8159967b9a73d0396f1
+  data AlexAddr = AlexA# GHC.Prim.Addr#
+c157b19ef40d36abc9797cd8a6c8c6d6
+  type AlexInput =
+    (LexLambdaNat.Posn, GHC.Types.Char, [LexLambdaNat.Byte],
+     GHC.Base.String)
+035893860ff493b2cb43014c28b5c0bd
+  data AlexLastAcc
+    = AlexNone
+    | AlexLastAcc {-# UNPACK #-}GHC.Types.Int
+                  !LexLambdaNat.AlexInput
+                  {-# UNPACK #-}GHC.Types.Int
+    | AlexLastSkip !LexLambdaNat.AlexInput {-# UNPACK #-}GHC.Types.Int
+23f44c44377077189813d15c1d17bba5
+  data AlexReturn a
+    = AlexEOF
+    | AlexError !LexLambdaNat.AlexInput
+    | AlexSkip !LexLambdaNat.AlexInput {-# UNPACK #-}GHC.Types.Int
+    | AlexToken !LexLambdaNat.AlexInput {-# UNPACK #-}GHC.Types.Int a
+ee72ced7513726814524b888256c5a99
+  data BTree
+    = N
+    | B GHC.Base.String
+        LexLambdaNat.Tok
+        LexLambdaNat.BTree
+        LexLambdaNat.BTree
+20a684beaa4a0e62085d9b4799e47a27
+  type Byte = GHC.Word.Word8
+1370768abee82ed4ce1eca768b6e96c7
+  data Posn
+    = Pn {-# UNPACK #-}GHC.Types.Int
+         {-# UNPACK #-}GHC.Types.Int
+         {-# UNPACK #-}GHC.Types.Int
+ca3c8d152d21c6310544b16467db4933
+  data Tok
+    = TS !GHC.Base.String {-# UNPACK #-}GHC.Types.Int
+    | TL !GHC.Base.String
+    | TI !GHC.Base.String
+    | TV !GHC.Base.String
+    | TD !GHC.Base.String
+    | TC !GHC.Base.String
+    | T_Id !GHC.Base.String
+8bc1160a8cf61dbb1ffdddbfeb3169fb
+  data Token
+    = PT LexLambdaNat.Posn LexLambdaNat.Tok | Err LexLambdaNat.Posn
+af3654616759b6b5bff46a0499fc18de
+  alexGetByte ::
+    LexLambdaNat.AlexInput
+    -> GHC.Maybe.Maybe (LexLambdaNat.Byte, LexLambdaNat.AlexInput)
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSL),1*U(U(U,U,U),U,1*U,U)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: LexLambdaNat.AlexInput) ->
+                 case w of ww { (,,,) ww1 ww2 ww3 ww4 ->
+                 LexLambdaNat.$walexGetByte ww1 ww2 ww3 ww4 }) -}
+676990802f0cdb4a4d898d7a3a753886
+  alexIndexInt16OffAddr ::
+    LexLambdaNat.AlexAddr -> GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S,U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (ds :: LexLambdaNat.AlexAddr) (off :: GHC.Prim.Int#) ->
+                 case ds of wild { LexLambdaNat.AlexA# arr ->
+                 GHC.Prim.indexInt16OffAddr# arr off }) -}
+a958453982dbd62ba7fdc86721a16444
+  alexIndexInt32OffAddr ::
+    LexLambdaNat.AlexAddr -> GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S,U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (ds :: LexLambdaNat.AlexAddr) (off :: GHC.Prim.Int#) ->
+                 case ds of wild { LexLambdaNat.AlexA# arr ->
+                 GHC.Prim.indexInt32OffAddr# arr off }) -}
+44d36b143daa29f5b6889be8ed782d36
+  alexInputPrevChar :: LexLambdaNat.AlexInput -> GHC.Types.Char
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLL),1*U(A,1*U(U),A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: (LexLambdaNat.Posn, GHC.Types.Char, [LexLambdaNat.Byte],
+                           GHC.Base.String)) ->
+                 case ds of wild { (,,,) p c bs s -> c }) -}
+e985bc2f3b2c5807240a3da85ed13269
+  alexMove ::
+    LexLambdaNat.Posn -> GHC.Types.Char -> LexLambdaNat.Posn
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SSL),1*U(U,U,U)><S(S),1*U(1*U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: LexLambdaNat.Posn) (ds1 :: GHC.Types.Char) ->
+                 case ds of wild { LexLambdaNat.Pn dt dt1 dt2 ->
+                 case ds1 of wild1 { GHC.Types.C# ds2 ->
+                 case ds2 of ds3 {
+                   DEFAULT
+                   -> LexLambdaNat.Pn (GHC.Prim.+# dt 1#) dt1 (GHC.Prim.+# dt2 1#)
+                   '\t'#
+                   -> LexLambdaNat.Pn
+                        (GHC.Prim.+# dt 1#)
+                        dt1
+                        (GHC.Prim.+#
+                           (GHC.Prim.*#
+                              (GHC.Prim.uncheckedIShiftRA# (GHC.Prim.+# dt2 7#) 3#)
+                              8#)
+                           1#)
+                   '\n'#
+                   -> LexLambdaNat.Pn
+                        (GHC.Prim.+# dt 1#)
+                        (GHC.Prim.+# dt1 1#)
+                        1# } } }) -}
+32138c3971c84f9240cca3054e0b0497
+  alexScan ::
+    (LexLambdaNat.Posn, GHC.Types.Char, [LexLambdaNat.Byte],
+     GHC.Base.String)
+    -> GHC.Types.Int
+    -> LexLambdaNat.AlexReturn
+         (LexLambdaNat.Posn -> GHC.Base.String -> LexLambdaNat.Token)
+  {- Arity: 2,
+     Strictness: <S(LLSL),1*U(U(U,U,U),U,U,U)><S(S),1*U(U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (input__ :: (LexLambdaNat.Posn, GHC.Types.Char,
+                                [LexLambdaNat.Byte], GHC.Base.String))
+                   (ds :: GHC.Types.Int) ->
+                 case ds of wild { GHC.Types.I# sc ->
+                 LexLambdaNat.alexScanUser
+                   @ GHC.Types.Any
+                   LexLambdaNat.alexScan1
+                   input__
+                   (GHC.Types.I# sc) }) -}
+16275ef2c973a0be1dcfad1ba162405f
+  alexScan1 :: GHC.Types.Any
+  {- Strictness: x -}
+ba09ed07c53917ba185df94374760bca
+  alexScanUser ::
+    t
+    -> (LexLambdaNat.Posn, GHC.Types.Char, [LexLambdaNat.Byte],
+        GHC.Base.String)
+    -> GHC.Types.Int
+    -> LexLambdaNat.AlexReturn
+         (LexLambdaNat.Posn -> GHC.Base.String -> LexLambdaNat.Token)
+  {- Arity: 3,
+     Strictness: <L,A><S(LLSL),1*U(U(U,U,U),U,U,U)><S(S),1*U(U)>,
+     Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ t
+                   (w :: t)
+                   (w1 :: (LexLambdaNat.Posn, GHC.Types.Char, [LexLambdaNat.Byte],
+                           GHC.Base.String))
+                   (w2 :: GHC.Types.Int) ->
+                 case w1 of ww { (,,,) ww1 ww2 ww3 ww4 ->
+                 case w2 of ww5 { GHC.Types.I# ww6 ->
+                 LexLambdaNat.$walexScanUser @ t ww1 ww2 ww3 ww4 ww6 } }) -}
+f5abaaf0641dacfe8a7e0adc1fb07765
+  alexScanUser1 ::
+    GHC.Prim.Int# -> GHC.Types.Int -> GHC.Types.Int -> GHC.Types.Int
+  {- Arity: 3, Strictness: <B,U><B,U><B,U>x -}
+2b981f1cb00fd27e10d708c46f903ae2
+  alexStartPos :: LexLambdaNat.Posn
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (LexLambdaNat.Pn 0# 1# 1#) -}
+bca35582af18a7c881761e0b49758e9a
+  alex_accept ::
+    GHC.Arr.Array GHC.Types.Int (LexLambdaNat.AlexAcc user)
+  {- Unfolding: (\ @ user ->
+                 case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '[ 'GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld,
+                             GHC.Arr.Array GHC.Types.Int (LexLambdaNat.AlexAcc user) #)
+                        (LexLambdaNat.alex_accept1 @ user) of ds1 { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+a976b3f8ea5c48ff35bc3f56ffd70478
+  alex_accept1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Arr.Array GHC.Types.Int (LexLambdaNat.AlexAcc user) #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ @ user
+                   (s1# :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newArray#
+                        @ (LexLambdaNat.AlexAcc user)
+                        @ GHC.Prim.RealWorld
+                        29#
+                        (GHC.Arr.arrEleBottom @ (LexLambdaNat.AlexAcc user))
+                        s1# of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        0#
+                        (LexLambdaNat.AlexAccNone @ user)
+                        ipv of s4# { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        1#
+                        (LexLambdaNat.AlexAccNone @ user)
+                        s4# of s4#1 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        2#
+                        (LexLambdaNat.AlexAccNone @ user)
+                        s4#1 of s4#2 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        3#
+                        (LexLambdaNat.AlexAccNone @ user)
+                        s4#2 of s4#3 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        4#
+                        (LexLambdaNat.AlexAccNone @ user)
+                        s4#3 of s4#4 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        5#
+                        (LexLambdaNat.AlexAccNone @ user)
+                        s4#4 of s4#5 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        6#
+                        (LexLambdaNat.AlexAccNone @ user)
+                        s4#5 of s4#6 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        7#
+                        (LexLambdaNat.AlexAccNone @ user)
+                        s4#6 of s4#7 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        8#
+                        (LexLambdaNat.AlexAccNone @ user)
+                        s4#7 of s4#8 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        9#
+                        (LexLambdaNat.AlexAccNone @ user)
+                        s4#8 of s4#9 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        10#
+                        (LexLambdaNat.AlexAccNone @ user)
+                        s4#9 of s4#10 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        11#
+                        (LexLambdaNat.AlexAccNone @ user)
+                        s4#10 of s4#11 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        12#
+                        (LexLambdaNat.AlexAccNone @ user)
+                        s4#11 of s4#12 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        13#
+                        (LexLambdaNat.AlexAccNone @ user)
+                        s4#12 of s4#13 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        14#
+                        (LexLambdaNat.AlexAccNone @ user)
+                        s4#13 of s4#14 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        15#
+                        (LexLambdaNat.AlexAccNone @ user)
+                        s4#14 of s4#15 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        16#
+                        (LexLambdaNat.AlexAccNone @ user)
+                        s4#15 of s4#16 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        17#
+                        (LexLambdaNat.AlexAccNone @ user)
+                        s4#16 of s4#17 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        18#
+                        (LexLambdaNat.AlexAccNone @ user)
+                        s4#17 of s4#18 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        19#
+                        (LexLambdaNat.AlexAccNone @ user)
+                        s4#18 of s4#19 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        20#
+                        (LexLambdaNat.AlexAccSkip @ user)
+                        s4#19 of s4#20 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        21#
+                        (LexLambdaNat.AlexAccSkip @ user)
+                        s4#20 of s4#21 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        22#
+                        (LexLambdaNat.AlexAccSkip @ user)
+                        s4#21 of s4#22 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        23#
+                        (LexLambdaNat.alex_accept12 @ user)
+                        s4#22 of s4#23 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        24#
+                        (LexLambdaNat.alex_accept10 @ user)
+                        s4#23 of s4#24 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        25#
+                        (LexLambdaNat.alex_accept8 @ user)
+                        s4#24 of s4#25 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        26#
+                        (LexLambdaNat.alex_accept6 @ user)
+                        s4#25 of s4#26 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        27#
+                        (LexLambdaNat.alex_accept4 @ user)
+                        s4#26 of s4#27 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        28#
+                        (LexLambdaNat.alex_accept3 @ user)
+                        s4#27 of wild4 { DEFAULT ->
+                 case GHC.Prim.unsafeFreezeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.AlexAcc user)
+                        ipv1
+                        wild4 of ds2 { (#,#) ipv2 ipv3 ->
+                 (# ipv2,
+                    GHC.Arr.Array
+                      @ GHC.Types.Int
+                      @ (LexLambdaNat.AlexAcc user)
+                      LexLambdaNat.$fShowBTree2
+                      LexLambdaNat.alex_accept2
+                      29#
+                      ipv3 #) } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } }) -}
+1b174b7ae0b9306102f30eba4c172166
+  alex_accept10 :: LexLambdaNat.AlexAcc user
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (\ @ user ->
+                 LexLambdaNat.AlexAcc @ user LexLambdaNat.alex_accept11) -}
+a2da7d534391d2f03154273eb740bd88
+  alex_accept11 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 4#) -}
+53ead4ba23d999b09fee28379624859d
+  alex_accept12 :: LexLambdaNat.AlexAcc user
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (\ @ user ->
+                 LexLambdaNat.AlexAcc @ user LexLambdaNat.alex_accept13) -}
+f2a2870731c6febca3478b672782b021
+  alex_accept13 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 5#) -}
+039a4e917a77bbf1f4c7c4b271bb58bc
+  alex_accept2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 28#) -}
+1b92ce114de250c9aeff7bb8ac151a8e
+  alex_accept3 :: LexLambdaNat.AlexAcc user
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (\ @ user ->
+                 LexLambdaNat.AlexAcc @ user LexLambdaNat.$fShowBTree2) -}
+32fe61bbc29212659feb77b64dc5437c
+  alex_accept4 :: LexLambdaNat.AlexAcc user
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (\ @ user ->
+                 LexLambdaNat.AlexAcc @ user LexLambdaNat.alex_accept5) -}
+8ce0a025ae63eb31b0819189a2ab7d36
+  alex_accept5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+516522fbfbd32f4e6d3b908ed57d3f18
+  alex_accept6 :: LexLambdaNat.AlexAcc user
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (\ @ user ->
+                 LexLambdaNat.AlexAcc @ user LexLambdaNat.alex_accept7) -}
+4953b025bf01195f2083498eabf07deb
+  alex_accept7 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 2#) -}
+12a5659150bdb6721466f26304729fe5
+  alex_accept8 :: LexLambdaNat.AlexAcc user
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (\ @ user ->
+                 LexLambdaNat.AlexAcc @ user LexLambdaNat.alex_accept9) -}
+1ec7117dd9e09a82c36bfc852953d6a2
+  alex_accept9 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 3#) -}
+9f6260fafb5ace1b56ca020aa06d2d9b
+  alex_action_1 :: LexLambdaNat.Tok
+  {- Strictness: x -}
+64cccdb232673c6fd2d0b39ae59f2dc1
+  alex_action_3 ::
+    LexLambdaNat.Posn -> GHC.Base.String -> LexLambdaNat.Token
+  {- Arity: 2, Strictness: <L,U><L,U>m1,
+     Unfolding: InlineRule (2, True, False)
+                (\ (p :: LexLambdaNat.Posn) (s :: GHC.Base.String) ->
+                 LexLambdaNat.PT
+                   p
+                   (let {
+                      exit :: GHC.Base.String -> LexLambdaNat.Tok -> LexLambdaNat.Tok
+                        <join 2> {- Arity: 2 -}
+                      = \ (a :: GHC.Base.String)[OneShot]
+                          (t :: LexLambdaNat.Tok)[OneShot] ->
+                        case GHC.Base.eqString s a of wild {
+                          GHC.Types.False -> LexLambdaNat.alex_action_1 GHC.Types.True -> t }
+                    } in
+                    let {
+                      lvl25 :: LexLambdaNat.Tok <join 0> = LexLambdaNat.$WTV s
+                    } in
+                    letrec {
+                      treeFind :: LexLambdaNat.BTree -> LexLambdaNat.Tok
+                        <join 1> {- Arity: 1, Strictness: <S,U> -}
+                      = \ (ds :: LexLambdaNat.BTree) ->
+                        case ds of wild {
+                          LexLambdaNat.N -> lvl25
+                          LexLambdaNat.B a t left right
+                          -> case GHC.Classes.$fOrd[]_$s$ccompare1 s a of wild1 {
+                               GHC.Types.LT -> treeFind left
+                               GHC.Types.EQ -> exit a t
+                               GHC.Types.GT -> treeFind right } }
+                    } in
+                    treeFind LexLambdaNat.resWords)) -}
+5e5b73fa91da845df1bcd9963ac2d281
+  alex_action_4 ::
+    LexLambdaNat.Posn -> GHC.Base.String -> LexLambdaNat.Token
+  {- Arity: 2, Strictness: <L,U><L,U>m1,
+     Unfolding: InlineRule (2, True, False)
+                (\ (p :: LexLambdaNat.Posn) (s :: GHC.Base.String) ->
+                 LexLambdaNat.PT
+                   p
+                   (let {
+                      exit :: GHC.Base.String -> LexLambdaNat.Tok -> LexLambdaNat.Tok
+                        <join 2> {- Arity: 2 -}
+                      = \ (a :: GHC.Base.String)[OneShot]
+                          (t :: LexLambdaNat.Tok)[OneShot] ->
+                        case GHC.Base.eqString s a of wild {
+                          GHC.Types.False -> LexLambdaNat.alex_action_1 GHC.Types.True -> t }
+                    } in
+                    let {
+                      lvl25 :: LexLambdaNat.Tok <join 0> = LexLambdaNat.$WT_Id s
+                    } in
+                    letrec {
+                      treeFind :: LexLambdaNat.BTree -> LexLambdaNat.Tok
+                        <join 1> {- Arity: 1, Strictness: <S,U> -}
+                      = \ (ds :: LexLambdaNat.BTree) ->
+                        case ds of wild {
+                          LexLambdaNat.N -> lvl25
+                          LexLambdaNat.B a t left right
+                          -> case GHC.Classes.$fOrd[]_$s$ccompare1 s a of wild1 {
+                               GHC.Types.LT -> treeFind left
+                               GHC.Types.EQ -> exit a t
+                               GHC.Types.GT -> treeFind right } }
+                    } in
+                    treeFind LexLambdaNat.resWords)) -}
+315c3c90ec8d40de420203be58aa2528
+  alex_action_5 ::
+    LexLambdaNat.Posn -> GHC.Base.String -> LexLambdaNat.Token
+  {- Arity: 2, Strictness: <L,U><L,U>m1,
+     Unfolding: InlineRule (2, True, False)
+                (\ (p :: LexLambdaNat.Posn) (s :: GHC.Base.String) ->
+                 LexLambdaNat.PT
+                   p
+                   (let {
+                      exit :: GHC.Base.String -> LexLambdaNat.Tok -> LexLambdaNat.Tok
+                        <join 2> {- Arity: 2 -}
+                      = \ (a :: GHC.Base.String)[OneShot]
+                          (t :: LexLambdaNat.Tok)[OneShot] ->
+                        case GHC.Base.eqString s a of wild {
+                          GHC.Types.False -> LexLambdaNat.alex_action_1 GHC.Types.True -> t }
+                    } in
+                    let {
+                      lvl25 :: LexLambdaNat.Tok <join 0> = LexLambdaNat.$WTV s
+                    } in
+                    letrec {
+                      treeFind :: LexLambdaNat.BTree -> LexLambdaNat.Tok
+                        <join 1> {- Arity: 1, Strictness: <S,U> -}
+                      = \ (ds :: LexLambdaNat.BTree) ->
+                        case ds of wild {
+                          LexLambdaNat.N -> lvl25
+                          LexLambdaNat.B a t left right
+                          -> case GHC.Classes.$fOrd[]_$s$ccompare1 s a of wild1 {
+                               GHC.Types.LT -> treeFind left
+                               GHC.Types.EQ -> exit a t
+                               GHC.Types.GT -> treeFind right } }
+                    } in
+                    treeFind LexLambdaNat.resWords)) -}
+b5dba598dd2268fd6d5d79d67b9af70f
+  alex_actions ::
+    GHC.Arr.Array
+      GHC.Types.Int
+      (LexLambdaNat.Posn -> GHC.Base.String -> LexLambdaNat.Token)
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '[ 'GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld,
+                             GHC.Arr.Array
+                               GHC.Types.Int
+                               (LexLambdaNat.Posn -> GHC.Base.String -> LexLambdaNat.Token) #)
+                        LexLambdaNat.alex_actions1 of ds1 { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+269e2fa1d9d87deba2fb4fde85252df7
+  alex_actions1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Arr.Array
+            GHC.Types.Int
+            (LexLambdaNat.Posn -> GHC.Base.String -> LexLambdaNat.Token) #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s1# :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newArray#
+                        @ (LexLambdaNat.Posn -> GHC.Base.String -> LexLambdaNat.Token)
+                        @ GHC.Prim.RealWorld
+                        7#
+                        (GHC.Arr.arrEleBottom
+                           @ (LexLambdaNat.Posn -> GHC.Base.String -> LexLambdaNat.Token))
+                        s1# of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.Posn -> GHC.Base.String -> LexLambdaNat.Token)
+                        ipv1
+                        5#
+                        LexLambdaNat.alex_action_3
+                        ipv of s2# { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.Posn -> GHC.Base.String -> LexLambdaNat.Token)
+                        ipv1
+                        4#
+                        LexLambdaNat.alex_action_4
+                        s2# of s2#1 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.Posn -> GHC.Base.String -> LexLambdaNat.Token)
+                        ipv1
+                        3#
+                        LexLambdaNat.alex_action_4
+                        s2#1 of s2#2 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.Posn -> GHC.Base.String -> LexLambdaNat.Token)
+                        ipv1
+                        2#
+                        LexLambdaNat.alex_action_4
+                        s2#2 of s2#3 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.Posn -> GHC.Base.String -> LexLambdaNat.Token)
+                        ipv1
+                        1#
+                        LexLambdaNat.alex_action_4
+                        s2#3 of s2#4 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.Posn -> GHC.Base.String -> LexLambdaNat.Token)
+                        ipv1
+                        0#
+                        LexLambdaNat.alex_action_3
+                        s2#4 of s2#5 { DEFAULT ->
+                 case GHC.Prim.unsafeFreezeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (LexLambdaNat.Posn -> GHC.Base.String -> LexLambdaNat.Token)
+                        ipv1
+                        s2#5 of ds2 { (#,#) ipv2 ipv3 ->
+                 (# ipv2,
+                    GHC.Arr.Array
+                      @ GHC.Types.Int
+                      @ (LexLambdaNat.Posn -> GHC.Base.String -> LexLambdaNat.Token)
+                      LexLambdaNat.$fShowBTree2
+                      LexLambdaNat.alex_actions2
+                      7#
+                      ipv3 #) } } } } } } } }) -}
+dcbadb70fbd947db556517ce2177518f
+  alex_actions2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 6#) -}
+9b436ba2b3112afbeccaa06b0287ac2c
+  alex_base :: LexLambdaNat.AlexAddr
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (LexLambdaNat.AlexA# LexLambdaNat.alex_base1) -}
+71eb256bed03a2243eaaee0a8bab3edd
+  alex_base1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("\\248\\255\\255\\255\\220\\255\\255\\255I\NUL\NUL\NUL\\164\\255\\255\\255\\201\NUL\NUL\NUL\\163\\255\\255\\255I\SOH\NUL\NUL\\151\\255\\255\\255I\STX\NUL\NUL\\185\\255\\255\\255\NUL\NUL\NUL\NUL:\STX\NUL\NUL\DLE\ETX\NUL\NUL\NUL\NUL\NUL\NUL|\STX\NUL\NUL\\144\ETX\NUL\NUL\\208\ETX\NUL\NUL\\144\EOT\NUL\NULP\EOT\NUL\NUL\NUL\NUL\NUL\NULF\ENQ\NUL\NUL\NUL\NUL\NUL\NUL\ETX\NUL\NUL\NUL\NUL\NUL\NUL\NUL\US\ACK\NUL\NUL\\130\ACK\NUL\NUL\\229\ACK\NUL\NULH\a\NUL\NUL\\171\a\NUL\NUL"#) -}
+07d252f08b4cf63157a8c0908f4ad4a0
+  alex_check :: LexLambdaNat.AlexAddr
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (LexLambdaNat.AlexA# LexLambdaNat.alex_check1) -}
+3b548b7884064c13bd73f1ec299028a1
+  alex_check1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("\\255\\255\t\NUL\n\
+                 \\NUL\v\NUL\f\NUL\r\NUL*\NULc\NULe\NULr\NUL\\255\\255/\NUL\t\NUL\n\
+                 \\NUL\v\NUL\f\NUL\r\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255 \NUL\\255\\255\\255\\255#\NUL\\255\\255\\255\\255\\255\\255\\255\\255(\NUL)\NUL\\255\\255 \NUL\\255\\255\\255\\255.\NUL/\NUL0\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255:\NUL\\255\\255\\255\\255=\NUL\\255\\255\\255\\255\\255\\255A\NULB\NULC\NULD\NULE\NULF\NULG\NULH\NULI\NULJ\NULK\NULL\NULM\NULN\NULO\NULP\NULQ\NULR\NULS\NULT\NULU\NULV\NULW\NULX\NULY\NULZ\NUL\\255\\255\\\NUL\\255\\255\\255\\255\\255\\255\\255\\255a\NULb\NULc\NULd\NULe\NULf\NULg\NULh\NULi\NULj\NULk\NULl\NULm\NULn\NULo\NULp\NULq\NULr\NULs\NULt\NULu\NULv\NULw\NULx\NULy\NULz\NUL*\NUL\\255\\255\\255\\255\\255\\255\\255\\255/\NUL\\192\NUL\\193\NUL\\194\NUL\\195\NUL\\196\NUL\\197\NUL\\198\NUL\\199\NUL\\200\NUL\\201\NUL\\202\NUL\\203\NUL\\204\NUL\\205\NUL\\206\NUL\\207\NUL\\208\NUL\\209\NUL\\210\NUL\\211\NUL\\212\NUL\\213\NUL\\214\NUL\\215\NUL\\216\NUL\\217\NUL\\218\NUL\\219\NUL\\220\NUL\\221\NUL\\222\NUL\\223\NUL\\224\NUL\\225\NUL\\226\NUL\\227\NUL\\228\NUL\\229\NUL\\230\NUL\\231\NUL\\232\NUL\\233\NUL\\234\NUL\\235\NUL\\236\NUL\\237\NUL\\238\NUL\\239\NUL\\240\NUL\\241\NUL\\242\NUL\\243\NUL\\244\NUL\\245\NUL\\246\NUL\\247\NUL\\248\NUL\\249\NUL\\250\NUL\\251\NUL\\252\NUL\\253\NUL\\254\NUL\\255\NUL\\255\\255\\255\\255\\195\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\128\NUL\\129\NUL\\130\NUL\\131\NUL\\132\NUL\\133\NUL\\134\NUL\\135\NUL\\136\NUL\\137\NUL\\138\NUL\\139\NUL\\140\NUL\\141\NUL\\142\NUL\\143\NUL\\144\NUL\\145\NUL\\146\NUL\\147\NUL\\148\NUL\\149\NUL\\150\NUL\\151\NUL\\152\NUL\\153\NUL\\154\NUL\\155\NUL\\156\NUL\\157\NUL\\158\NUL\\159\NUL\\160\NUL\\161\NUL\\162\NUL\\163\NUL\\164\NUL\\165\NUL\\166\NUL\\167\NUL\\168\NUL\\169\NUL\\170\NUL\\171\NUL\\172\NUL\\173\NUL\\174\NUL\\175\NUL\\176\NUL\\177\NUL\\178\NUL\\179\NUL\\180\NUL\\181\NUL\\182\NUL\\183\NUL\\184\NUL\\185\NUL\\186\NUL\\187\NUL\\188\NUL\\189\NUL\\190\NUL\\191\NUL\\192\NUL\\193\NUL\\194\NUL\\195\NUL\\196\NUL\\197\NUL\\198\NUL\\199\NUL\\200\NUL\\201\NUL\\202\NUL\\203\NUL\\204\NUL\\205\NUL\\206\NUL\\207\NUL\\208\NUL\\209\NUL\\210\NUL\\211\NUL\\212\NUL\\213\NUL\\214\NUL\\215\NUL\\216\NUL\\217\NUL\\218\NUL\\219\NUL\\220\NUL\\221\NUL\\222\NUL\\223\NUL\\224\NUL\\225\NUL\\226\NUL\\227\NUL\\228\NUL\\229\NUL\\230\NUL\\231\NUL\\232\NUL\\233\NUL\\234\NUL\\235\NUL\\236\NUL\\237\NUL\\238\NUL\\239\NUL\\240\NUL\\241\NUL\\242\NUL\\243\NUL\\244\NUL\\245\NUL\\246\NUL\\247\NUL\\248\NUL\\249\NUL\\250\NUL\\251\NUL\\252\NUL\\253\NUL\\254\NUL\\255\NUL\\128\NUL\\129\NUL\\130\NUL\\131\NUL\\132\NUL\\133\NUL\\134\NUL\\135\NUL\\136\NUL\\137\NUL\\138\NUL\\139\NUL\\140\NUL\\141\NUL\\142\NUL\\143\NUL\\144\NUL\\145\NUL\\146\NUL\\147\NUL\\148\NUL\\149\NUL\\150\NUL\\151\NUL\\152\NUL\\153\NUL\\154\NUL\\155\NUL\\156\NUL\\157\NUL\\158\NUL\\159\NUL\\160\NUL\\161\NUL\\162\NUL\\163\NUL\\164\NUL\\165\NUL\\166\NUL\\167\NUL\\168\NUL\\169\NUL\\170\NUL\\171\NUL\\172\NUL\\173\NUL\\174\NUL\\175\NUL\\176\NUL\\177\NUL\\178\NUL\\179\NUL\\180\NUL\\181\NUL\\182\NUL\\183\NUL\\184\NUL\\185\NUL\\186\NUL\\187\NUL\\188\NUL\\189\NUL\\190\NUL\\191\NUL\\192\NUL\\193\NUL\\194\NUL\\195\NUL\\196\NUL\\197\NUL\\198\NUL\\199\NUL\\200\NUL\\201\NUL\\202\NUL\\203\NUL\\204\NUL\\205\NUL\\206\NUL\\207\NUL\\208\NUL\\209\NUL\\210\NUL\\211\NUL\\212\NUL\\213\NUL\\214\NUL\\215\NUL\\216\NUL\\217\NUL\\218\NUL\\219\NUL\\220\NUL\\221\NUL\\222\NUL\\223\NUL\\224\NUL\\225\NUL\\226\NUL\\227\NUL\\228\NUL\\229\NUL\\230\NUL\\231\NUL\\232\NUL\\233\NUL\\234\NUL\\235\NUL\\236\NUL\\237\NUL\\238\NUL\\239\NUL\\240\NUL\\241\NUL\\242\NUL\\243\NUL\\244\NUL\\245\NUL\\246\NUL\\247\NUL\\248\NUL\\249\NUL\\250\NUL\\251\NUL\\252\NUL\\253\NUL\\254\NUL\\255\NUL\\128\NUL\\129\NUL\\130\NUL\\131\NUL\\132\NUL\\133\NUL\\134\NUL\\135\NUL\\136\NUL\\137\NUL\\138\NUL\\139\NUL\\140\NUL\\141\NUL\\142\NUL\\143\NUL\\144\NUL\\145\NUL\\146\NUL\\147\NUL\\148\NUL\\149\NUL\\150\NUL\\151\NUL\\152\NUL\\153\NUL\\154\NUL\\155\NUL\\156\NUL\\157\NUL\\158\NUL\\159\NUL\\160\NUL\\161\NUL\\162\NUL\\163\NUL\\164\NUL\\165\NUL\\166\NUL\\167\NUL\\168\NUL\\169\NUL\\170\NUL\\171\NUL\\172\NUL\\173\NUL\\174\NUL\\175\NUL\\176\NUL\\177\NUL\\178\NUL\\179\NUL\\180\NUL\\181\NUL\\182\NUL\\183\NUL\\184\NUL\\185\NUL\\186\NUL\\187\NUL\\188\NUL\\189\NUL\\190\NUL\\191\NUL\\192\NUL\\193\NUL\\194\NUL\\195\NUL\\196\NUL\\197\NUL\\198\NUL\\199\NUL\\200\NUL\\201\NUL\\202\NUL\\203\NUL\\204\NUL\\205\NUL\\206\NUL\\207\NUL\\208\NUL\\209\NUL\\210\NUL\\211\NUL\\212\NUL\\213\NUL\\214\NUL\\215\NUL\\216\NUL\\217\NUL\\218\NUL\\219\NUL\\220\NUL\\221\NUL\\222\NUL\\223\NUL\\224\NUL\\225\NUL\\226\NUL\\227\NUL\\228\NUL\\229\NUL\\230\NUL\\231\NUL\\232\NUL\\233\NUL\\234\NUL\\235\NUL\\236\NUL\\237\NUL\\238\NUL\\239\NUL\\240\NUL\\241\NUL\\242\NUL\\243\NUL\\244\NUL\\245\NUL\\246\NUL\\247\NUL\\248\NUL\\249\NUL\\250\NUL\\251\NUL\\252\NUL\\253\NUL\\254\NUL\\255\NUL\NUL\NUL\SOH\NUL\STX\NUL\ETX\NUL\EOT\NUL\ENQ\NUL\ACK\NUL\a\NUL\b\NUL\t\NUL\n\
+                 \\NUL\v\NUL\f\NUL\r\NUL\SO\NUL\SI\NUL\DLE\NUL\DC1\NUL\DC2\NUL\DC3\NUL\DC4\NUL\NAK\NUL\SYN\NUL\ETB\NUL\CAN\NUL\EM\NUL\SUB\NUL\ESC\NUL\FS\NUL\GS\NUL\RS\NUL\US\NUL \NUL!\NUL\"\NUL#\NUL$\NUL%\NUL&\NUL'\NUL(\NUL)\NUL*\NUL+\NUL,\NUL-\NUL.\NUL/\NUL0\NUL1\NUL2\NUL3\NUL4\NUL5\NUL6\NUL7\NUL8\NUL9\NUL:\NUL;\NUL<\NUL=\NUL>\NUL?\NUL@\NULA\NULB\NULC\NULD\NULE\NULF\NULG\NULH\NULI\NULJ\NULK\NULL\NULM\NULN\NULO\NULP\NULQ\NULR\NULS\NULT\NULU\NULV\NULW\NULX\NULY\NULZ\NUL[\NUL\\\NUL]\NUL^\NUL_\NUL`\NULa\NULb\NULc\NULd\NULe\NULf\NULg\NULh\NULi\NULj\NULk\NULl\NULm\NULn\NULo\NULp\NULq\NULr\NULs\NULt\NULu\NULv\NULw\NULx\NULy\NULz\NUL{\NUL|\NUL}\NUL~\NUL\DEL\NUL\\143\NUL\\144\NUL\\145\NUL\\146\NUL\\147\NUL\\148\NUL\\149\NUL\\150\NUL\\151\NUL\\152\NUL\\153\NUL\\154\NUL\\155\NUL\\156\NUL\\157\NUL\\158\NUL\\159\NUL\\160\NUL\\161\NUL\\162\NUL\\163\NUL\\164\NUL\\165\NUL\\166\NUL\\167\NUL\\168\NUL\\169\NUL\\170\NUL\\171\NUL\\172\NUL\\173\NUL\\174\NUL\\175\NUL\\176\NUL\\177\NUL\\178\NUL\\179\NUL\\180\NUL\\181\NUL\\182\NUL\\183\NUL\\184\NUL\\185\NUL\\186\NUL\\187\NUL\\188\NUL\\189\NUL\\190\NUL\\191\NUL\\192\NUL\\193\NUL\\194\NUL\\195\NUL\\196\NUL\\197\NUL\\198\NUL\\199\NUL\\200\NUL\\201\NUL\\202\NUL\\203\NUL\\204\NUL\\205\NUL\\206\NUL\\207\NUL\\208\NUL\\209\NUL\\210\NUL\\211\NUL\\212\NUL\\213\NUL\\214\NUL\\215\NUL\\216\NUL\\217\NUL\\218\NUL\\219\NUL\\220\NUL\\221\NUL\\222\NUL\\223\NUL\\224\NUL\\225\NUL\\226\NUL\\227\NUL\\228\NUL\\229\NUL\\230\NUL\\231\NUL\\232\NUL\\233\NUL\\234\NUL\\235\NUL\\236\NUL\\237\NUL\\238\NUL\\239\NUL\\240\NUL\\241\NUL\\242\NUL\\243\NUL\\244\NUL\\245\NUL\\246\NUL\\247\NUL\\248\NUL\\249\NUL\\250\NUL\\251\NUL\\252\NUL\\253\NUL\\254\NUL\\255\NUL*\NUL\\191\NUL\\192\NUL\\193\NUL\\194\NUL\\195\NUL\\196\NUL\\197\NUL\\198\NUL\\199\NUL\\200\NUL\\201\NUL\\202\NUL\\203\NUL\\204\NUL\\205\NUL\\206\NUL\\207\NUL\\208\NUL\\209\NUL\\210\NUL\\211\NUL\\212\NUL\\213\NUL\\214\NUL\\215\NUL\\216\NUL\\217\NUL\\218\NUL\\219\NUL\\220\NUL\\221\NUL\\222\NUL\\223\NUL\\224\NUL\\225\NUL\\226\NUL\\227\NUL\\228\NUL\\229\NUL\\230\NUL\\231\NUL\\232\NUL\\233\NUL\\234\NUL\\235\NUL\\236\NUL\\237\NUL\\238\NUL\\239\NUL\\240\NUL\\241\NUL\\242\NUL\\243\NUL\\244\NUL\\245\NUL\\246\NUL\\247\NUL\\248\NUL\\249\NUL\\250\NUL\\251\NUL\\252\NUL\\253\NUL\\254\NUL\\255\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\128\NUL\\129\NUL\\130\NUL\\131\NUL\\132\NUL\\133\NUL\\134\NUL\\135\NUL\\136\NUL\\137\NUL\\138\NUL\\139\NUL\\140\NUL\\141\NUL\\142\NUL\\143\NUL\\144\NUL\\145\NUL\\146\NUL\\147\NUL\\148\NUL\\149\NUL\\150\NUL\\151\NUL\\152\NUL\\153\NUL\\154\NUL\\155\NUL\\156\NUL\\157\NUL\\158\NUL\\159\NUL\\160\NUL\\161\NUL\\162\NUL\\163\NUL\\164\NUL\\165\NUL\\166\NUL\\167\NUL\\168\NUL\\169\NUL\\170\NUL\\171\NUL\\172\NUL\\173\NUL\\174\NUL\\175\NUL\\176\NUL\\177\NUL\\178\NUL\\179\NUL\\180\NUL\\181\NUL\\182\NUL\\183\NUL\\184\NUL\\185\NUL\\186\NUL\\187\NUL\\188\NUL\\189\NUL\\190\NUL\\191\NUL\\192\NUL\\193\NUL\\194\NUL\\195\NUL\\196\NUL\\197\NUL\\198\NUL\\199\NUL\\200\NUL\\201\NUL\\202\NUL\\203\NUL\\204\NUL\\205\NUL\\206\NUL\\207\NUL\\208\NUL\\209\NUL\\210\NUL\\211\NUL\\212\NUL\\213\NUL\\214\NUL\\215\NUL\\216\NUL\\217\NUL\\218\NUL\\219\NUL\\220\NUL\\221\NUL\\222\NUL\\223\NUL\\224\NUL\\225\NUL\\226\NUL\\227\NUL\\228\NUL\\229\NUL\\230\NUL\\231\NUL\\232\NUL\\233\NUL\\234\NUL\\235\NUL\\236\NUL\\237\NUL\\238\NUL\\239\NUL\\240\NUL\\241\NUL\\242\NUL\\243\NUL\\244\NUL\\245\NUL\\246\NUL\\247\NUL\\248\NUL\\249\NUL\\250\NUL\\251\NUL\\252\NUL\\253\NUL\\254\NUL\\255\NUL\\128\NUL\\129\NUL\\130\NUL\\131\NUL\\132\NUL\\133\NUL\\134\NUL\\135\NUL\\136\NUL\\137\NUL\\138\NUL\\139\NUL\\140\NUL\\141\NUL\\142\NUL\\143\NUL\\144\NUL\\145\NUL\\146\NUL\\147\NUL\\148\NUL\\149\NUL\\150\NUL\\255\\255\\152\NUL\\153\NUL\\154\NUL\\155\NUL\\156\NUL\\157\NUL\\158\NUL\\159\NUL\\160\NUL\\161\NUL\\162\NUL\\163\NUL\\164\NUL\\165\NUL\\166\NUL\\167\NUL\\168\NUL\\169\NUL\\170\NUL\\171\NUL\\172\NUL\\173\NUL\\174\NUL\\175\NUL\\176\NUL\\177\NUL\\178\NUL\\179\NUL\\180\NUL\\181\NUL\\182\NUL\\255\\255\\184\NUL\\185\NUL\\186\NUL\\187\NUL\\188\NUL\\189\NUL\\190\NUL\\191\NUL\\128\NUL\\129\NUL\\130\NUL\\131\NUL\\132\NUL\\133\NUL\\134\NUL\\135\NUL\\136\NUL\\137\NUL\\138\NUL\\139\NUL\\140\NUL\\141\NUL\\142\NUL\\143\NUL\\144\NUL\\145\NUL\\146\NUL\\147\NUL\\148\NUL\\149\NUL\\150\NUL\\255\\255\\152\NUL\\153\NUL\\154\NUL\\155\NUL\\156\NUL\\157\NUL\\158\NUL\\159\NUL\\160\NUL\\161\NUL\\162\NUL\\163\NUL\\164\NUL\\165\NUL\\166\NUL\\167\NUL\\168\NUL\\169\NUL\\170\NUL\\171\NUL\\172\NUL\\173\NUL\\174\NUL\\175\NUL\\176\NUL\\177\NUL\\178\NUL\\179\NUL\\180\NUL\\181\NUL\\182\NUL\\255\\255\\184\NUL\\185\NUL\\186\NUL\\187\NUL\\188\NUL\\189\NUL\\190\NUL\\191\NUL\NUL\NUL\SOH\NUL\STX\NUL\ETX\NUL\EOT\NUL\ENQ\NUL\ACK\NUL\a\NUL\b\NUL\t\NUL\n\
+                 \\NUL\v\NUL\f\NUL\r\NUL\SO\NUL\SI\NUL\DLE\NUL\DC1\NUL\DC2\NUL\DC3\NUL\DC4\NUL\NAK\NUL\SYN\NUL\ETB\NUL\CAN\NUL\EM\NUL\SUB\NUL\ESC\NUL\FS\NUL\GS\NUL\RS\NUL\US\NUL \NUL!\NUL\"\NUL#\NUL$\NUL%\NUL&\NUL'\NUL(\NUL)\NUL*\NUL+\NUL,\NUL-\NUL.\NUL/\NUL0\NUL1\NUL2\NUL3\NUL4\NUL5\NUL6\NUL7\NUL8\NUL9\NUL:\NUL;\NUL<\NUL=\NUL>\NUL?\NUL@\NULA\NULB\NULC\NULD\NULE\NULF\NULG\NULH\NULI\NULJ\NULK\NULL\NULM\NULN\NULO\NULP\NULQ\NULR\NULS\NULT\NULU\NULV\NULW\NULX\NULY\NULZ\NUL[\NUL\\\NUL]\NUL^\NUL_\NUL`\NULa\NULb\NULc\NULd\NULe\NULf\NULg\NULh\NULi\NULj\NULk\NULl\NULm\NULn\NULo\NULp\NULq\NULr\NULs\NULt\NULu\NULv\NULw\NULx\NULy\NULz\NUL{\NUL|\NUL}\NUL~\NUL\DEL\NUL\\192\NUL\\193\NUL\\194\NUL\\195\NUL\\196\NUL\\197\NUL\\198\NUL\\199\NUL\\200\NUL\\201\NUL\\202\NUL\\203\NUL\\204\NUL\\205\NUL\\206\NUL\\207\NUL\\208\NUL\\209\NUL\\210\NUL\\211\NUL\\212\NUL\\213\NUL\\214\NUL\\215\NUL\\216\NUL\\217\NUL\\218\NUL\\219\NUL\\220\NUL\\221\NUL\\222\NUL\\223\NUL\\224\NUL\\225\NUL\\226\NUL\\227\NUL\\228\NUL\\229\NUL\\230\NUL\\231\NUL\\232\NUL\\233\NUL\\234\NUL\\235\NUL\\236\NUL\\237\NUL\\238\NUL\\239\NUL\\240\NUL\\241\NUL\\242\NUL\\243\NUL\\244\NUL\\245\NUL\\246\NUL\\247\NUL\\248\NUL\\249\NUL\\250\NUL\\251\NUL\\252\NUL\\253\NUL\\254\NUL\\255\NUL\n\
+                 \\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\128\NUL\\129\NUL\\130\NUL\\131\NUL\\132\NUL\\133\NUL\\134\NUL\\135\NUL\\136\NUL\\137\NUL\\138\NUL\\139\NUL\\140\NUL\\141\NUL\\142\NUL\\143\NUL\\144\NUL\\145\NUL\\146\NUL\\147\NUL\\148\NUL\\149\NUL\\150\NUL\\151\NUL\\152\NUL\\153\NUL\\154\NUL\\155\NUL\\156\NUL\\157\NUL\\158\NUL\\159\NUL\\160\NUL\\161\NUL\\162\NUL\\163\NUL\\164\NUL\\165\NUL\\166\NUL\\167\NUL\\168\NUL\\169\NUL\\170\NUL\\171\NUL\\172\NUL\\173\NUL\\174\NUL\\175\NUL\\176\NUL\\177\NUL\\178\NUL\\179\NUL\\180\NUL\\181\NUL\\182\NUL\\183\NUL\\184\NUL\\185\NUL\\186\NUL\\187\NUL\\188\NUL\\189\NUL\\190\NUL\\191\NUL\\192\NUL\\193\NUL\\194\NUL\\195\NUL\\196\NUL\\197\NUL\\198\NUL\\199\NUL\\200\NUL\\201\NUL\\202\NUL\\203\NUL\\204\NUL\\205\NUL\\206\NUL\\207\NUL\\208\NUL\\209\NUL\\210\NUL\\211\NUL\\212\NUL\\213\NUL\\214\NUL\\215\NUL\\216\NUL\\217\NUL\\218\NUL\\219\NUL\\220\NUL\\221\NUL\\222\NUL\\223\NUL\\224\NUL\\225\NUL\\226\NUL\\227\NUL\\228\NUL\\229\NUL\\230\NUL\\231\NUL\\232\NUL\\233\NUL\\234\NUL\\235\NUL\\236\NUL\\237\NUL\\238\NUL\\239\NUL\\240\NUL\\241\NUL\\242\NUL\\243\NUL\\244\NUL\\245\NUL\\246\NUL\\247\NUL\\248\NUL\\249\NUL\\250\NUL\\251\NUL\\252\NUL\\253\NUL\\254\NUL\\255\NUL'\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\2550\NUL1\NUL2\NUL3\NUL4\NUL5\NUL6\NUL7\NUL8\NUL9\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255A\NULB\NULC\NULD\NULE\NULF\NULG\NULH\NULI\NULJ\NULK\NULL\NULM\NULN\NULO\NULP\NULQ\NULR\NULS\NULT\NULU\NULV\NULW\NULX\NULY\NULZ\NUL\\255\\255\\255\\255\\255\\255\\255\\255_\NUL\\255\\255a\NULb\NULc\NULd\NULe\NULf\NULg\NULh\NULi\NULj\NULk\NULl\NULm\NULn\NULo\NULp\NULq\NULr\NULs\NULt\NULu\NULv\NULw\NULx\NULy\NULz\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255'\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\2550\NUL1\NUL2\NUL3\NUL4\NUL5\NUL6\NUL7\NUL8\NUL9\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255A\NULB\NULC\NULD\NULE\NULF\NULG\NULH\NULI\NULJ\NULK\NULL\NULM\NULN\NULO\NULP\NULQ\NULR\NULS\NULT\NULU\NULV\NULW\NULX\NULY\NULZ\NUL\\255\\255\\255\\255\\255\\255\\255\\255_\NUL\\195\NULa\NULb\NULc\NULd\NULe\NULf\NULg\NULh\NULi\NULj\NULk\NULl\NULm\NULn\NULo\NULp\NULq\NULr\NULs\NULt\NULu\NULv\NULw\NULx\NULy\NULz\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255'\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\2550\NUL1\NUL2\NUL3\NUL4\NUL5\NUL6\NUL7\NUL8\NUL9\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255A\NULB\NULC\NULD\NULE\NULF\NULG\NULH\NULI\NULJ\NULK\NULL\NULM\NULN\NULO\NULP\NULQ\NULR\NULS\NULT\NULU\NULV\NULW\NULX\NULY\NULZ\NUL\\255\\255\\255\\255\\255\\255\\255\\255_\NUL\\195\NULa\NULb\NULc\NULd\NULe\NULf\NULg\NULh\NULi\NULj\NULk\NULl\NULm\NULn\NULo\NULp\NULq\NULr\NULs\NULt\NULu\NULv\NULw\NULx\NULy\NULz\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255 \NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255'\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\2550\NUL1\NUL2\NUL3\NUL4\NUL5\NUL6\NUL7\NUL8\NUL9\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255A\NULB\NULC\NULD\NULE\NULF\NULG\NULH\NULI\NULJ\NULK\NULL\NULM\NULN\NULO\NULP\NULQ\NULR\NULS\NULT\NULU\NULV\NULW\NULX\NULY\NULZ\NUL\\255\\255\\255\\255\\255\\255\\255\\255_\NUL\\195\NULa\NULb\NULc\NULd\NULe\NULf\NULg\NULh\NULi\NULj\NULk\NULl\NULm\NULn\NULo\NULp\NULq\NULr\NULs\NULt\NULu\NULv\NULw\NULx\NULy\NULz\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255'\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\2550\NUL1\NUL2\NUL3\NUL4\NUL5\NUL6\NUL7\NUL8\NUL9\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255A\NULB\NULC\NULD\NULE\NULF\NULG\NULH\NULI\NULJ\NULK\NULL\NULM\NULN\NULO\NULP\NULQ\NULR\NULS\NULT\NULU\NULV\NULW\NULX\NULY\NULZ\NUL\\255\\255\\255\\255\\255\\255\\255\\255_\NUL\\195\NULa\NULb\NULc\NULd\NULe\NULf\NULg\NULh\NULi\NULj\NULk\NULl\NULm\NULn\NULo\NULp\NULq\NULr\NULs\NULt\NULu\NULv\NULw\NULx\NULy\NULz\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\195\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255"#) -}
+53f22984301e44eb391a9b263a2aadfb
+  alex_deflt :: LexLambdaNat.AlexAddr
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (LexLambdaNat.AlexA# LexLambdaNat.alex_deflt1) -}
+3d3db16bdc052e4d379c3d68b545beed
+  alex_deflt1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("\\255\\255\\255\\255\f\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\f\NUL\f\NUL\r\NUL\r\NUL\f\NUL\DC3\NUL\DC3\NUL\\255\\255\\255\\255\DC4\NUL\DC4\NUL\DC4\NUL\DC4\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255"#) -}
+485f618332ab576409fd6ef485e5bfab
+  alex_scan_tkn ::
+    t1
+    -> t2
+    -> GHC.Prim.Int#
+    -> LexLambdaNat.AlexInput
+    -> GHC.Prim.Int#
+    -> LexLambdaNat.AlexLastAcc
+    -> (LexLambdaNat.AlexLastAcc,
+        (LexLambdaNat.Posn, GHC.Types.Char, [LexLambdaNat.Byte],
+         GHC.Base.String))
+  {- Arity: 6,
+     Strictness: <L,A><L,A><S,U><S(LLSL),1*U(U(U,U,U),U,U,U)><S,U><L,1*U>m,
+     Inline: [2],
+     Unfolding: InlineRule (6, True, False)
+                (\ @ t
+                   @ t1
+                   (w :: t)
+                   (w1 :: t1)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: LexLambdaNat.AlexInput)
+                   (w4 :: GHC.Prim.Int#)
+                   (w5 :: LexLambdaNat.AlexLastAcc) ->
+                 case w3 of ww { (,,,) ww1 ww2 ww3 ww4 ->
+                 case LexLambdaNat.$walex_scan_tkn
+                        @ t
+                        @ t1
+                        w2
+                        ww1
+                        ww2
+                        ww3
+                        ww4
+                        w4
+                        w5 of ww5 { (#,#) ww6 ww7 ->
+                 (ww6, ww7) } }) -}
+29e7d2e39de91dec9453799fc86f1cba
+  alex_tab_size :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 8#) -}
+22e1256eb61f34cf49a87a6b6f8c55cb
+  alex_table :: LexLambdaNat.AlexAddr
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (LexLambdaNat.AlexA# LexLambdaNat.alex_table1) -}
+e9d2a774726399461d80c85ea4bab696
+  alex_table1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("\NUL\NUL\SYN\NUL\SYN\NUL\SYN\NUL\SYN\NUL\SYN\NUL\f\NUL\ETB\NUL\ETX\NUL\ENQ\NUL\NUL\NUL\DC4\NUL\SYN\NUL\SYN\NUL\SYN\NUL\SYN\NUL\SYN\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\SYN\NUL\NUL\NUL\NUL\NUL\ETB\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\ETB\NUL\ETB\NUL\NUL\NUL\SYN\NUL\NUL\NUL\NUL\NUL\ETB\NUL\SOH\NUL\ETB\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\ETB\NUL\NUL\NUL\NUL\NUL\ETB\NUL\NUL\NUL\NUL\NUL\NUL\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\NUL\NUL\ETB\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\CAN\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\STX\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NAK\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\NUL\NUL\NUL\NUL\DLE\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\b\NUL\t\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\DC1\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\EOT\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\SO\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\STX\NUL\DC2\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\b\NUL\t\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\NUL\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\NUL\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\NUL\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\NUL\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\DC1\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC3\NUL\DC2\NUL\EOT\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\r\NUL\SO\NUL\ACK\NUL\n\
+                 \\NUL\n\
+                 \\NUL\n\
+                 \\NUL\v\NUL\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\\255\FS\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\EM\NUL\NUL\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\SUB\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\FS\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\EM\NUL\DLE\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\FS\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\EM\NUL\DLE\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\ESC\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\a\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\FS\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\EM\NUL\DLE\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\EM\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\FS\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\FS\NUL\DLE\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\FS\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\SI\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL"#) -}
+e7ce17482f174215dfc94a3589f7832f
+  eitherResIdent ::
+    (GHC.Base.String -> LexLambdaNat.Tok)
+    -> GHC.Base.String -> LexLambdaNat.Tok
+  {- Arity: 2, Strictness: <L,C(U)><L,U>,
+     Unfolding: (\ (tv :: GHC.Base.String -> LexLambdaNat.Tok)
+                   (s :: GHC.Base.String) ->
+                 let {
+                   exit :: GHC.Base.String -> LexLambdaNat.Tok -> LexLambdaNat.Tok
+                     <join 2> {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+                   = \ (a :: GHC.Base.String)[OneShot]
+                       (t :: LexLambdaNat.Tok)[OneShot] ->
+                     case GHC.Base.eqString s a of wild {
+                       GHC.Types.False -> LexLambdaNat.alex_action_1 GHC.Types.True -> t }
+                 } in
+                 let {
+                   lvl25 :: LexLambdaNat.Tok <join 0> = tv s
+                 } in
+                 letrec {
+                   treeFind :: LexLambdaNat.BTree -> LexLambdaNat.Tok
+                     <join 1> {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: LexLambdaNat.BTree) ->
+                     case ds of wild {
+                       LexLambdaNat.N -> lvl25
+                       LexLambdaNat.B a t left right
+                       -> case GHC.Classes.$fOrd[]_$s$ccompare1 s a of wild1 {
+                            GHC.Types.LT -> treeFind left
+                            GHC.Types.EQ -> exit a t
+                            GHC.Types.GT -> treeFind right } }
+                 } in
+                 treeFind LexLambdaNat.resWords) -}
+fd76acf9ea0b88aa8876396ff77b2489
+  mkPosToken ::
+    LexLambdaNat.Token
+    -> ((GHC.Types.Int, GHC.Types.Int), GHC.Base.String)
+  {- Arity: 1, Strictness: <S,1*U>m, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: LexLambdaNat.Token) ->
+                 case LexLambdaNat.$wmkPosToken w of ww { (#,#) ww1 ww2 ->
+                 (ww1, ww2) }) -}
+2fef4d703d2bf01d7b82f19c99691998
+  mkPosToken1 :: ((GHC.Types.Int, GHC.Types.Int), GHC.Base.String)
+  {- Strictness: x -}
+6f38000c91a368e60a645a1d47079c90
+  posLineCol :: LexLambdaNat.Posn -> (GHC.Types.Int, GHC.Types.Int)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(A,U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: LexLambdaNat.Posn) ->
+                 case ds of wild { LexLambdaNat.Pn dt dt1 dt2 ->
+                 (GHC.Types.I# dt1, GHC.Types.I# dt2) }) -}
+022ccc37f29018dd27817c9e255e9a4f
+  prToken :: LexLambdaNat.Token -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (t :: LexLambdaNat.Token) ->
+                 case t of wild {
+                   LexLambdaNat.PT ds ds1
+                   -> case ds1 of wild1 {
+                        LexLambdaNat.TS s dt -> s
+                        LexLambdaNat.TL s
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.$fShow(,)3
+                             (GHC.Show.showLitString s GHC.Show.$fShow[]1)
+                        LexLambdaNat.TI s -> s
+                        LexLambdaNat.TV s -> s
+                        LexLambdaNat.TD s -> s
+                        LexLambdaNat.TC s -> s
+                        LexLambdaNat.T_Id s -> s }
+                   LexLambdaNat.Err ipv -> LexLambdaNat.prToken1 }) -}
+c7d013c79559b71a2611d86e0ef0bb4c
+  prToken1 :: GHC.Base.String
+  {- Strictness: x -}
+e78129e63a76977bfe6cdf2f844d0322
+  quickIndex ::
+    GHC.Arr.Array GHC.Types.Int (LexLambdaNat.AlexAcc GHC.Types.Any)
+    -> GHC.Types.Int -> LexLambdaNat.AlexAcc GHC.Types.Any
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LLLS),1*U(A,A,A,U)><S(S),1*U(U)>,
+     Unfolding: InlineRule (0, True, True)
+                (GHC.Arr.unsafeAt
+                   @ GHC.Types.Int
+                   @ (LexLambdaNat.AlexAcc GHC.Types.Any)) -}
+0ba44548d2e18f2453b84d3bbf642ecf
+  resWords :: LexLambdaNat.BTree
+  {- Strictness: m2,
+     Unfolding: (LexLambdaNat.B
+                   LexLambdaNat.resWords_s18
+                   LexLambdaNat.resWords55
+                   LexLambdaNat.resWords28
+                   LexLambdaNat.resWords1) -}
+9246e10f17111ce3785776c6714d351e
+  resWords1 :: LexLambdaNat.BTree
+  {- Strictness: m2,
+     Unfolding: (LexLambdaNat.B
+                   LexLambdaNat.resWords_s8
+                   LexLambdaNat.resWords26
+                   LexLambdaNat.resWords14
+                   LexLambdaNat.resWords2) -}
+c83ab5d0771600355b136fc92ce8b7b8
+  resWords10 :: LexLambdaNat.Tok
+  {- Strictness: m1,
+     Unfolding: (LexLambdaNat.TS LexLambdaNat.resWords_s2 17#) -}
+ff2b93876a9982f2bce25a135495e84f
+  resWords11 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("minus_one"#) -}
+eac2dd8a977c9ae4afa2c8947c4f0f82
+  resWords12 :: LexLambdaNat.Tok
+  {- Strictness: m1,
+     Unfolding: (LexLambdaNat.TS LexLambdaNat.resWords_s3 18#) -}
+c15b43cbae37d2dcd2a6f39f2c3924dc
+  resWords13 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("then"#) -}
+d033852c8ed6bd70f03bd4db9e71e2d2
+  resWords14 :: LexLambdaNat.BTree
+  {- Strictness: m2,
+     Unfolding: (LexLambdaNat.B
+                   LexLambdaNat.resWords_s7
+                   LexLambdaNat.resWords24
+                   LexLambdaNat.resWords18
+                   LexLambdaNat.resWords15) -}
+cad766d05a99badb2697c224bacbb07a
+  resWords15 :: LexLambdaNat.BTree
+  {- Strictness: m2,
+     Unfolding: (LexLambdaNat.B
+                   LexLambdaNat.resWords_s4
+                   LexLambdaNat.resWords16
+                   LexLambdaNat.N
+                   LexLambdaNat.N) -}
+4db0ff4ca323f3fac98d7fe10d0f4ccc
+  resWords16 :: LexLambdaNat.Tok
+  {- Strictness: m1,
+     Unfolding: (LexLambdaNat.TS LexLambdaNat.resWords_s4 14#) -}
+d7f29ed751c617dbdfef71e35cc9b61d
+  resWords17 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("in"#) -}
+ddd73815338aa4473fb0755eff289e2b
+  resWords18 :: LexLambdaNat.BTree
+  {- Strictness: m2,
+     Unfolding: (LexLambdaNat.B
+                   LexLambdaNat.resWords_s6
+                   LexLambdaNat.resWords22
+                   LexLambdaNat.resWords19
+                   LexLambdaNat.N) -}
+ec3e05707b77ab4ec1904c987a3be8b5
+  resWords19 :: LexLambdaNat.BTree
+  {- Strictness: m2,
+     Unfolding: (LexLambdaNat.B
+                   LexLambdaNat.resWords_s5
+                   LexLambdaNat.resWords20
+                   LexLambdaNat.N
+                   LexLambdaNat.N) -}
+c67aa3a4ecf20c9d67eed5b03b0c8f27
+  resWords2 :: LexLambdaNat.BTree
+  {- Strictness: m2,
+     Unfolding: (LexLambdaNat.B
+                   LexLambdaNat.resWords_s3
+                   LexLambdaNat.resWords12
+                   LexLambdaNat.resWords6
+                   LexLambdaNat.resWords3) -}
+90c8c7d5622edc1337f1f927675a4958
+  resWords20 :: LexLambdaNat.Tok
+  {- Strictness: m1,
+     Unfolding: (LexLambdaNat.TS LexLambdaNat.resWords_s5 11#) -}
+ae82b31f1c01b2665edf6f3694de389d
+  resWords21 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("fix"#) -}
+aac0b5e7f2a37ab4059816ae21f94e39
+  resWords22 :: LexLambdaNat.Tok
+  {- Strictness: m1,
+     Unfolding: (LexLambdaNat.TS LexLambdaNat.resWords_s6 12#) -}
+c359c4a6e8705aa56e5e05a57109ce89
+  resWords23 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("hd"#) -}
+36e618a789fc598ee220091fc47e5196
+  resWords24 :: LexLambdaNat.Tok
+  {- Strictness: m1,
+     Unfolding: (LexLambdaNat.TS LexLambdaNat.resWords_s7 13#) -}
+a46b1aab50863a45a589e277c8826bd0
+  resWords25 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("if"#) -}
+53d76465faf208e0804b3f8f298a1ec6
+  resWords26 :: LexLambdaNat.Tok
+  {- Strictness: m1,
+     Unfolding: (LexLambdaNat.TS LexLambdaNat.resWords_s8 15#) -}
+92e909792059bf9a7e839be4f086815f
+  resWords27 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("let"#) -}
+a4751e3307900e9b252821faf3d02671
+  resWords28 :: LexLambdaNat.BTree
+  {- Strictness: m2,
+     Unfolding: (LexLambdaNat.B
+                   LexLambdaNat.resWords_s17
+                   LexLambdaNat.resWords53
+                   LexLambdaNat.resWords41
+                   LexLambdaNat.resWords29) -}
+7968e3afcfdb218f81441e6733b67efd
+  resWords29 :: LexLambdaNat.BTree
+  {- Strictness: m2,
+     Unfolding: (LexLambdaNat.B
+                   LexLambdaNat.resWords_s12
+                   LexLambdaNat.resWords39
+                   LexLambdaNat.resWords33
+                   LexLambdaNat.resWords30) -}
+90ba80cd79aba5f3401e147affd11cf6
+  resWords3 :: LexLambdaNat.BTree
+  {- Strictness: m2,
+     Unfolding: (LexLambdaNat.B
+                   LexLambdaNat.resWords_s
+                   LexLambdaNat.resWords4
+                   LexLambdaNat.N
+                   LexLambdaNat.N) -}
+84591a107e7b566a0c4189fe22087ff4
+  resWords30 :: LexLambdaNat.BTree
+  {- Strictness: m2,
+     Unfolding: (LexLambdaNat.B
+                   LexLambdaNat.resWords_s9
+                   LexLambdaNat.resWords31
+                   LexLambdaNat.N
+                   LexLambdaNat.N) -}
+ed31a7dae7488d1c58db8272852253c6
+  resWords31 :: LexLambdaNat.Tok
+  {- Strictness: m1,
+     Unfolding: (LexLambdaNat.TS LexLambdaNat.resWords_s9 9#) -}
+c51a9a14377e1ff218a4fd2c3ed6d8c3
+  resWords32 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("\\"#) -}
+612ee7b07e6e179c8ad5fdaa8791286d
+  resWords33 :: LexLambdaNat.BTree
+  {- Strictness: m2,
+     Unfolding: (LexLambdaNat.B
+                   LexLambdaNat.resWords_s11
+                   LexLambdaNat.resWords37
+                   LexLambdaNat.resWords34
+                   LexLambdaNat.N) -}
+f1dbe1129bf3c5c67b0477997edcbb29
+  resWords34 :: LexLambdaNat.BTree
+  {- Strictness: m2,
+     Unfolding: (LexLambdaNat.B
+                   LexLambdaNat.resWords_s10
+                   LexLambdaNat.resWords35
+                   LexLambdaNat.N
+                   LexLambdaNat.N) -}
+3a43d725c324ace88ee6009c3cb21ea9
+  resWords35 :: LexLambdaNat.Tok
+  {- Strictness: m1,
+     Unfolding: (LexLambdaNat.TS LexLambdaNat.resWords_s10 6#) -}
+0c3798adfe56e09c303e1ab8bcf3b7fc
+  resWords36 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (":"#) -}
+02f0a1080bcbfacffbefc0f05c0af087
+  resWords37 :: LexLambdaNat.Tok
+  {- Strictness: m1,
+     Unfolding: (LexLambdaNat.TS LexLambdaNat.resWords_s11 7#) -}
+bc92477b96cefc9da1c55af3eef99b6b
+  resWords38 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("="#) -}
+1223dac8c9e89eba87ed3ac5cbd824e9
+  resWords39 :: LexLambdaNat.Tok
+  {- Strictness: m1,
+     Unfolding: (LexLambdaNat.TS LexLambdaNat.resWords_s12 8#) -}
+b454653ec195a0f019c2d6e4aacadbd1
+  resWords4 :: LexLambdaNat.Tok
+  {- Strictness: m1,
+     Unfolding: (LexLambdaNat.TS LexLambdaNat.resWords_s 19#) -}
+609c9d5e5a99e30b85d06d583284b8ab
+  resWords40 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("S"#) -}
+34ca46a897fd297c92f29e50c3cf2e8a
+  resWords41 :: LexLambdaNat.BTree
+  {- Strictness: m2,
+     Unfolding: (LexLambdaNat.B
+                   LexLambdaNat.resWords_s16
+                   LexLambdaNat.resWords51
+                   LexLambdaNat.resWords45
+                   LexLambdaNat.resWords42) -}
+fe22b3be541f0a4a55d949cdf7628925
+  resWords42 :: LexLambdaNat.BTree
+  {- Strictness: m2,
+     Unfolding: (LexLambdaNat.B
+                   LexLambdaNat.resWords_s13
+                   LexLambdaNat.resWords43
+                   LexLambdaNat.N
+                   LexLambdaNat.N) -}
+910e797e95331126efa34ec2530145bf
+  resWords43 :: LexLambdaNat.Tok
+  {- Strictness: m1,
+     Unfolding: (LexLambdaNat.TS LexLambdaNat.resWords_s13 4#) -}
+5dfa9971488824bfae451d3fbd996ff0
+  resWords44 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("."#) -}
+da5acff9d1ad55bf5e70e01ddc6eb33d
+  resWords45 :: LexLambdaNat.BTree
+  {- Strictness: m2,
+     Unfolding: (LexLambdaNat.B
+                   LexLambdaNat.resWords_s15
+                   LexLambdaNat.resWords49
+                   LexLambdaNat.resWords46
+                   LexLambdaNat.N) -}
+25f10c01d0cfde0bed6b502de9f6dc2f
+  resWords46 :: LexLambdaNat.BTree
+  {- Strictness: m2,
+     Unfolding: (LexLambdaNat.B
+                   LexLambdaNat.resWords_s14
+                   LexLambdaNat.resWords47
+                   LexLambdaNat.N
+                   LexLambdaNat.N) -}
+d1ad7c4410d3ec2975102e56c55a7f78
+  resWords47 :: LexLambdaNat.Tok
+  {- Strictness: m1,
+     Unfolding: (LexLambdaNat.TS LexLambdaNat.resWords_s14 1#) -}
+9dccd32cbb7236e4390d5b168f0048c7
+  resWords48 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("#"#) -}
+07eb95c234c4bc666b2f501b0ac079d8
+  resWords49 :: LexLambdaNat.Tok
+  {- Strictness: m1,
+     Unfolding: (LexLambdaNat.TS LexLambdaNat.resWords_s15 2#) -}
+658ab896f09dce7c252ebc19a4641853
+  resWords5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("tl"#) -}
+b06073ff5d7ea6b0284cbefbdca7e11e
+  resWords50 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("("#) -}
+1eabc72758303610ed9998bf1a8bd7f7
+  resWords51 :: LexLambdaNat.Tok
+  {- Strictness: m1,
+     Unfolding: (LexLambdaNat.TS LexLambdaNat.resWords_s16 3#) -}
+5effdd5289d499763143ec223874ab71
+  resWords52 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (")"#) -}
+bd20f48e0ad0871d4a52f6cd0b989dfa
+  resWords53 :: LexLambdaNat.Tok
+  {- Strictness: m1,
+     Unfolding: (LexLambdaNat.TS LexLambdaNat.resWords_s17 5#) -}
+5a762212c30f8c76a9097f43a83b947a
+  resWords54 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("0"#) -}
+968fc94a38a0ecf059a18b00347596d5
+  resWords55 :: LexLambdaNat.Tok
+  {- Strictness: m1,
+     Unfolding: (LexLambdaNat.TS LexLambdaNat.resWords_s18 10#) -}
+ea13b46c58f5d5c8bde031af3f424077
+  resWords56 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("else"#) -}
+05fb1f85efcd02faf95286a5c93933c2
+  resWords6 :: LexLambdaNat.BTree
+  {- Strictness: m2,
+     Unfolding: (LexLambdaNat.B
+                   LexLambdaNat.resWords_s2
+                   LexLambdaNat.resWords10
+                   LexLambdaNat.resWords7
+                   LexLambdaNat.N) -}
+9bbb8272a8f30dfec78e22be99839c86
+  resWords7 :: LexLambdaNat.BTree
+  {- Strictness: m2,
+     Unfolding: (LexLambdaNat.B
+                   LexLambdaNat.resWords_s1
+                   LexLambdaNat.resWords8
+                   LexLambdaNat.N
+                   LexLambdaNat.N) -}
+bf1dd26d7783d08566f5e48fc6447e2e
+  resWords8 :: LexLambdaNat.Tok
+  {- Strictness: m1,
+     Unfolding: (LexLambdaNat.TS LexLambdaNat.resWords_s1 16#) -}
+de0c9b0872f4b8d7908576837be30fc7
+  resWords9 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("let rec"#) -}
+673b79f5ec9fed9bd1a19877f5344d3a
+  resWords_s :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LexLambdaNat.resWords5) -}
+51001bb83aafcb78380a5db09917c08f
+  resWords_s1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LexLambdaNat.resWords9) -}
+1190655a5068b7af2a1b83cd5a648b3a
+  resWords_s10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LexLambdaNat.resWords36) -}
+b4be2f713ca4dffde7aa3fb5efce158b
+  resWords_s11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LexLambdaNat.resWords38) -}
+cf503903fbfb873e23e214c4f842cfde
+  resWords_s12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LexLambdaNat.resWords40) -}
+72c447e8902f5be3da2d8f5140de82a7
+  resWords_s13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LexLambdaNat.resWords44) -}
+8142546e0efae6d66ae32d5c60c3ee64
+  resWords_s14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LexLambdaNat.resWords48) -}
+ee65257d18044e846c246f9ea4a49e0f
+  resWords_s15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LexLambdaNat.resWords50) -}
+aa04b42a99513610c3c0e847daf00cb6
+  resWords_s16 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LexLambdaNat.resWords52) -}
+9648312d14ca84a4e34548dc1672e7e1
+  resWords_s17 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LexLambdaNat.resWords54) -}
+7ef6e7d358a41d388865f1e5528300bc
+  resWords_s18 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LexLambdaNat.resWords56) -}
+4e7feca1d7c8a0943ff7cf33ad7fcd95
+  resWords_s2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LexLambdaNat.resWords11) -}
+93e77161d49daa8545d9fdc3d75b0aed
+  resWords_s3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LexLambdaNat.resWords13) -}
+aad751805d38bc431270d1d7e0c58664
+  resWords_s4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LexLambdaNat.resWords17) -}
+ef9b39dde674c780a3848fcecde04069
+  resWords_s5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LexLambdaNat.resWords21) -}
+eec6418441b3980701df6fbf8d967ae9
+  resWords_s6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LexLambdaNat.resWords23) -}
+101db1f2e44a2af8f5b03dd78f553ce7
+  resWords_s7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LexLambdaNat.resWords25) -}
+639ba4dbd5732e306b6c52ff2d0bf8e5
+  resWords_s8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LexLambdaNat.resWords27) -}
+adab86ab6bf3ab7bbc5346942c991195
+  resWords_s9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LexLambdaNat.resWords32) -}
+05bfd608860f05354d61bc9db445f80c
+  share :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                (GHC.Base.id @ GHC.Base.String) -}
+e377cd9bfa27a8d01e65020b3a201e94
+  tok ::
+    (LexLambdaNat.Posn -> GHC.Base.String -> LexLambdaNat.Token)
+    -> LexLambdaNat.Posn -> GHC.Base.String -> LexLambdaNat.Token
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(C(S)),1*C1(C1(U))><L,U><L,U>,
+     Unfolding: InlineRule (3, True, True)
+                (\ (f :: LexLambdaNat.Posn
+                         -> GHC.Base.String -> LexLambdaNat.Token)
+                   (p :: LexLambdaNat.Posn)
+                   (s :: GHC.Base.String) ->
+                 f p s) -}
+85f5940fb36165d2a281808d22e1ff5a
+  tokenLineCol ::
+    LexLambdaNat.Token -> (GHC.Types.Int, GHC.Types.Int)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: LexLambdaNat.Token) ->
+                 case w of wild {
+                   LexLambdaNat.PT p ds
+                   -> case p of wild1 { LexLambdaNat.Pn dt dt1 dt2 ->
+                      (GHC.Types.I# dt1, GHC.Types.I# dt2) }
+                   LexLambdaNat.Err p
+                   -> case p of wild1 { LexLambdaNat.Pn dt dt1 dt2 ->
+                      (GHC.Types.I# dt1, GHC.Types.I# dt2) } }) -}
+b6467db0df0c7dc5769154cdf30a632e
+  tokenPos :: [LexLambdaNat.Token] -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: [LexLambdaNat.Token]) ->
+                 case ds of wild {
+                   [] -> LexLambdaNat.tokenPos2
+                   : ds1 ds2
+                   -> case ds1 of wild1 {
+                        LexLambdaNat.PT ds3 ds4
+                        -> case ds3 of wild2 { LexLambdaNat.Pn dt dt1 dt2 ->
+                           GHC.CString.unpackAppendCString#
+                             LexLambdaNat.tokenPos1
+                             (case GHC.Show.$wshowSignedInt
+                                     0#
+                                     dt1
+                                     (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                              GHC.Types.: @ GHC.Types.Char ww5 ww6 }) }
+                        LexLambdaNat.Err ds3
+                        -> case ds3 of wild2 { LexLambdaNat.Pn dt dt1 dt2 ->
+                           GHC.CString.unpackAppendCString#
+                             LexLambdaNat.tokenPos1
+                             (case GHC.Show.$wshowSignedInt
+                                     0#
+                                     dt1
+                                     (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                              GHC.Types.: @ GHC.Types.Char ww5 ww6 }) } } }) -}
+0550ae0c2f591a925f37c3097340b0f6
+  tokenPos1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("line "#) -}
+6a683ee0b31578ac4fbcde42c5b31acd
+  tokenPos2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   LexLambdaNat.tokenPos3) -}
+8551cba36a9bbed525749f8e5d422ea8
+  tokenPos3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("end of file"#) -}
+d4f77d1d50ec4f5b9cae9ce08d6a11c4
+  tokenPosn :: LexLambdaNat.Token -> LexLambdaNat.Posn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: LexLambdaNat.Token) ->
+                 case ds of wild {
+                   LexLambdaNat.PT p ds1 -> p LexLambdaNat.Err p -> p }) -}
+5b7a85a1c6ad076c01111d0dbaf39029
+  tokens :: GHC.Base.String -> [LexLambdaNat.Token]
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (str :: GHC.Base.String) ->
+                 LexLambdaNat.tokens_go
+                   (LexLambdaNat.alexStartPos, LexLambdaNat.tokens1,
+                    GHC.Types.[] @ LexLambdaNat.Byte, str)) -}
+2f5ee8e10049ac660fea27de0d7bb7d3
+  tokens1 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# '\n'#) -}
+98038fe6c1bd0fc91cc30f36c476f18a
+  tokens_go :: LexLambdaNat.AlexInput -> [LexLambdaNat.Token]
+  {- Arity: 1, Strictness: <S(LLSL),1*U(U(U,U,U),U,U,U)>,
+     Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: LexLambdaNat.AlexInput) ->
+                 case w of ww { (,,,) ww1 ww2 ww3 ww4 ->
+                 LexLambdaNat.$wgo ww1 ww2 ww3 ww4 }) -}
+2b0fbadf77ba4e322fe75058211be2f0
+  unescapeInitTail :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: [GHC.Types.Char]) ->
+                 case x of wild {
+                   [] -> case GHC.List.scanl2 ret_ty [GHC.Types.Char] of {}
+                   : ds1 xs -> LexLambdaNat.unescapeInitTail_unesc xs }) -}
+be666bf4a035d21c39de59b787f98b9f
+  unescapeInitTail_unesc :: [GHC.Types.Char] -> [GHC.Types.Char]
+  {- Arity: 1, Strictness: <S,1*U> -}
+39ea3051e91024c19b53618a10d87369
+  utf8Encode :: GHC.Types.Char -> [GHC.Word.Word8]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>m2,
+     Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Char) ->
+                 case w of ww { GHC.Types.C# ww1 ->
+                 let {
+                   x :: GHC.Prim.Int# = GHC.Prim.ord# ww1
+                 } in
+                 case GHC.Prim.<=# x 127# of lwild {
+                   DEFAULT
+                   -> case GHC.Prim.<=# x 2047# of lwild1 {
+                        DEFAULT
+                        -> case GHC.Prim.<=# x 65535# of lwild2 {
+                             DEFAULT
+                             -> GHC.Types.:
+                                  @ GHC.Word.Word8
+                                  (GHC.Word.W8#
+                                     (GHC.Prim.narrow8Word#
+                                        (GHC.Prim.int2Word#
+                                           (GHC.Prim.+# 240# (GHC.Prim.uncheckedIShiftRA# x 18#)))))
+                                  (GHC.Types.:
+                                     @ GHC.Word.Word8
+                                     (GHC.Word.W8#
+                                        (GHC.Prim.narrow8Word#
+                                           (GHC.Prim.int2Word#
+                                              (GHC.Prim.+#
+                                                 128#
+                                                 (GHC.Prim.andI#
+                                                    (GHC.Prim.uncheckedIShiftRA# x 12#)
+                                                    63#)))))
+                                     (GHC.Types.:
+                                        @ GHC.Word.Word8
+                                        (GHC.Word.W8#
+                                           (GHC.Prim.narrow8Word#
+                                              (GHC.Prim.int2Word#
+                                                 (GHC.Prim.+#
+                                                    128#
+                                                    (GHC.Prim.andI#
+                                                       (GHC.Prim.uncheckedIShiftRA# x 6#)
+                                                       63#)))))
+                                        (GHC.Types.:
+                                           @ GHC.Word.Word8
+                                           (GHC.Word.W8#
+                                              (GHC.Prim.narrow8Word#
+                                                 (GHC.Prim.int2Word#
+                                                    (GHC.Prim.+# 128# (GHC.Prim.andI# x 63#)))))
+                                           (GHC.Types.[] @ GHC.Word.Word8))))
+                             1#
+                             -> GHC.Types.:
+                                  @ GHC.Word.Word8
+                                  (GHC.Word.W8#
+                                     (GHC.Prim.narrow8Word#
+                                        (GHC.Prim.int2Word#
+                                           (GHC.Prim.+# 224# (GHC.Prim.uncheckedIShiftRA# x 12#)))))
+                                  (GHC.Types.:
+                                     @ GHC.Word.Word8
+                                     (GHC.Word.W8#
+                                        (GHC.Prim.narrow8Word#
+                                           (GHC.Prim.int2Word#
+                                              (GHC.Prim.+#
+                                                 128#
+                                                 (GHC.Prim.andI#
+                                                    (GHC.Prim.uncheckedIShiftRA# x 6#)
+                                                    63#)))))
+                                     (GHC.Types.:
+                                        @ GHC.Word.Word8
+                                        (GHC.Word.W8#
+                                           (GHC.Prim.narrow8Word#
+                                              (GHC.Prim.int2Word#
+                                                 (GHC.Prim.+# 128# (GHC.Prim.andI# x 63#)))))
+                                        (GHC.Types.[] @ GHC.Word.Word8))) }
+                        1#
+                        -> GHC.Types.:
+                             @ GHC.Word.Word8
+                             (GHC.Word.W8#
+                                (GHC.Prim.narrow8Word#
+                                   (GHC.Prim.int2Word#
+                                      (GHC.Prim.+# 192# (GHC.Prim.uncheckedIShiftRA# x 6#)))))
+                             (GHC.Types.:
+                                @ GHC.Word.Word8
+                                (GHC.Word.W8#
+                                   (GHC.Prim.narrow8Word#
+                                      (GHC.Prim.int2Word#
+                                         (GHC.Prim.+# 128# (GHC.Prim.andI# x 63#)))))
+                                (GHC.Types.[] @ GHC.Word.Word8)) }
+                   1#
+                   -> GHC.Types.:
+                        @ GHC.Word.Word8
+                        (GHC.Word.W8# (GHC.Prim.narrow8Word# (GHC.Prim.int2Word# x)))
+                        (GHC.Types.[] @ GHC.Word.Word8) } }) -}
+instance GHC.Classes.Eq [LexLambdaNat.Posn] = LexLambdaNat.$fEqPosn
+instance GHC.Classes.Eq [LexLambdaNat.Tok] = LexLambdaNat.$fEqTok
+instance GHC.Classes.Eq [LexLambdaNat.Token]
+  = LexLambdaNat.$fEqToken
+instance GHC.Classes.Ord [LexLambdaNat.Posn]
+  = LexLambdaNat.$fOrdPosn
+instance GHC.Classes.Ord [LexLambdaNat.Tok] = LexLambdaNat.$fOrdTok
+instance GHC.Classes.Ord [LexLambdaNat.Token]
+  = LexLambdaNat.$fOrdToken
+instance GHC.Show.Show [LexLambdaNat.BTree]
+  = LexLambdaNat.$fShowBTree
+instance GHC.Show.Show [LexLambdaNat.Posn]
+  = LexLambdaNat.$fShowPosn
+instance GHC.Show.Show [LexLambdaNat.Tok] = LexLambdaNat.$fShowTok
+instance GHC.Show.Show [LexLambdaNat.Token]
+  = LexLambdaNat.$fShowToken
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

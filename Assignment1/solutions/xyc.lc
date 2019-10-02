@@ -1,1 +1,5 @@
-//Solutions 
+//Solutions
+-- even
+let rec even = \l. if Hd(l)= Nil then 0 else minusOne (S even Tl(l) ) in (f S S 0)
+-- append
+let rec append= \l1. \l2. if Hd(l1)=Nil then l2 else Hd(l1) : append( Tl(l1, l2) )

@@ -1,0 +1,3528 @@
+
+==================== FINAL INTERFACE ====================
+2019-10-02 22:50:48.5042468 UTC
+
+interface LambdaNat-0.1.0.0-EvitBjaHhSP7BnBJ5PUt9C:ParLambdaNat 8064
+  interface hash: caa535a2ef41fc5137ddb48e48e64969
+  ABI hash: 7f77d5fd54880281e374454d5cddaf2a
+  export-list hash: 083dd097efe4c6a1aeb366ac9300795b
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 20079e53ac6e24a00b1c42678a85a0cb
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  ParLambdaNat.happyAccept
+  ParLambdaNat.happyActOffsets
+  ParLambdaNat.happyAdjustOffset
+  ParLambdaNat.happyCheck
+  ParLambdaNat.happyDefActions
+  ParLambdaNat.happyDoAction
+  ParLambdaNat.happyDoSeq
+  ParLambdaNat.happyDontSeq
+  ParLambdaNat.happyDrop
+  ParLambdaNat.happyDropStk
+  ParLambdaNat.happyError
+  ParLambdaNat.happyError'
+  ParLambdaNat.happyError_
+  ParLambdaNat.happyExpList
+  ParLambdaNat.happyExpListPerState
+  ParLambdaNat.happyFail
+  ParLambdaNat.happyGoto
+  ParLambdaNat.happyGotoOffsets
+  ParLambdaNat.happyIn16
+  ParLambdaNat.happyIn17
+  ParLambdaNat.happyIn18
+  ParLambdaNat.happyIn19
+  ParLambdaNat.happyIn20
+  ParLambdaNat.happyIn21
+  ParLambdaNat.happyIn22
+  ParLambdaNat.happyIn23
+  ParLambdaNat.happyIn24
+  ParLambdaNat.happyIn25
+  ParLambdaNat.happyIn26
+  ParLambdaNat.happyIn27
+  ParLambdaNat.happyIn28
+  ParLambdaNat.happyIn29
+  ParLambdaNat.happyInTok
+  ParLambdaNat.happyLt
+  ParLambdaNat.happyMonad2Reduce
+  ParLambdaNat.happyMonadReduce
+  ParLambdaNat.happyNewToken
+  ParLambdaNat.happyOut16
+  ParLambdaNat.happyOut17
+  ParLambdaNat.happyOut18
+  ParLambdaNat.happyOut19
+  ParLambdaNat.happyOut20
+  ParLambdaNat.happyOut21
+  ParLambdaNat.happyOut22
+  ParLambdaNat.happyOut23
+  ParLambdaNat.happyOut24
+  ParLambdaNat.happyOut25
+  ParLambdaNat.happyOut26
+  ParLambdaNat.happyOut27
+  ParLambdaNat.happyOut28
+  ParLambdaNat.happyOut29
+  ParLambdaNat.happyOutTok
+  ParLambdaNat.happyParse
+  ParLambdaNat.happyReduce
+  ParLambdaNat.happyReduceArr
+  ParLambdaNat.happyReduce_13
+  ParLambdaNat.happyReduce_14
+  ParLambdaNat.happyReduce_15
+  ParLambdaNat.happyReduce_16
+  ParLambdaNat.happyReduce_17
+  ParLambdaNat.happyReduce_18
+  ParLambdaNat.happyReduce_19
+  ParLambdaNat.happyReduce_20
+  ParLambdaNat.happyReduce_21
+  ParLambdaNat.happyReduce_22
+  ParLambdaNat.happyReduce_23
+  ParLambdaNat.happyReduce_24
+  ParLambdaNat.happyReduce_25
+  ParLambdaNat.happyReduce_26
+  ParLambdaNat.happyReduce_27
+  ParLambdaNat.happyReduce_28
+  ParLambdaNat.happyReduce_29
+  ParLambdaNat.happyReduce_30
+  ParLambdaNat.happyReduce_31
+  ParLambdaNat.happyReduce_32
+  ParLambdaNat.happyReduce_33
+  ParLambdaNat.happyReduce_34
+  ParLambdaNat.happyReduce_35
+  ParLambdaNat.happyReduce_36
+  ParLambdaNat.happyReduce_37
+  ParLambdaNat.happyReduce_38
+  ParLambdaNat.happyReduce_39
+  ParLambdaNat.happyReduction_13
+  ParLambdaNat.happyReduction_14
+  ParLambdaNat.happyReduction_15
+  ParLambdaNat.happyReduction_16
+  ParLambdaNat.happyReduction_17
+  ParLambdaNat.happyReduction_18
+  ParLambdaNat.happyReduction_19
+  ParLambdaNat.happyReduction_20
+  ParLambdaNat.happyReduction_21
+  ParLambdaNat.happyReduction_22
+  ParLambdaNat.happyReduction_23
+  ParLambdaNat.happyReduction_24
+  ParLambdaNat.happyReduction_25
+  ParLambdaNat.happyReduction_26
+  ParLambdaNat.happyReduction_27
+  ParLambdaNat.happyReduction_28
+  ParLambdaNat.happyReduction_29
+  ParLambdaNat.happyReduction_30
+  ParLambdaNat.happyReduction_31
+  ParLambdaNat.happyReduction_32
+  ParLambdaNat.happyReduction_33
+  ParLambdaNat.happyReduction_34
+  ParLambdaNat.happyReduction_35
+  ParLambdaNat.happyReduction_36
+  ParLambdaNat.happyReduction_37
+  ParLambdaNat.happyReduction_38
+  ParLambdaNat.happyReduction_39
+  ParLambdaNat.happyReturn
+  ParLambdaNat.happyReturn1
+  ParLambdaNat.happySeq
+  ParLambdaNat.happyShift
+  ParLambdaNat.happySpecReduce_0
+  ParLambdaNat.happySpecReduce_1
+  ParLambdaNat.happySpecReduce_2
+  ParLambdaNat.happySpecReduce_3
+  ParLambdaNat.happyTable
+  ParLambdaNat.happyTcHack
+  ParLambdaNat.happyThen
+  ParLambdaNat.happyThen1
+  ParLambdaNat.happy_n_nonterms
+  ParLambdaNat.happy_n_terms
+  ParLambdaNat.indexShortOffAddr
+  ParLambdaNat.myLexer
+  ParLambdaNat.notHappyAtAll
+  ParLambdaNat.pExp
+  ParLambdaNat.pExp1
+  ParLambdaNat.pExp10
+  ParLambdaNat.pExp11
+  ParLambdaNat.pExp2
+  ParLambdaNat.pExp3
+  ParLambdaNat.pExp4
+  ParLambdaNat.pExp5
+  ParLambdaNat.pExp6
+  ParLambdaNat.pExp7
+  ParLambdaNat.pExp8
+  ParLambdaNat.pExp9
+  ParLambdaNat.pProgram
+  ParLambdaNat.readArrayBit
+  ParLambdaNat.returnM
+  ParLambdaNat.thenM
+  ParLambdaNat.HappyAbsSyn{ParLambdaNat.HappyAbsSyn}
+  ParLambdaNat.HappyAddr{ParLambdaNat.HappyA#}
+  ParLambdaNat.HappyAny
+  ParLambdaNat.HappyStk{ParLambdaNat.HappyStk}
+  ParLambdaNat.Happy_IntList{ParLambdaNat.HappyCons}
+module dependencies: AbsLambdaNat ErrM LexLambdaNat
+package dependencies: array-0.5.3.0 base-4.12.0.0 ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:GHC.Exts base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  AbsLambdaNat 04a76c481aadaee483d9743e82ab5ff6
+  exports: dce3dbcb1796db0a7c2cc7d9c58b5d57
+  EAbs 50acbaba9717770c7d78c2d05d4bd27c
+  EApp cbafc0af3886455aafd8b0834b1a5391
+  ECons 465741e75f669018b9cdb77825b5889a
+  EHd c500a92ed98a9e3a8f5c097ac9c11a5f
+  EIf af8dc15618f09d04bffeaa04946dfb7f
+  ELet c33dfc32c486672a86a3145ef086ed63
+  EMinusOne b178edf2ab4d15bb095b366c6c66df61
+  ENat0 ebb05270e8c3a0d38b8e1eb08f98a24b
+  ENatS 10bbff1af592dd59b9cbfdbe90ddce83
+  ENil ca08700cba7541c0e80ee1a5275656cc
+  ERec c6aa78680aaae86272f2f31d686a99ab
+  ETl b713211e2662a8c55c28edd8e72ee5ef
+  EVar b571d194ff8d5f9f9d0bae44403364e3
+  Exp 75dc4dd7f90173f13db2386bf021ccd3
+  Id 6bf29625116d6b0a0ecbb7faeafe10fc
+  Id 9607cd230e6ee57b357ee6334bb1cfae
+  Prog 5aa67e399afe55920c1f04817ae4fa7f
+  Program 589136324556dad1030302773e76c6fc
+import  -/  ErrM 746d270a2e0d61a274cbfd30de8cf42c
+  exports: 5df018d0238e03fcffb629f6e5868455
+  Bad e9cd672418f21a90cfc628a21b25fbf9
+  Err a1a89eb5c3e343b85b60ab4faac95fa2
+import  -/  LexLambdaNat 5a8c26dcb5d1f2dc2ce648634f0b4213
+  exports: 86ed9270f3b67e6d02545a92ce4e7156
+  Err 2867b581ea1712fdadf7e5cef813f0bd
+  PT bacbf38fd8853b4c75cf38f96357fc8c
+  TS 5d440456643724746e731ffb6acb8fac
+  T_Id 25aff78af40a877f64589ac943b2082f
+  Token 8bc1160a8cf61dbb1ffdddbfeb3169fb
+  prToken 022ccc37f29018dd27817c9e255e9a4f
+  tokenPos b6467db0df0c7dc5769154cdf30a632e
+  tokens 5b7a85a1c6ad076c01111d0dbaf39029
+import  -/  array-0.5.3.0:Data.Array eb98d3d0a7cdc641243ed1ccfa67944e
+import  -/  base-4.12.0.0:Control.Applicative 37ad1ecb7adc211899b18378548196ee
+import  -/  base-4.12.0.0:Control.Monad be24c6211d7cb61f18d2854428d9a69e
+import  -/  base-4.12.0.0:Data.Bits b78d81b5d1c57d0d83cdd8fc7d67f6e7
+import  -/  base-4.12.0.0:Data.Foldable 6673f41a7644ecd4dda455d741d47ef8
+import  -/  base-4.12.0.0:Data.OldList cd51cf46346202f55e4ecde7f0f7b58e
+import  -/  base-4.12.0.0:GHC.Arr 5c8976bdf1d7504d59c707054115617e
+import  -/  base-4.12.0.0:GHC.Base 954f4c258d193fab7048a63bfeb56dcf
+import  -/  base-4.12.0.0:GHC.Err 3a680f55541fe399f95f794018fc3593
+import  -/  base-4.12.0.0:GHC.Exts 1506064f1ef8de9c81d05bf0196ab254
+import  -/  base-4.12.0.0:GHC.List 63f1dc438c14c2ecfce50219fbb7ff35
+import  -/  base-4.12.0.0:GHC.Num 009f4fca9200daff9e3ffbe2d7676a2f
+import  -/  base-4.12.0.0:GHC.Real 2becc15d35863665b039224a7445f8b0
+import  -/  base-4.12.0.0:Prelude aea9afd24db8aed3563d7d850ea453c0
+addDependentFile "C:\Users\Charlie Story\AppData\Local\Programs\stack\x86_64-windows\ghc-8.6.4\lib\include\ghcversion.h" a0ce8aeb7f525f4d70decd6c1d3ca2dd
+addDependentFile ".stack-work\dist\e626a42b\build\autogen\cabal_macros.h" d06ee0050c9b13795ed17be7333a365e
+fixities infixr 9 HappyStk, infixr 9 HappyStk
+1569dc77cd1fdf2758e90d263e2091b3
+  $tc'HappyA# :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5702545866230256767##
+                   15549802387980104512##
+                   ParLambdaNat.$trModule
+                   ParLambdaNat.$tc'HappyA#2
+                   0#
+                   ParLambdaNat.$tc'HappyA#1) -}
+4355218e34f5faf7428e9edf046eed49
+  $tc'HappyA#1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+4f2aa0a22d6ba4797ec5bcf84c844a90
+  $tc'HappyA#2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ParLambdaNat.$tc'HappyA#3) -}
+af6a0758863a986f92f60dd54367d80a
+  $tc'HappyA#3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'HappyA#"#) -}
+09d03a8634286d8d7a62d04f84878873
+  $tc'HappyCons :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7269429186540029708##
+                   16866278763452287288##
+                   ParLambdaNat.$trModule
+                   ParLambdaNat.$tc'HappyCons2
+                   0#
+                   ParLambdaNat.$tc'HappyCons1) -}
+79dfe3db37e9207291a885278abe6d28
+  $tc'HappyCons1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+57d7291561a9952942e309708e56e54b
+  $tc'HappyCons2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ParLambdaNat.$tc'HappyCons3) -}
+2418cc343067288c8cbc3eb7eb0c8515
+  $tc'HappyCons3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'HappyCons"#) -}
+f3cb2426a397760106e374270feaee49
+  $tc'HappyStk :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4847129393662105496##
+                   18038693342249580037##
+                   ParLambdaNat.$trModule
+                   ParLambdaNat.$tc'HappyStk2
+                   1#
+                   ParLambdaNat.$tc'HappyStk1) -}
+0804f3e0b28fbe688ce138c1796734c9
+  $tc'HappyStk1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+b3eaa74c472d5176c7663838e284c0b9
+  $tc'HappyStk2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ParLambdaNat.$tc'HappyStk3) -}
+0f974f0f9ae287cb934845d547bb5378
+  $tc'HappyStk3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'HappyStk"#) -}
+bf1cec9918d495c30e419aa12853ae0b
+  $tcHappyAbsSyn :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2386885040914313153##
+                   17973181160328929486##
+                   ParLambdaNat.$trModule
+                   ParLambdaNat.$tcHappyAbsSyn1
+                   0#
+                   GHC.Types.krep$*) -}
+a3bdbe72400ab56b4e899ac6184d9584
+  $tcHappyAbsSyn1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ParLambdaNat.$tcHappyAbsSyn2) -}
+5991dd927b98df9a38f32b302a76ebe9
+  $tcHappyAbsSyn2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("HappyAbsSyn"#) -}
+3584787986aff82f3831e4ad3188b621
+  $tcHappyAddr :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5684324060324790678##
+                   6310576368860600748##
+                   ParLambdaNat.$trModule
+                   ParLambdaNat.$tcHappyAddr1
+                   0#
+                   GHC.Types.krep$*) -}
+9bc8359990ccb64b6f314d838cabf652
+  $tcHappyAddr1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ParLambdaNat.$tcHappyAddr2) -}
+07c544640fffbc1502dcd16d40cad4cb
+  $tcHappyAddr2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("HappyAddr"#) -}
+a41c3f8c47b3c2044c9c57e89386fd0c
+  $tcHappyStk :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1850211671423380500##
+                   15113939631423949577##
+                   ParLambdaNat.$trModule
+                   ParLambdaNat.$tcHappyStk1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+3ec62511886bb21e8a83381c94a1fc47
+  $tcHappyStk1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ParLambdaNat.$tcHappyStk2) -}
+4f5ed2db9989f884b460bb636932b3fc
+  $tcHappyStk2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("HappyStk"#) -}
+fe5304b28373a637741f80b98e1e3edd
+  $tcHappy_IntList :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18082858847953787334##
+                   10655937135418286033##
+                   ParLambdaNat.$trModule
+                   ParLambdaNat.$tcHappy_IntList1
+                   0#
+                   GHC.Types.krep$*) -}
+353d959bb6069657dd2dda9ff28444f1
+  $tcHappy_IntList1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ParLambdaNat.$tcHappy_IntList2) -}
+ab39c16fad01645d46783bcb0cd0a37c
+  $tcHappy_IntList2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Happy_IntList"#) -}
+b2a5be976a2d4592bba52f5200000468
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   ParLambdaNat.$trModule3
+                   ParLambdaNat.$trModule1) -}
+1d2ff5c7e58215c4ec1cccf1eb38c953
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ParLambdaNat.$trModule2) -}
+6833268b66a1278d3001ef8a845f096c
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ParLambdaNat"#) -}
+1796bc4491c653deb2db74a91dce07ec
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ParLambdaNat.$trModule4) -}
+5b3bb899de6df0caacffed560984a1cf
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("LambdaNat-0.1.0.0-EvitBjaHhSP7BnBJ5PUt9C"#) -}
+81c9ae2f3121cda0ed9f8e0d07a40fbf
+  $wgo :: [LexLambdaNat.Token] -> GHC.Prim.Int# -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [2] -}
+9cd0936fa03c8671581a2304acfdb816
+  $wgo1 :: [LexLambdaNat.Token] -> GHC.Prim.Int# -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [2] -}
+350c7fbeb659b20189cbaba3fce15766
+  $whappyError :: [LexLambdaNat.Token] -> (# GHC.Base.String #)
+  {- Arity: 1, Strictness: <L,U>, Inline: [2],
+     Unfolding: (\ @ a (w :: [LexLambdaNat.Token]) ->
+                 (# GHC.CString.unpackAppendCString#
+                      ParLambdaNat.happyError4
+                      (GHC.Base.++
+                         @ GHC.Types.Char
+                         (LexLambdaNat.tokenPos w)
+                         (case w of wild {
+                            [] -> GHC.Types.[] @ GHC.Types.Char
+                            : ds ds1
+                            -> case ds of wild1 {
+                                 LexLambdaNat.PT ipv ipv1
+                                 -> GHC.CString.unpackAppendCString#
+                                      ParLambdaNat.happyError3
+                                      (case ParLambdaNat.$wgo1 wild 4# of wild2 {
+                                         [] -> GHC.Types.[] @ GHC.Types.Char : ds2 xs -> xs })
+                                 LexLambdaNat.Err ds2
+                                 -> case ds1 of wild2 {
+                                      [] -> ParLambdaNat.happyError1
+                                      : ipv ipv1
+                                      -> GHC.CString.unpackAppendCString#
+                                           ParLambdaNat.happyError3
+                                           (case ParLambdaNat.$wgo wild 4# of wild3 {
+                                              [] -> GHC.Types.[] @ GHC.Types.Char
+                                              : ds3 xs -> xs }) } } })) #)) -}
+7c324297fc2dcae0315f3afe1eea704a
+  $whappyExpListPerState :: GHC.Prim.Int# -> [[GHC.Types.Char]]
+  {- Arity: 1, Strictness: <S,U>, Inline: -}
+af63b15ab3adbe056f80ac655ec1edce
+  $whappyFail ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 5, Strictness: <S,1*U><L,U><L,U><L,U><L,U(U,U)>,
+     Inline: [2],
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: LexLambdaNat.Token)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: ParLambdaNat.Happy_IntList)
+                   (w4 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w of ds {
+                   DEFAULT
+                   -> ParLambdaNat.happyDoAction_happyDoAction
+                        0#
+                        w1
+                        w2
+                        w3
+                        (ParLambdaNat.HappyStk
+                           @ ParLambdaNat.HappyAbsSyn
+                           (GHC.Types.I# ds)
+                             `cast`
+                           (UnsafeCo representational GHC.Types.Int ParLambdaNat.HappyAbsSyn)
+                           w4)
+                   0#
+                   -> case w4 of wild { ParLambdaNat.HappyStk x ds1 ->
+                      case x `cast`
+                           (UnsafeCo representational ParLambdaNat.HappyAbsSyn GHC.Types.Int) of wild1 { GHC.Types.I# i ->
+                      \ (tks :: [LexLambdaNat.Token]) ->
+                      case i of ds2 {
+                        DEFAULT
+                        -> case ParLambdaNat.$whappyError
+                                  @ ParLambdaNat.HappyAbsSyn
+                                  (GHC.Types.: @ LexLambdaNat.Token w1 tks) of ww { Unit# ww1 ->
+                           ErrM.Bad @ ParLambdaNat.HappyAbsSyn ww1 }
+                        21#
+                        -> ParLambdaNat.happyError
+                             @ ParLambdaNat.HappyAbsSyn
+                             tks } } } }) -}
+6df4a9d14073c68b15c24ad8f35b1f97
+  $whappyReduce ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> (ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+        -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn)
+    -> GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 7,
+     Strictness: <L,U><L,U><L,1*C1(U(U,U))><S,1*U><L,U><L,U><L,U(U,U)>,
+     Inline: [2],
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: GHC.Prim.Int#)
+                   (w2 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                          -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn)
+                   (w3 :: GHC.Prim.Int#)
+                   (w4 :: LexLambdaNat.Token)
+                   (w5 :: ParLambdaNat.Happy_IntList)
+                   (w6 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w3 of ds {
+                   DEFAULT
+                   -> case ParLambdaNat.happyDrop
+                             (GHC.Prim.-# w 1#)
+                             w5 of wild { ParLambdaNat.HappyCons st1 ds1 ->
+                      case w2 w6 of a { ParLambdaNat.HappyStk ipv ipv1 ->
+                      case ParLambdaNat.happyGotoOffsets of wild1 { ParLambdaNat.HappyA# arr ->
+                      let {
+                        off' :: GHC.Prim.Int# = GHC.Prim.*# st1 2#
+                      } in
+                      case GHC.Prim.indexCharOffAddr# arr off' of wild2 { DEFAULT ->
+                      case GHC.Prim.indexCharOffAddr#
+                             arr
+                             (GHC.Prim.+# off' 1#) of wild3 { DEFAULT ->
+                      case ParLambdaNat.happyTable of wild4 { ParLambdaNat.HappyA# arr1 ->
+                      let {
+                        off'1 :: GHC.Prim.Int#
+                        = GHC.Prim.*#
+                            (GHC.Prim.+#
+                               (GHC.Prim.narrow16Int#
+                                  (GHC.Prim.word2Int#
+                                     (GHC.Prim.or#
+                                        (GHC.Prim.uncheckedShiftL#
+                                           (GHC.Prim.int2Word# (GHC.Prim.ord# wild3))
+                                           8#)
+                                        (GHC.Prim.int2Word# (GHC.Prim.ord# wild2)))))
+                               w1)
+                            2#
+                      } in
+                      case GHC.Prim.indexCharOffAddr# arr1 off'1 of wild5 { DEFAULT ->
+                      case GHC.Prim.indexCharOffAddr#
+                             arr1
+                             (GHC.Prim.+# off'1 1#) of wild6 { DEFAULT ->
+                      ParLambdaNat.happyDoAction_happyDoAction
+                        ds
+                        w4
+                        (GHC.Prim.narrow16Int#
+                           (GHC.Prim.word2Int#
+                              (GHC.Prim.or#
+                                 (GHC.Prim.uncheckedShiftL#
+                                    (GHC.Prim.int2Word# (GHC.Prim.ord# wild6))
+                                    8#)
+                                 (GHC.Prim.int2Word# (GHC.Prim.ord# wild5)))))
+                        wild
+                        a } } } } } } } }
+                   0#
+                   -> case w6 of wild { ParLambdaNat.HappyStk x ds1 ->
+                      case x `cast`
+                           (UnsafeCo representational ParLambdaNat.HappyAbsSyn GHC.Types.Int) of wild1 { GHC.Types.I# i ->
+                      \ (tks :: [LexLambdaNat.Token]) ->
+                      case i of ds2 {
+                        DEFAULT
+                        -> case ParLambdaNat.$whappyError
+                                  @ ParLambdaNat.HappyAbsSyn
+                                  (GHC.Types.: @ LexLambdaNat.Token w4 tks) of ww { Unit# ww1 ->
+                           ErrM.Bad @ ParLambdaNat.HappyAbsSyn ww1 }
+                        21#
+                        -> ParLambdaNat.happyError
+                             @ ParLambdaNat.HappyAbsSyn
+                             tks } } } }) -}
+7f24e85e9feb2adb117a322d72b1a83e
+  $whappySpecReduce_1 ::
+    GHC.Prim.Int#
+    -> (ParLambdaNat.HappyAbsSyn -> ParLambdaNat.HappyAbsSyn)
+    -> GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyAbsSyn
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 7,
+     Strictness: <L,U><L,1*C1(U)><S,1*U><L,U><L,1*U(U,U)><L,U><L,U>,
+     Inline: [2],
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: ParLambdaNat.HappyAbsSyn -> ParLambdaNat.HappyAbsSyn)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: LexLambdaNat.Token)
+                   (w4 :: ParLambdaNat.Happy_IntList)
+                   (ww :: ParLambdaNat.HappyAbsSyn)
+                   (ww1 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w2 of ds {
+                   DEFAULT
+                   -> case w4 of wild { ParLambdaNat.HappyCons st ds1 ->
+                      case ParLambdaNat.happyGotoOffsets of wild1 { ParLambdaNat.HappyA# arr ->
+                      let {
+                        off' :: GHC.Prim.Int# = GHC.Prim.*# st 2#
+                      } in
+                      case GHC.Prim.indexCharOffAddr# arr off' of wild2 { DEFAULT ->
+                      case GHC.Prim.indexCharOffAddr#
+                             arr
+                             (GHC.Prim.+# off' 1#) of wild3 { DEFAULT ->
+                      case ParLambdaNat.happyTable of wild4 { ParLambdaNat.HappyA# arr1 ->
+                      let {
+                        off'1 :: GHC.Prim.Int#
+                        = GHC.Prim.*#
+                            (GHC.Prim.+#
+                               (GHC.Prim.narrow16Int#
+                                  (GHC.Prim.word2Int#
+                                     (GHC.Prim.or#
+                                        (GHC.Prim.uncheckedShiftL#
+                                           (GHC.Prim.int2Word# (GHC.Prim.ord# wild3))
+                                           8#)
+                                        (GHC.Prim.int2Word# (GHC.Prim.ord# wild2)))))
+                               w)
+                            2#
+                      } in
+                      case GHC.Prim.indexCharOffAddr# arr1 off'1 of wild5 { DEFAULT ->
+                      case GHC.Prim.indexCharOffAddr#
+                             arr1
+                             (GHC.Prim.+# off'1 1#) of wild6 { DEFAULT ->
+                      ParLambdaNat.happyDoAction_happyDoAction
+                        ds
+                        w3
+                        (GHC.Prim.narrow16Int#
+                           (GHC.Prim.word2Int#
+                              (GHC.Prim.or#
+                                 (GHC.Prim.uncheckedShiftL#
+                                    (GHC.Prim.int2Word# (GHC.Prim.ord# wild6))
+                                    8#)
+                                 (GHC.Prim.int2Word# (GHC.Prim.ord# wild5)))))
+                        wild
+                        (ParLambdaNat.HappyStk
+                           @ ParLambdaNat.HappyAbsSyn
+                           (w1 ww)
+                           ww1) } } } } } } }
+                   0#
+                   -> case ww
+                             `cast`
+                           (UnsafeCo representational ParLambdaNat.HappyAbsSyn GHC.Types.Int) of wild { GHC.Types.I# i ->
+                      \ (tks :: [LexLambdaNat.Token]) ->
+                      case i of ds1 {
+                        DEFAULT
+                        -> case ParLambdaNat.$whappyError
+                                  @ ParLambdaNat.HappyAbsSyn
+                                  (GHC.Types.: @ LexLambdaNat.Token w3 tks) of ww2 { Unit# ww3 ->
+                           ErrM.Bad @ ParLambdaNat.HappyAbsSyn ww3 }
+                        21#
+                        -> ParLambdaNat.happyError @ ParLambdaNat.HappyAbsSyn tks } } }) -}
+473d3a82b46bc9e4a9d74d6942fa9aea
+  $whappySpecReduce_2 ::
+    GHC.Prim.Int#
+    -> (ParLambdaNat.HappyAbsSyn
+        -> ParLambdaNat.HappyAbsSyn -> ParLambdaNat.HappyAbsSyn)
+    -> GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyAbsSyn
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 7,
+     Strictness: <L,U><L,1*C1(C1(U))><S,1*U><L,U><L,1*U(A,1*U(U,U))><L,U><L,1*U(U,U)>,
+     Inline: [2],
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: ParLambdaNat.HappyAbsSyn
+                          -> ParLambdaNat.HappyAbsSyn -> ParLambdaNat.HappyAbsSyn)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: LexLambdaNat.Token)
+                   (w4 :: ParLambdaNat.Happy_IntList)
+                   (ww :: ParLambdaNat.HappyAbsSyn)
+                   (ww1 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w2 of ds {
+                   DEFAULT
+                   -> case w4 of wild { ParLambdaNat.HappyCons ds1 sts ->
+                      case sts of wild1 { ParLambdaNat.HappyCons st ds2 ->
+                      case ww1 of wild2 { ParLambdaNat.HappyStk v2 stk' ->
+                      case ParLambdaNat.happyGotoOffsets of wild3 { ParLambdaNat.HappyA# arr ->
+                      let {
+                        off' :: GHC.Prim.Int# = GHC.Prim.*# st 2#
+                      } in
+                      case GHC.Prim.indexCharOffAddr# arr off' of wild4 { DEFAULT ->
+                      case GHC.Prim.indexCharOffAddr#
+                             arr
+                             (GHC.Prim.+# off' 1#) of wild5 { DEFAULT ->
+                      case ParLambdaNat.happyTable of wild6 { ParLambdaNat.HappyA# arr1 ->
+                      let {
+                        off'1 :: GHC.Prim.Int#
+                        = GHC.Prim.*#
+                            (GHC.Prim.+#
+                               (GHC.Prim.narrow16Int#
+                                  (GHC.Prim.word2Int#
+                                     (GHC.Prim.or#
+                                        (GHC.Prim.uncheckedShiftL#
+                                           (GHC.Prim.int2Word# (GHC.Prim.ord# wild5))
+                                           8#)
+                                        (GHC.Prim.int2Word# (GHC.Prim.ord# wild4)))))
+                               w)
+                            2#
+                      } in
+                      case GHC.Prim.indexCharOffAddr# arr1 off'1 of wild7 { DEFAULT ->
+                      case GHC.Prim.indexCharOffAddr#
+                             arr1
+                             (GHC.Prim.+# off'1 1#) of wild8 { DEFAULT ->
+                      ParLambdaNat.happyDoAction_happyDoAction
+                        ds
+                        w3
+                        (GHC.Prim.narrow16Int#
+                           (GHC.Prim.word2Int#
+                              (GHC.Prim.or#
+                                 (GHC.Prim.uncheckedShiftL#
+                                    (GHC.Prim.int2Word# (GHC.Prim.ord# wild8))
+                                    8#)
+                                 (GHC.Prim.int2Word# (GHC.Prim.ord# wild7)))))
+                        wild1
+                        (ParLambdaNat.HappyStk
+                           @ ParLambdaNat.HappyAbsSyn
+                           (w1 ww v2)
+                           stk') } } } } } } } } }
+                   0#
+                   -> case ww
+                             `cast`
+                           (UnsafeCo representational ParLambdaNat.HappyAbsSyn GHC.Types.Int) of wild { GHC.Types.I# i ->
+                      \ (tks :: [LexLambdaNat.Token]) ->
+                      case i of ds1 {
+                        DEFAULT
+                        -> case ParLambdaNat.$whappyError
+                                  @ ParLambdaNat.HappyAbsSyn
+                                  (GHC.Types.: @ LexLambdaNat.Token w3 tks) of ww2 { Unit# ww3 ->
+                           ErrM.Bad @ ParLambdaNat.HappyAbsSyn ww3 }
+                        21#
+                        -> ParLambdaNat.happyError @ ParLambdaNat.HappyAbsSyn tks } } }) -}
+c1a21164848263b06ee7925c4e14a9fe
+  $whappySpecReduce_3 ::
+    GHC.Prim.Int#
+    -> (ParLambdaNat.HappyAbsSyn
+        -> ParLambdaNat.HappyAbsSyn
+        -> ParLambdaNat.HappyAbsSyn
+        -> ParLambdaNat.HappyAbsSyn)
+    -> GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyAbsSyn
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 7,
+     Strictness: <L,U><L,1*C1(C1(C1(U)))><S,1*U><L,U><L,1*U(A,1*U(A,1*U(U,U)))><L,U><L,1*U(U,1*U(U,U))>,
+     Inline: [2],
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: ParLambdaNat.HappyAbsSyn
+                          -> ParLambdaNat.HappyAbsSyn
+                          -> ParLambdaNat.HappyAbsSyn
+                          -> ParLambdaNat.HappyAbsSyn)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: LexLambdaNat.Token)
+                   (w4 :: ParLambdaNat.Happy_IntList)
+                   (ww :: ParLambdaNat.HappyAbsSyn)
+                   (ww1 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w2 of ds {
+                   DEFAULT
+                   -> case w4 of wild { ParLambdaNat.HappyCons ds1 ds2 ->
+                      case ds2 of wild1 { ParLambdaNat.HappyCons ds3 sts ->
+                      case sts of wild2 { ParLambdaNat.HappyCons st ds4 ->
+                      case ww1 of wild3 { ParLambdaNat.HappyStk v2 ds5 ->
+                      case ds5 of wild4 { ParLambdaNat.HappyStk v3 stk' ->
+                      case ParLambdaNat.happyGotoOffsets of wild5 { ParLambdaNat.HappyA# arr ->
+                      let {
+                        off' :: GHC.Prim.Int# = GHC.Prim.*# st 2#
+                      } in
+                      case GHC.Prim.indexCharOffAddr# arr off' of wild6 { DEFAULT ->
+                      case GHC.Prim.indexCharOffAddr#
+                             arr
+                             (GHC.Prim.+# off' 1#) of wild7 { DEFAULT ->
+                      case ParLambdaNat.happyTable of wild8 { ParLambdaNat.HappyA# arr1 ->
+                      let {
+                        off'1 :: GHC.Prim.Int#
+                        = GHC.Prim.*#
+                            (GHC.Prim.+#
+                               (GHC.Prim.narrow16Int#
+                                  (GHC.Prim.word2Int#
+                                     (GHC.Prim.or#
+                                        (GHC.Prim.uncheckedShiftL#
+                                           (GHC.Prim.int2Word# (GHC.Prim.ord# wild7))
+                                           8#)
+                                        (GHC.Prim.int2Word# (GHC.Prim.ord# wild6)))))
+                               w)
+                            2#
+                      } in
+                      case GHC.Prim.indexCharOffAddr# arr1 off'1 of wild9 { DEFAULT ->
+                      case GHC.Prim.indexCharOffAddr#
+                             arr1
+                             (GHC.Prim.+# off'1 1#) of wild10 { DEFAULT ->
+                      ParLambdaNat.happyDoAction_happyDoAction
+                        ds
+                        w3
+                        (GHC.Prim.narrow16Int#
+                           (GHC.Prim.word2Int#
+                              (GHC.Prim.or#
+                                 (GHC.Prim.uncheckedShiftL#
+                                    (GHC.Prim.int2Word# (GHC.Prim.ord# wild10))
+                                    8#)
+                                 (GHC.Prim.int2Word# (GHC.Prim.ord# wild9)))))
+                        wild2
+                        (ParLambdaNat.HappyStk
+                           @ ParLambdaNat.HappyAbsSyn
+                           (w1 ww v2 v3)
+                           stk') } } } } } } } } } } }
+                   0#
+                   -> case ww
+                             `cast`
+                           (UnsafeCo representational ParLambdaNat.HappyAbsSyn GHC.Types.Int) of wild { GHC.Types.I# i ->
+                      \ (tks :: [LexLambdaNat.Token]) ->
+                      case i of ds1 {
+                        DEFAULT
+                        -> case ParLambdaNat.$whappyError
+                                  @ ParLambdaNat.HappyAbsSyn
+                                  (GHC.Types.: @ LexLambdaNat.Token w3 tks) of ww2 { Unit# ww3 ->
+                           ErrM.Bad @ ParLambdaNat.HappyAbsSyn ww3 }
+                        21#
+                        -> ParLambdaNat.happyError @ ParLambdaNat.HappyAbsSyn tks } } }) -}
+12ea799a5de9021c6dd838e23dcc80c5
+  newtype HappyAbsSyn = HappyAbsSyn ParLambdaNat.HappyAny
+42bbaab87f8d0d867ca8011a6455a5f7
+  data HappyAddr = HappyA# GHC.Prim.Addr#
+5fd34f326ce37a8156641efae40b59a5
+  type HappyAny = GHC.Types.Any
+526a25e1b0d073495846a96833629386
+  data HappyStk a = HappyStk a (ParLambdaNat.HappyStk a)
+56a261833d562f4549818d5e81e94559
+  data Happy_IntList
+    = HappyCons GHC.Prim.Int# ParLambdaNat.Happy_IntList
+5f1866c2b4444d8e1b1c5f73501690b2
+  happyAccept ::
+    GHC.Prim.Int#
+    -> p1
+    -> GHC.Prim.Int#
+    -> p2
+    -> ParLambdaNat.HappyStk a
+    -> b
+    -> ErrM.Err a
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <S,1*U><L,A><L,A><L,A><S,1*U(U,1*U(U,A))><L,A>m1,
+     Unfolding: InlineRule (6, True, False)
+                (\ @ p
+                   @ p1
+                   @ a
+                   @ b
+                   (ds :: GHC.Prim.Int#)
+                   (tk :: p)
+                   (st :: GHC.Prim.Int#)
+                   (sts :: p1)
+                   (ds1 :: ParLambdaNat.HappyStk a)
+                   (eta :: b) ->
+                 case ds of ds2 {
+                   DEFAULT
+                   -> case ds1 of wild { ParLambdaNat.HappyStk ans ds3 ->
+                      ErrM.Ok @ a ans }
+                   0#
+                   -> case ds1 of wild { ParLambdaNat.HappyStk ds3 ds4 ->
+                      case ds4 of wild1 { ParLambdaNat.HappyStk ans ds5 ->
+                      ErrM.Ok @ a ans } } }) -}
+73369d497ce958eecddb608c904982db
+  happyActOffsets :: ParLambdaNat.HappyAddr
+  {- HasNoCafRefs, Strictness: m, Inline: -}
+8db25d1658f8eb8cf2a417a85e26d1e0
+  happyAdjustOffset :: GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (off :: GHC.Prim.Int#) -> off) -}
+b9ba912d926ef446955c179fa8cb3909
+  happyCheck :: ParLambdaNat.HappyAddr
+  {- HasNoCafRefs, Strictness: m, Inline: -}
+ba24164b61a947d3bbc5d3b189339dbf
+  happyDefActions :: ParLambdaNat.HappyAddr
+  {- HasNoCafRefs, Strictness: m, Inline: -}
+87ab04c13dff472b25369e556d5b88a4
+  happyDoAction ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 3, Strictness: <S,U><L,U><S,U>, Inline:,
+     Unfolding: InlineRule (0, True, True)
+                ParLambdaNat.happyDoAction_happyDoAction -}
+21fb77887defe0765c6b9f16cd8261f3
+  happyDoAction_happyDoAction ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 3, Strictness: <S,U><L,U><S,U> -}
+dbe331b5d04236e8003c8adf6ab6d0cc
+  happyDoSeq :: a -> b -> b
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a @ b (a1 :: a) (b1 :: b) ->
+                 case a1 of a2 { DEFAULT -> b1 }) -}
+96a3926136f7339b79e8d31dd9d6b5a5
+  happyDontSeq :: a -> b -> b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a @ b (a1 :: a) (b1 :: b) -> b1) -}
+d206871191aa7c5a77d760e236e97c26
+  happyDrop ::
+    GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList -> ParLambdaNat.Happy_IntList
+  {- Arity: 2, HasNoCafRefs -}
+69df0db9866deb74848c3981ab751cfa
+  happyDropStk ::
+    GHC.Prim.Int# -> ParLambdaNat.HappyStk a -> ParLambdaNat.HappyStk a
+  {- Arity: 2, HasNoCafRefs -}
+3d4c23a9ecebdced66665682f33f216c
+  happyError :: [LexLambdaNat.Token] -> ErrM.Err a
+  {- Arity: 1, Strictness: <L,U>m2, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (w :: [LexLambdaNat.Token]) ->
+                 case ParLambdaNat.$whappyError @ a w of ww { Unit# ww1 ->
+                 ErrM.Bad @ a ww1 }) -}
+9bbab601c1ef638512b49c74ef4455a2
+  happyError' ::
+    ([LexLambdaNat.Token], [GHC.Base.String]) -> ErrM.Err a
+  {- Arity: 1, Strictness: <S,1*U(U,A)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: ([LexLambdaNat.Token], [GHC.Base.String])) ->
+                 case ds of wild { (,) tokens ds1 ->
+                 ParLambdaNat.happyError @ a tokens }) -}
+ac4a901bd7c0f0acaceef8245e9b5b8a
+  happyError1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ParLambdaNat.happyError2) -}
+b107b9add65e7e076e2b8d53178df8cf
+  happyError2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (" due to lexer error"#) -}
+96722318bb34eb03e16c3e1fc36a7557
+  happyError3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (" before "#) -}
+d679c5aa28a10fd4e42a1fb069086edf
+  happyError4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("syntax error at "#) -}
+11dbc547f9afc477b85f6f32a557f355
+  happyError_ ::
+    [GHC.Base.String]
+    -> GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err a
+  {- Arity: 4, Strictness: <L,A><S,1*U><L,U><L,U>m2,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   (explist :: [GHC.Base.String])
+                   (ds :: GHC.Prim.Int#)
+                   (tk :: LexLambdaNat.Token)
+                   (tks :: [LexLambdaNat.Token]) ->
+                 case ds of ds1 {
+                   DEFAULT
+                   -> ParLambdaNat.happyError
+                        @ a
+                        (GHC.Types.: @ LexLambdaNat.Token tk tks)
+                   21# -> ParLambdaNat.happyError @ a tks }) -}
+ffb1cc175d22c57f537c6930861ef4d9
+  happyExpList :: ParLambdaNat.HappyAddr
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (ParLambdaNat.HappyA# ParLambdaNat.happyExpList1) -}
+6dd273005e439d1f344cdd321c7bd0d8
+  happyExpList1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("\NUL\NUL\NUL`2\\187\SOH\NUL\NUL\\128\\201\\236\ACK\NUL\NUL\NUL&\\177\ESC\NUL\NUL\NUL\\152Dn\NUL\NUL\NUL`\DC2\\177\SOH\NUL\NUL\\128I\\132\ACK\NUL\NUL\NUL&\SOH\DC2\NUL\NUL\NUL\\152\EOT@\NUL\NUL\NUL`\DC2\NUL\SOH\NUL\NUL\NULI\NUL\EOT\NUL\NUL\NUL\EOT\NUL\DLE\NUL\NUL\NUL\\152Dh\NUL\NUL\NUL`2\\187\SOH\NUL\NUL\NUL\NUL\NUL\EOT\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL&\SOH\DLE\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\EOT\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\\128\\201\\236\ACK\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\\144\EOT@\NUL\NUL\NUL\NUL\NUL\NUL\SOH\NUL\NUL\\128\\201\\236\ACK\NUL\NUL\NUL&\\179\ESC\NUL\NUL\NUL\NUL\NUL@\NUL\NUL\NUL\NUL\NUL\NUL\SOH\NUL\NUL\\128\\201\\236\ACK\NUL\NUL\NUL&\\179\ESC\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\\152\EOT@\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\STX\NUL\NUL\NUL\NUL\NUL\b\NUL\NUL\NUL\NUL\NUL \NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL@\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\STX\NUL\NUL\NUL\NUL\NUL&\SOH\DLE\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\\128\\201\\236\ACK\NUL\NUL\NUL&\\179\ESC\NUL\NUL\NUL\\152\\204n\NUL\NUL\NUL`2\\187\SOH\NUL\NUL\NUL\NUL\DLE\NUL\NUL\NUL\NUL\NUL@\NUL\NUL\NUL\NUL\NUL\NUL\DLE\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\\128\\201\\236\ACK\NUL\NUL\NUL&\\179\ESC\NUL\NUL\NUL\\152\\204n\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\EOT\NUL\NUL\NUL\NUL\\152\\204n\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL\NUL"#) -}
+6096c5c8e50dc68aebd45477988edd09
+  happyExpListPerState :: GHC.Types.Int -> [[GHC.Types.Char]]
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 ParLambdaNat.$whappyExpListPerState ww1 }) -}
+951c00f8e6a6b4edae8b47d76c8e8b58
+  happyFail ::
+    [[GHC.Types.Char]]
+    -> GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 6, Strictness: <L,A><S,1*U><L,U><S,U><L,U><L,U(U,U)>,
+     Inline:,
+     Unfolding: InlineRule (0, True, True)
+                ParLambdaNat.happyFail_happyFail -}
+6a8235a068b66c0ff68eb1dae0351d4d
+  happyFail_happyFail ::
+    [[GHC.Types.Char]]
+    -> GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 6, Strictness: <L,A><S,1*U><L,U><S,U><L,U><L,U(U,U)>,
+     Inline: [2],
+     Unfolding: InlineRule (6, True, True)
+                (\ (w :: [[GHC.Types.Char]])
+                   (w1 :: GHC.Prim.Int#)
+                   (w2 :: LexLambdaNat.Token)
+                   (w3 :: GHC.Prim.Int#)
+                   (w4 :: ParLambdaNat.Happy_IntList)
+                   (w5 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 ParLambdaNat.$whappyFail w1 w2 w3 w4 w5) -}
+59c5cd01b75339fe11d166cc69ecad78
+  happyGoto ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 4, Strictness: <S,U><S,U><L,U><S,U>, Inline: -}
+6286e73da419a68a09f16e84c12c5db0
+  happyGotoOffsets :: ParLambdaNat.HappyAddr
+  {- HasNoCafRefs, Strictness: m, Inline: -}
+26dad7f8b9f89db30f595cf879c4c638
+  happyIn16 :: AbsLambdaNat.Id -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: AbsLambdaNat.Id) -> x)
+                  `cast`
+                (<AbsLambdaNat.Id>_R
+                 ->_R UnsafeCo representational AbsLambdaNat.Id ParLambdaNat.HappyAbsSyn) -}
+f32f1d35fcc61cbb8964748e686dab8b
+  happyIn17 :: AbsLambdaNat.Program -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U)>m,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: AbsLambdaNat.Program) -> x)
+                  `cast`
+                (<AbsLambdaNat.Program>_R
+                 ->_R UnsafeCo representational AbsLambdaNat.Program ParLambdaNat.HappyAbsSyn) -}
+80186453f8643414b24f2b87578ae455
+  happyIn18 :: AbsLambdaNat.Exp -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: AbsLambdaNat.Exp) -> x)
+                  `cast`
+                (<AbsLambdaNat.Exp>_R
+                 ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn) -}
+faa1cc417207c822b9bd6897bbe6658a
+  happyIn19 :: AbsLambdaNat.Exp -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: AbsLambdaNat.Exp) -> x)
+                  `cast`
+                (<AbsLambdaNat.Exp>_R
+                 ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn) -}
+386854cb5a2348211ef34a6a56e2c991
+  happyIn20 :: AbsLambdaNat.Exp -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: AbsLambdaNat.Exp) -> x)
+                  `cast`
+                (<AbsLambdaNat.Exp>_R
+                 ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn) -}
+2f6a3f029eeab5c1f4657c032dd1a1a7
+  happyIn21 :: AbsLambdaNat.Exp -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: AbsLambdaNat.Exp) -> x)
+                  `cast`
+                (<AbsLambdaNat.Exp>_R
+                 ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn) -}
+898f5b2cedb57c09b26d8091271cedf3
+  happyIn22 :: AbsLambdaNat.Exp -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: AbsLambdaNat.Exp) -> x)
+                  `cast`
+                (<AbsLambdaNat.Exp>_R
+                 ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn) -}
+2ed135468b08af02452d08390ea056e4
+  happyIn23 :: AbsLambdaNat.Exp -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: AbsLambdaNat.Exp) -> x)
+                  `cast`
+                (<AbsLambdaNat.Exp>_R
+                 ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn) -}
+2fdf368775882f296fec258d27fd7d65
+  happyIn24 :: AbsLambdaNat.Exp -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: AbsLambdaNat.Exp) -> x)
+                  `cast`
+                (<AbsLambdaNat.Exp>_R
+                 ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn) -}
+c26dcafdbe141c9eba43660236911de2
+  happyIn25 :: AbsLambdaNat.Exp -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: AbsLambdaNat.Exp) -> x)
+                  `cast`
+                (<AbsLambdaNat.Exp>_R
+                 ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn) -}
+84c551eab70129325baab76ffc329728
+  happyIn26 :: AbsLambdaNat.Exp -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: AbsLambdaNat.Exp) -> x)
+                  `cast`
+                (<AbsLambdaNat.Exp>_R
+                 ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn) -}
+449181620ad11b0e383a47b88b3f0057
+  happyIn27 :: AbsLambdaNat.Exp -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: AbsLambdaNat.Exp) -> x)
+                  `cast`
+                (<AbsLambdaNat.Exp>_R
+                 ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn) -}
+dd4ca5a9001d2203654f9bcfe8723825
+  happyIn28 :: AbsLambdaNat.Exp -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: AbsLambdaNat.Exp) -> x)
+                  `cast`
+                (<AbsLambdaNat.Exp>_R
+                 ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn) -}
+9aaba153e64b54a16ace8e18a669e4bb
+  happyIn29 :: AbsLambdaNat.Exp -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: AbsLambdaNat.Exp) -> x)
+                  `cast`
+                (<AbsLambdaNat.Exp>_R
+                 ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn) -}
+3f4380c6a27eb37053f61b2d86ce1ee3
+  happyInTok :: LexLambdaNat.Token -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: LexLambdaNat.Token) -> x)
+                  `cast`
+                (<LexLambdaNat.Token>_R
+                 ->_R UnsafeCo representational LexLambdaNat.Token ParLambdaNat.HappyAbsSyn) -}
+98a5e932f7d388090c8643c4c2dd675a
+  happyLt :: GHC.Prim.Int# -> GHC.Prim.Int# -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: GHC.Prim.Int#) (y :: GHC.Prim.Int#) ->
+                 GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.<# x y)) -}
+1d1639439118ba2093cf4be2c7d213fc
+  happyMonad2Reduce ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> (ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+        -> LexLambdaNat.Token -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+    -> GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 8,
+     Strictness: <L,U><L,U><L,1*C1(C1(U))><S,1*U><L,U><L,U><L,U><L,U(U,U)>,
+     Unfolding: (\ (k :: GHC.Prim.Int#)
+                   (nt :: GHC.Prim.Int#)
+                   (fn :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                          -> LexLambdaNat.Token -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                   (ds :: GHC.Prim.Int#)
+                   (tk :: LexLambdaNat.Token)
+                   (st :: GHC.Prim.Int#)
+                   (sts :: ParLambdaNat.Happy_IntList)
+                   (stk :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case ds of ds1 {
+                   DEFAULT
+                   -> case ParLambdaNat.happyDrop
+                             k
+                             (ParLambdaNat.HappyCons
+                                st
+                                sts) of wild { ParLambdaNat.HappyCons st1 ds2 ->
+                      case ParLambdaNat.happyGotoOffsets of wild1 { ParLambdaNat.HappyA# arr ->
+                      let {
+                        off' :: GHC.Prim.Int# = GHC.Prim.*# st1 2#
+                      } in
+                      case GHC.Prim.indexCharOffAddr# arr off' of wild2 { DEFAULT ->
+                      case GHC.Prim.indexCharOffAddr#
+                             arr
+                             (GHC.Prim.+# off' 1#) of wild3 { DEFAULT ->
+                      case ParLambdaNat.happyTable of wild4 { ParLambdaNat.HappyA# arr1 ->
+                      let {
+                        off'1 :: GHC.Prim.Int#
+                        = GHC.Prim.*#
+                            (GHC.Prim.+#
+                               (GHC.Prim.narrow16Int#
+                                  (GHC.Prim.word2Int#
+                                     (GHC.Prim.or#
+                                        (GHC.Prim.uncheckedShiftL#
+                                           (GHC.Prim.int2Word# (GHC.Prim.ord# wild3))
+                                           8#)
+                                        (GHC.Prim.int2Word# (GHC.Prim.ord# wild2)))))
+                               nt)
+                            2#
+                      } in
+                      case GHC.Prim.indexCharOffAddr# arr1 off'1 of wild5 { DEFAULT ->
+                      case GHC.Prim.indexCharOffAddr#
+                             arr1
+                             (GHC.Prim.+# off'1 1#) of wild6 { DEFAULT ->
+                      let {
+                        new_state :: GHC.Prim.Int#
+                        = GHC.Prim.narrow16Int#
+                            (GHC.Prim.word2Int#
+                               (GHC.Prim.or#
+                                  (GHC.Prim.uncheckedShiftL#
+                                     (GHC.Prim.int2Word# (GHC.Prim.ord# wild6))
+                                     8#)
+                                  (GHC.Prim.int2Word# (GHC.Prim.ord# wild5))))
+                      } in
+                      let {
+                        drop_stk :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                        = ParLambdaNat.happyDropStk @ ParLambdaNat.HappyAbsSyn k stk
+                      } in
+                      let {
+                        m :: ErrM.Err ParLambdaNat.HappyAbsSyn = fn stk tk
+                      } in
+                      \ (tks :: [LexLambdaNat.Token]) ->
+                      case m of wild7 {
+                        ErrM.Ok a1
+                        -> ParLambdaNat.happyNewToken
+                             new_state
+                             wild
+                             (ParLambdaNat.HappyStk @ ParLambdaNat.HappyAbsSyn a1 drop_stk)
+                             tks
+                        ErrM.Bad s -> wild7 } } } } } } } }
+                   0#
+                   -> ParLambdaNat.happyFail
+                        (GHC.Types.[] @ [GHC.Types.Char])
+                        0#
+                        tk
+                        st
+                        sts
+                        stk }) -}
+427356df403aa915588687556558b387
+  happyMonadReduce ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> (ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+        -> LexLambdaNat.Token -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+    -> GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 8,
+     Strictness: <L,U><L,U><L,1*C1(C1(U))><S,1*U><L,U><L,U><L,U><L,U(U,U)>,
+     Inline: -}
+c8cd9ffb9d176c7ea198117843c41bac
+  happyNewToken ::
+    GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 4, Strictness: <L,U><L,U><L,U><S,1*U> -}
+a8d4ce59cff72bfa8052d5fa4e3a136a
+  happyOut16 :: ParLambdaNat.HappyAbsSyn -> AbsLambdaNat.Id
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: ParLambdaNat.HappyAbsSyn) -> x)
+                  `cast`
+                (<ParLambdaNat.HappyAbsSyn>_R
+                 ->_R UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Id) -}
+bd56e1bb359dcc85f5a4c95cd5ee5e31
+  happyOut17 :: ParLambdaNat.HappyAbsSyn -> AbsLambdaNat.Program
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: ParLambdaNat.HappyAbsSyn) -> x)
+                  `cast`
+                (<ParLambdaNat.HappyAbsSyn>_R
+                 ->_R UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Program) -}
+45135dda2b84b22dcc1539c9540be03c
+  happyOut18 :: ParLambdaNat.HappyAbsSyn -> AbsLambdaNat.Exp
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: ParLambdaNat.HappyAbsSyn) -> x)
+                  `cast`
+                (<ParLambdaNat.HappyAbsSyn>_R
+                 ->_R UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp) -}
+c39f8631bb6212dafabb5270f7b127bd
+  happyOut19 :: ParLambdaNat.HappyAbsSyn -> AbsLambdaNat.Exp
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: ParLambdaNat.HappyAbsSyn) -> x)
+                  `cast`
+                (<ParLambdaNat.HappyAbsSyn>_R
+                 ->_R UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp) -}
+ae92bff8d072ee58b4c47d487f866aeb
+  happyOut20 :: ParLambdaNat.HappyAbsSyn -> AbsLambdaNat.Exp
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: ParLambdaNat.HappyAbsSyn) -> x)
+                  `cast`
+                (<ParLambdaNat.HappyAbsSyn>_R
+                 ->_R UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp) -}
+3e67020da55fd735513fa64d9650ed4b
+  happyOut21 :: ParLambdaNat.HappyAbsSyn -> AbsLambdaNat.Exp
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: ParLambdaNat.HappyAbsSyn) -> x)
+                  `cast`
+                (<ParLambdaNat.HappyAbsSyn>_R
+                 ->_R UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp) -}
+a36d3026f256bafed5d8d33bbcfe8294
+  happyOut22 :: ParLambdaNat.HappyAbsSyn -> AbsLambdaNat.Exp
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: ParLambdaNat.HappyAbsSyn) -> x)
+                  `cast`
+                (<ParLambdaNat.HappyAbsSyn>_R
+                 ->_R UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp) -}
+bbb3f9d0b4367cb414fd645c26ec1e42
+  happyOut23 :: ParLambdaNat.HappyAbsSyn -> AbsLambdaNat.Exp
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: ParLambdaNat.HappyAbsSyn) -> x)
+                  `cast`
+                (<ParLambdaNat.HappyAbsSyn>_R
+                 ->_R UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp) -}
+1a80ee33ddb8d148fd27d115af0348f4
+  happyOut24 :: ParLambdaNat.HappyAbsSyn -> AbsLambdaNat.Exp
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: ParLambdaNat.HappyAbsSyn) -> x)
+                  `cast`
+                (<ParLambdaNat.HappyAbsSyn>_R
+                 ->_R UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp) -}
+06618ea33e37ed3411acdf6d0fc71976
+  happyOut25 :: ParLambdaNat.HappyAbsSyn -> AbsLambdaNat.Exp
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: ParLambdaNat.HappyAbsSyn) -> x)
+                  `cast`
+                (<ParLambdaNat.HappyAbsSyn>_R
+                 ->_R UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp) -}
+ccad7e4285676caff2a6c4eb99da1bed
+  happyOut26 :: ParLambdaNat.HappyAbsSyn -> AbsLambdaNat.Exp
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: ParLambdaNat.HappyAbsSyn) -> x)
+                  `cast`
+                (<ParLambdaNat.HappyAbsSyn>_R
+                 ->_R UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp) -}
+b0306369731a95b0dd37f49ad442025b
+  happyOut27 :: ParLambdaNat.HappyAbsSyn -> AbsLambdaNat.Exp
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: ParLambdaNat.HappyAbsSyn) -> x)
+                  `cast`
+                (<ParLambdaNat.HappyAbsSyn>_R
+                 ->_R UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp) -}
+d201bce471e23afe0c55e0d0195c8947
+  happyOut28 :: ParLambdaNat.HappyAbsSyn -> AbsLambdaNat.Exp
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: ParLambdaNat.HappyAbsSyn) -> x)
+                  `cast`
+                (<ParLambdaNat.HappyAbsSyn>_R
+                 ->_R UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp) -}
+b0cdc3ef0a5ecd3354df3f055867999f
+  happyOut29 :: ParLambdaNat.HappyAbsSyn -> AbsLambdaNat.Exp
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: ParLambdaNat.HappyAbsSyn) -> x)
+                  `cast`
+                (<ParLambdaNat.HappyAbsSyn>_R
+                 ->_R UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp) -}
+3ec3145dc7de8f724716fe18d714577c
+  happyOutTok :: ParLambdaNat.HappyAbsSyn -> LexLambdaNat.Token
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=1),
+     Unfolding: InlineRule (1, False, True)
+                (\ (x :: ParLambdaNat.HappyAbsSyn) -> x)
+                  `cast`
+                (<ParLambdaNat.HappyAbsSyn>_R
+                 ->_R UnsafeCo representational ParLambdaNat.HappyAbsSyn LexLambdaNat.Token) -}
+e8a18112ee50ead6ae56cfe9b0f4b389
+  happyParse ::
+    GHC.Prim.Int#
+    -> [LexLambdaNat.Token] -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 2, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (start_state :: GHC.Prim.Int#) ->
+                 ParLambdaNat.happyNewToken
+                   start_state
+                   (ParLambdaNat.notHappyAtAll @ ParLambdaNat.Happy_IntList)
+                   (ParLambdaNat.notHappyAtAll
+                      @ (ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn))) -}
+75fb3441b5276973f8c6aae46b47f801
+  happyReduce ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> (ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+        -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn)
+    -> GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 8,
+     Strictness: <S,U><S,U><L,1*C1(U(U,U))><S,1*U><L,U><L,A><L,U><L,U(U,U)>,
+     Inline:,
+     Unfolding: InlineRule (0, True, True)
+                ParLambdaNat.happyReduce_happyReduce -}
+5961799205b534938ddb0186ab72d193
+  happyReduceArr ::
+    GHC.Arr.Array
+      GHC.Types.Int
+      (GHC.Prim.Int#
+       -> LexLambdaNat.Token
+       -> GHC.Prim.Int#
+       -> ParLambdaNat.Happy_IntList
+       -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+       -> [LexLambdaNat.Token]
+       -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '[ 'GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld,
+                             GHC.Arr.Array
+                               GHC.Types.Int
+                               (GHC.Prim.Int#
+                                -> LexLambdaNat.Token
+                                -> GHC.Prim.Int#
+                                -> ParLambdaNat.Happy_IntList
+                                -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                                -> [LexLambdaNat.Token]
+                                -> ErrM.Err ParLambdaNat.HappyAbsSyn) #)
+                        ParLambdaNat.happyReduceArr1 of ds1 { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+9c32934419fbad142cf95abaab5a9805
+  happyReduceArr1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Arr.Array
+            GHC.Types.Int
+            (GHC.Prim.Int#
+             -> LexLambdaNat.Token
+             -> GHC.Prim.Int#
+             -> ParLambdaNat.Happy_IntList
+             -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+             -> [LexLambdaNat.Token]
+             -> ErrM.Err ParLambdaNat.HappyAbsSyn) #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s1# :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newArray#
+                        @ (GHC.Prim.Int#
+                           -> LexLambdaNat.Token
+                           -> GHC.Prim.Int#
+                           -> ParLambdaNat.Happy_IntList
+                           -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                           -> [LexLambdaNat.Token]
+                           -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                        @ GHC.Prim.RealWorld
+                        27#
+                        (GHC.Arr.arrEleBottom
+                           @ (GHC.Prim.Int#
+                              -> LexLambdaNat.Token
+                              -> GHC.Prim.Int#
+                              -> ParLambdaNat.Happy_IntList
+                              -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                              -> [LexLambdaNat.Token]
+                              -> ErrM.Err ParLambdaNat.HappyAbsSyn))
+                        s1# of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (GHC.Prim.Int#
+                           -> LexLambdaNat.Token
+                           -> GHC.Prim.Int#
+                           -> ParLambdaNat.Happy_IntList
+                           -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                           -> [LexLambdaNat.Token]
+                           -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                        ipv1
+                        0#
+                        ParLambdaNat.happyReduce_13
+                        ipv of s2# { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (GHC.Prim.Int#
+                           -> LexLambdaNat.Token
+                           -> GHC.Prim.Int#
+                           -> ParLambdaNat.Happy_IntList
+                           -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                           -> [LexLambdaNat.Token]
+                           -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                        ipv1
+                        1#
+                        ParLambdaNat.happyReduce_14
+                        s2# of s2#1 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (GHC.Prim.Int#
+                           -> LexLambdaNat.Token
+                           -> GHC.Prim.Int#
+                           -> ParLambdaNat.Happy_IntList
+                           -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                           -> [LexLambdaNat.Token]
+                           -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                        ipv1
+                        2#
+                        ParLambdaNat.happyReduce_15
+                        s2#1 of s2#2 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (GHC.Prim.Int#
+                           -> LexLambdaNat.Token
+                           -> GHC.Prim.Int#
+                           -> ParLambdaNat.Happy_IntList
+                           -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                           -> [LexLambdaNat.Token]
+                           -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                        ipv1
+                        3#
+                        ParLambdaNat.happyReduce_16
+                        s2#2 of s2#3 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (GHC.Prim.Int#
+                           -> LexLambdaNat.Token
+                           -> GHC.Prim.Int#
+                           -> ParLambdaNat.Happy_IntList
+                           -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                           -> [LexLambdaNat.Token]
+                           -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                        ipv1
+                        4#
+                        ParLambdaNat.happyReduce_17
+                        s2#3 of s2#4 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (GHC.Prim.Int#
+                           -> LexLambdaNat.Token
+                           -> GHC.Prim.Int#
+                           -> ParLambdaNat.Happy_IntList
+                           -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                           -> [LexLambdaNat.Token]
+                           -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                        ipv1
+                        5#
+                        ParLambdaNat.happyReduce_18
+                        s2#4 of s2#5 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (GHC.Prim.Int#
+                           -> LexLambdaNat.Token
+                           -> GHC.Prim.Int#
+                           -> ParLambdaNat.Happy_IntList
+                           -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                           -> [LexLambdaNat.Token]
+                           -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                        ipv1
+                        6#
+                        ParLambdaNat.happyReduce_19
+                        s2#5 of s2#6 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (GHC.Prim.Int#
+                           -> LexLambdaNat.Token
+                           -> GHC.Prim.Int#
+                           -> ParLambdaNat.Happy_IntList
+                           -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                           -> [LexLambdaNat.Token]
+                           -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                        ipv1
+                        7#
+                        ParLambdaNat.happyReduce_20
+                        s2#6 of s2#7 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (GHC.Prim.Int#
+                           -> LexLambdaNat.Token
+                           -> GHC.Prim.Int#
+                           -> ParLambdaNat.Happy_IntList
+                           -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                           -> [LexLambdaNat.Token]
+                           -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                        ipv1
+                        8#
+                        ParLambdaNat.happyReduce_21
+                        s2#7 of s2#8 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (GHC.Prim.Int#
+                           -> LexLambdaNat.Token
+                           -> GHC.Prim.Int#
+                           -> ParLambdaNat.Happy_IntList
+                           -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                           -> [LexLambdaNat.Token]
+                           -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                        ipv1
+                        9#
+                        ParLambdaNat.happyReduce_22
+                        s2#8 of s2#9 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (GHC.Prim.Int#
+                           -> LexLambdaNat.Token
+                           -> GHC.Prim.Int#
+                           -> ParLambdaNat.Happy_IntList
+                           -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                           -> [LexLambdaNat.Token]
+                           -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                        ipv1
+                        10#
+                        ParLambdaNat.happyReduce_23
+                        s2#9 of s2#10 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (GHC.Prim.Int#
+                           -> LexLambdaNat.Token
+                           -> GHC.Prim.Int#
+                           -> ParLambdaNat.Happy_IntList
+                           -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                           -> [LexLambdaNat.Token]
+                           -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                        ipv1
+                        11#
+                        ParLambdaNat.happyReduce_24
+                        s2#10 of s2#11 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (GHC.Prim.Int#
+                           -> LexLambdaNat.Token
+                           -> GHC.Prim.Int#
+                           -> ParLambdaNat.Happy_IntList
+                           -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                           -> [LexLambdaNat.Token]
+                           -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                        ipv1
+                        12#
+                        ParLambdaNat.happyReduce_25
+                        s2#11 of s2#12 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (GHC.Prim.Int#
+                           -> LexLambdaNat.Token
+                           -> GHC.Prim.Int#
+                           -> ParLambdaNat.Happy_IntList
+                           -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                           -> [LexLambdaNat.Token]
+                           -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                        ipv1
+                        13#
+                        ParLambdaNat.happyReduce_26
+                        s2#12 of s2#13 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (GHC.Prim.Int#
+                           -> LexLambdaNat.Token
+                           -> GHC.Prim.Int#
+                           -> ParLambdaNat.Happy_IntList
+                           -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                           -> [LexLambdaNat.Token]
+                           -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                        ipv1
+                        14#
+                        ParLambdaNat.happyReduce_27
+                        s2#13 of s2#14 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (GHC.Prim.Int#
+                           -> LexLambdaNat.Token
+                           -> GHC.Prim.Int#
+                           -> ParLambdaNat.Happy_IntList
+                           -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                           -> [LexLambdaNat.Token]
+                           -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                        ipv1
+                        15#
+                        ParLambdaNat.happyReduce_28
+                        s2#14 of s2#15 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (GHC.Prim.Int#
+                           -> LexLambdaNat.Token
+                           -> GHC.Prim.Int#
+                           -> ParLambdaNat.Happy_IntList
+                           -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                           -> [LexLambdaNat.Token]
+                           -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                        ipv1
+                        16#
+                        ParLambdaNat.happyReduce_29
+                        s2#15 of s2#16 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (GHC.Prim.Int#
+                           -> LexLambdaNat.Token
+                           -> GHC.Prim.Int#
+                           -> ParLambdaNat.Happy_IntList
+                           -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                           -> [LexLambdaNat.Token]
+                           -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                        ipv1
+                        17#
+                        ParLambdaNat.happyReduce_30
+                        s2#16 of s2#17 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (GHC.Prim.Int#
+                           -> LexLambdaNat.Token
+                           -> GHC.Prim.Int#
+                           -> ParLambdaNat.Happy_IntList
+                           -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                           -> [LexLambdaNat.Token]
+                           -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                        ipv1
+                        18#
+                        ParLambdaNat.happyReduce_31
+                        s2#17 of s2#18 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (GHC.Prim.Int#
+                           -> LexLambdaNat.Token
+                           -> GHC.Prim.Int#
+                           -> ParLambdaNat.Happy_IntList
+                           -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                           -> [LexLambdaNat.Token]
+                           -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                        ipv1
+                        19#
+                        ParLambdaNat.happyReduce_32
+                        s2#18 of s2#19 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (GHC.Prim.Int#
+                           -> LexLambdaNat.Token
+                           -> GHC.Prim.Int#
+                           -> ParLambdaNat.Happy_IntList
+                           -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                           -> [LexLambdaNat.Token]
+                           -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                        ipv1
+                        20#
+                        ParLambdaNat.happyReduce_33
+                        s2#19 of s2#20 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (GHC.Prim.Int#
+                           -> LexLambdaNat.Token
+                           -> GHC.Prim.Int#
+                           -> ParLambdaNat.Happy_IntList
+                           -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                           -> [LexLambdaNat.Token]
+                           -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                        ipv1
+                        21#
+                        ParLambdaNat.happyReduce_34
+                        s2#20 of s2#21 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (GHC.Prim.Int#
+                           -> LexLambdaNat.Token
+                           -> GHC.Prim.Int#
+                           -> ParLambdaNat.Happy_IntList
+                           -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                           -> [LexLambdaNat.Token]
+                           -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                        ipv1
+                        22#
+                        ParLambdaNat.happyReduce_35
+                        s2#21 of s2#22 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (GHC.Prim.Int#
+                           -> LexLambdaNat.Token
+                           -> GHC.Prim.Int#
+                           -> ParLambdaNat.Happy_IntList
+                           -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                           -> [LexLambdaNat.Token]
+                           -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                        ipv1
+                        23#
+                        ParLambdaNat.happyReduce_36
+                        s2#22 of s2#23 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (GHC.Prim.Int#
+                           -> LexLambdaNat.Token
+                           -> GHC.Prim.Int#
+                           -> ParLambdaNat.Happy_IntList
+                           -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                           -> [LexLambdaNat.Token]
+                           -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                        ipv1
+                        24#
+                        ParLambdaNat.happyReduce_37
+                        s2#23 of s2#24 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (GHC.Prim.Int#
+                           -> LexLambdaNat.Token
+                           -> GHC.Prim.Int#
+                           -> ParLambdaNat.Happy_IntList
+                           -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                           -> [LexLambdaNat.Token]
+                           -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                        ipv1
+                        25#
+                        ParLambdaNat.happyReduce_38
+                        s2#24 of s2#25 { DEFAULT ->
+                 case GHC.Prim.writeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (GHC.Prim.Int#
+                           -> LexLambdaNat.Token
+                           -> GHC.Prim.Int#
+                           -> ParLambdaNat.Happy_IntList
+                           -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                           -> [LexLambdaNat.Token]
+                           -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                        ipv1
+                        26#
+                        ParLambdaNat.happyReduce_39
+                        s2#25 of s2#26 { DEFAULT ->
+                 case GHC.Prim.unsafeFreezeArray#
+                        @ GHC.Prim.RealWorld
+                        @ (GHC.Prim.Int#
+                           -> LexLambdaNat.Token
+                           -> GHC.Prim.Int#
+                           -> ParLambdaNat.Happy_IntList
+                           -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                           -> [LexLambdaNat.Token]
+                           -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                        ipv1
+                        s2#26 of ds2 { (#,#) ipv2 ipv3 ->
+                 (# ipv2,
+                    GHC.Arr.Array
+                      @ GHC.Types.Int
+                      @ (GHC.Prim.Int#
+                         -> LexLambdaNat.Token
+                         -> GHC.Prim.Int#
+                         -> ParLambdaNat.Happy_IntList
+                         -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                         -> [LexLambdaNat.Token]
+                         -> ErrM.Err ParLambdaNat.HappyAbsSyn)
+                      ParLambdaNat.happyReduceArr3
+                      ParLambdaNat.happyReduceArr2
+                      27#
+                      ipv3 #) } } } } } } } } } } } } } } } } } } } } } } } } } } } } }) -}
+27be76c1e4bbbf8ebec9b9cdc0b81308
+  happyReduceArr2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 39#) -}
+db2212d126a2d3a34604c977e43b9e0e
+  happyReduceArr3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 13#) -}
+2d7ba1ec0e8b7641d337d2fe3832e636
+  happyReduce_1 ::
+    ParLambdaNat.HappyAbsSyn -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (x :: ParLambdaNat.HappyAbsSyn) -> x) -}
+884263c4185d021aa9bbda073123d5b2
+  happyReduce_13 ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 5, Strictness: <S,1*U><L,U><L,A><L,1*U(U,U)><S,1*U(U,U)>,
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: LexLambdaNat.Token)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: ParLambdaNat.Happy_IntList)
+                   (w4 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w4 of ww { ParLambdaNat.HappyStk ww1 ww2 ->
+                 ParLambdaNat.$whappySpecReduce_1
+                   0#
+                   ParLambdaNat.happyReduction_13
+                   w
+                   w1
+                   w3
+                   ww1
+                   ww2 }) -}
+249facc780874c3949f1b51888eccaf5
+  happyReduce_14 ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 5, Strictness: <S,1*U><L,U><L,A><L,1*U(U,U)><S,1*U(U,U)>,
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: LexLambdaNat.Token)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: ParLambdaNat.Happy_IntList)
+                   (w4 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w4 of ww { ParLambdaNat.HappyStk ww1 ww2 ->
+                 ParLambdaNat.$whappySpecReduce_1
+                   1#
+                   AbsLambdaNat.Prog
+                     `cast`
+                   (UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn
+                    ->_R UnsafeCo representational AbsLambdaNat.Program ParLambdaNat.HappyAbsSyn)
+                   w
+                   w1
+                   w3
+                   ww1
+                   ww2 }) -}
+c10ed5b3d163f49aa5d068d4f4acdbb2
+  happyReduce_15 ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 5, Strictness: <S,1*U><L,U><L,A><L,U><L,U(U,U)>,
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: LexLambdaNat.Token)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: ParLambdaNat.Happy_IntList)
+                   (w4 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 ParLambdaNat.$whappyReduce
+                   4#
+                   2#
+                   ParLambdaNat.happyReduction_15
+                   w
+                   w1
+                   w3
+                   w4) -}
+e402ba0201165185554fc04b048ef937
+  happyReduce_16 ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 5, Strictness: <S,1*U><L,U><L,A><L,1*U(U,U)><S,1*U(U,U)>,
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: LexLambdaNat.Token)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: ParLambdaNat.Happy_IntList)
+                   (w4 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w4 of ww { ParLambdaNat.HappyStk ww1 ww2 ->
+                 ParLambdaNat.$whappySpecReduce_1
+                   2#
+                   ParLambdaNat.happyReduce_1
+                   w
+                   w1
+                   w3
+                   ww1
+                   ww2 }) -}
+4a38ad5f97c2569f0e85199208a5cae6
+  happyReduce_17 ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 5, Strictness: <S,1*U><L,U><L,A><L,U><L,U(U,U)>,
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: LexLambdaNat.Token)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: ParLambdaNat.Happy_IntList)
+                   (w4 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 ParLambdaNat.$whappyReduce
+                   8#
+                   3#
+                   ParLambdaNat.happyReduction_17
+                   w
+                   w1
+                   w3
+                   w4) -}
+093d91f4f11b1188a47cb95e1c50d10d
+  happyReduce_18 ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 5, Strictness: <S,1*U><L,U><L,A><L,1*U(U,U)><S,1*U(U,U)>,
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: LexLambdaNat.Token)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: ParLambdaNat.Happy_IntList)
+                   (w4 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w4 of ww { ParLambdaNat.HappyStk ww1 ww2 ->
+                 ParLambdaNat.$whappySpecReduce_1
+                   3#
+                   ParLambdaNat.happyReduce_1
+                   w
+                   w1
+                   w3
+                   ww1
+                   ww2 }) -}
+553f3c8a87daaa7be9a8493db8dbacb8
+  happyReduce_19 ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 5, Strictness: <S,1*U><L,U><L,A><L,U><L,U(U,U)>,
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: LexLambdaNat.Token)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: ParLambdaNat.Happy_IntList)
+                   (w4 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 ParLambdaNat.$whappyReduce
+                   6#
+                   4#
+                   ParLambdaNat.happyReduction_19
+                   w
+                   w1
+                   w3
+                   w4) -}
+8e18feb3abd6d908840c9ecfd45fe518
+  happyReduce_2 :: ParLambdaNat.HappyAbsSyn -> p -> AbsLambdaNat.Exp
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,A>m12,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ p (happy_x_2 :: ParLambdaNat.HappyAbsSyn) (happy_x_1 :: p) ->
+                 AbsLambdaNat.ENatS
+                   happy_x_2
+                     `cast`
+                   (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp)) -}
+6285510377fca2f82e0a9d33c276998f
+  happyReduce_20 ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 5, Strictness: <S,1*U><L,U><L,A><L,1*U(U,U)><S,1*U(U,U)>,
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: LexLambdaNat.Token)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: ParLambdaNat.Happy_IntList)
+                   (w4 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w4 of ww { ParLambdaNat.HappyStk ww1 ww2 ->
+                 ParLambdaNat.$whappySpecReduce_1
+                   4#
+                   ParLambdaNat.happyReduce_1
+                   w
+                   w1
+                   w3
+                   ww1
+                   ww2 }) -}
+71cd06f1672169a02fd9f1ca6c642cfb
+  happyReduce_21 ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 5, Strictness: <S,1*U><L,U><L,A><L,U><L,U(U,U)>,
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: LexLambdaNat.Token)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: ParLambdaNat.Happy_IntList)
+                   (w4 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 ParLambdaNat.$whappyReduce
+                   6#
+                   5#
+                   ParLambdaNat.happyReduction_21
+                   w
+                   w1
+                   w3
+                   w4) -}
+af065eba7bbe154af2806670894b7a69
+  happyReduce_22 ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 5, Strictness: <S,1*U><L,U><L,A><L,1*U(U,U)><S,1*U(U,U)>,
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: LexLambdaNat.Token)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: ParLambdaNat.Happy_IntList)
+                   (w4 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w4 of ww { ParLambdaNat.HappyStk ww1 ww2 ->
+                 ParLambdaNat.$whappySpecReduce_1
+                   5#
+                   ParLambdaNat.happyReduce_1
+                   w
+                   w1
+                   w3
+                   ww1
+                   ww2 }) -}
+4033d0eabf2420735b8d6e3ff16d6008
+  happyReduce_23 ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 5,
+     Strictness: <S,1*U><L,U><L,A><L,1*U(A,1*U(U,U))><S,1*U(U,1*U(U,U))>,
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: LexLambdaNat.Token)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: ParLambdaNat.Happy_IntList)
+                   (w4 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w4 of ww { ParLambdaNat.HappyStk ww1 ww2 ->
+                 ParLambdaNat.$whappySpecReduce_2
+                   6#
+                   (ParLambdaNat.happyReduce_9 @ ParLambdaNat.HappyAbsSyn)
+                     `cast`
+                   (<ParLambdaNat.HappyAbsSyn>_R
+                    ->_R <ParLambdaNat.HappyAbsSyn>_R
+                    ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn)
+                   w
+                   w1
+                   w3
+                   ww1
+                   ww2 }) -}
+769821ce8df3708ddbb94cdb3917e8e4
+  happyReduce_24 ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 5,
+     Strictness: <S,1*U><L,U><L,A><L,1*U(A,1*U(U,U))><S,1*U(U,1*U(U,U))>,
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: LexLambdaNat.Token)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: ParLambdaNat.Happy_IntList)
+                   (w4 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w4 of ww { ParLambdaNat.HappyStk ww1 ww2 ->
+                 ParLambdaNat.$whappySpecReduce_2
+                   6#
+                   (ParLambdaNat.happyReduce_8 @ ParLambdaNat.HappyAbsSyn)
+                     `cast`
+                   (<ParLambdaNat.HappyAbsSyn>_R
+                    ->_R <ParLambdaNat.HappyAbsSyn>_R
+                    ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn)
+                   w
+                   w1
+                   w3
+                   ww1
+                   ww2 }) -}
+39681e4296cd61af372fbbe84280d10d
+  happyReduce_25 ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 5, Strictness: <S,1*U><L,U><L,A><L,1*U(U,U)><S,1*U(U,U)>,
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: LexLambdaNat.Token)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: ParLambdaNat.Happy_IntList)
+                   (w4 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w4 of ww { ParLambdaNat.HappyStk ww1 ww2 ->
+                 ParLambdaNat.$whappySpecReduce_1
+                   6#
+                   ParLambdaNat.happyReduce_1
+                   w
+                   w1
+                   w3
+                   ww1
+                   ww2 }) -}
+5d3e9e30294035014d1916472d56fbb6
+  happyReduce_26 ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 5,
+     Strictness: <S,1*U><L,U><L,A><L,1*U(A,1*U(U,U))><S,1*U(U,1*U(U,U))>,
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: LexLambdaNat.Token)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: ParLambdaNat.Happy_IntList)
+                   (w4 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w4 of ww { ParLambdaNat.HappyStk ww1 ww2 ->
+                 ParLambdaNat.$whappySpecReduce_2
+                   7#
+                   (ParLambdaNat.happyReduce_7 @ ParLambdaNat.HappyAbsSyn)
+                     `cast`
+                   (<ParLambdaNat.HappyAbsSyn>_R
+                    ->_R <ParLambdaNat.HappyAbsSyn>_R
+                    ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn)
+                   w
+                   w1
+                   w3
+                   ww1
+                   ww2 }) -}
+6e639ff4ebb5f2055742132d251cff4c
+  happyReduce_27 ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 5, Strictness: <S,1*U><L,U><L,A><L,1*U(U,U)><S,1*U(U,U)>,
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: LexLambdaNat.Token)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: ParLambdaNat.Happy_IntList)
+                   (w4 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w4 of ww { ParLambdaNat.HappyStk ww1 ww2 ->
+                 ParLambdaNat.$whappySpecReduce_1
+                   7#
+                   ParLambdaNat.happyReduce_1
+                   w
+                   w1
+                   w3
+                   ww1
+                   ww2 }) -}
+357b268cd7999cff1dd15f92f882883c
+  happyReduce_28 ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 5,
+     Strictness: <S,1*U><L,U><L,A><L,1*U(A,1*U(U,U))><S,1*U(U,1*U(U,U))>,
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: LexLambdaNat.Token)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: ParLambdaNat.Happy_IntList)
+                   (w4 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w4 of ww { ParLambdaNat.HappyStk ww1 ww2 ->
+                 ParLambdaNat.$whappySpecReduce_2
+                   8#
+                   ParLambdaNat.happyReduce_6
+                     `cast`
+                   (<ParLambdaNat.HappyAbsSyn>_R
+                    ->_R <ParLambdaNat.HappyAbsSyn>_R
+                    ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn)
+                   w
+                   w1
+                   w3
+                   ww1
+                   ww2 }) -}
+8eedd129628818d2ad47491be8bb51b2
+  happyReduce_29 ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 5, Strictness: <S,1*U><L,U><L,A><L,1*U(U,U)><S,1*U(U,U)>,
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: LexLambdaNat.Token)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: ParLambdaNat.Happy_IntList)
+                   (w4 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w4 of ww { ParLambdaNat.HappyStk ww1 ww2 ->
+                 ParLambdaNat.$whappySpecReduce_1
+                   8#
+                   ParLambdaNat.happyReduce_1
+                   w
+                   w1
+                   w3
+                   ww1
+                   ww2 }) -}
+bac32a09d23d3f5a4f4948d751fdb609
+  happyReduce_3 :: p -> AbsLambdaNat.Exp
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ p (happy_x_1 :: p) -> AbsLambdaNat.ENat0) -}
+d5c212210d88a62b6dd71bfd0dde3d9e
+  happyReduce_30 ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 5, Strictness: <S,1*U><L,U><L,A><L,1*U(U,U)><S,1*U(U,U)>,
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: LexLambdaNat.Token)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: ParLambdaNat.Happy_IntList)
+                   (w4 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w4 of ww { ParLambdaNat.HappyStk ww1 ww2 ->
+                 ParLambdaNat.$whappySpecReduce_1
+                   9#
+                   (ParLambdaNat.happyReduce_5 @ ParLambdaNat.HappyAbsSyn)
+                     `cast`
+                   (<ParLambdaNat.HappyAbsSyn>_R
+                    ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn)
+                   w
+                   w1
+                   w3
+                   ww1
+                   ww2 }) -}
+29d160b9bd827602a16ae212bbfc479c
+  happyReduce_31 ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 5,
+     Strictness: <S,1*U><L,U><L,A><L,1*U(A,1*U(A,1*U(U,U)))><S,1*U(U,1*U(U,1*U(U,U)))>,
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: LexLambdaNat.Token)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: ParLambdaNat.Happy_IntList)
+                   (w4 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w4 of ww { ParLambdaNat.HappyStk ww1 ww2 ->
+                 ParLambdaNat.$whappySpecReduce_3
+                   9#
+                   (ParLambdaNat.happyReduce_4 @ ParLambdaNat.HappyAbsSyn)
+                     `cast`
+                   (<ParLambdaNat.HappyAbsSyn>_R
+                    ->_R <ParLambdaNat.HappyAbsSyn>_R
+                    ->_R <ParLambdaNat.HappyAbsSyn>_R
+                    ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn)
+                   w
+                   w1
+                   w3
+                   ww1
+                   ww2 }) -}
+06c5c829f964ed1fb19fd7a2d83c8291
+  happyReduce_32 ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 5, Strictness: <S,1*U><L,U><L,A><L,1*U(U,U)><S,1*U(U,U)>,
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: LexLambdaNat.Token)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: ParLambdaNat.Happy_IntList)
+                   (w4 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w4 of ww { ParLambdaNat.HappyStk ww1 ww2 ->
+                 ParLambdaNat.$whappySpecReduce_1
+                   9#
+                   ParLambdaNat.happyReduce_1
+                   w
+                   w1
+                   w3
+                   ww1
+                   ww2 }) -}
+c5ef806c8bab8c7580bfdf9f7d690342
+  happyReduce_33 ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 5, Strictness: <S,1*U><L,U><L,A><L,1*U(U,U)><S,1*U(U,U)>,
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: LexLambdaNat.Token)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: ParLambdaNat.Happy_IntList)
+                   (w4 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w4 of ww { ParLambdaNat.HappyStk ww1 ww2 ->
+                 ParLambdaNat.$whappySpecReduce_1
+                   10#
+                   (ParLambdaNat.happyReduce_3 @ ParLambdaNat.HappyAbsSyn)
+                     `cast`
+                   (<ParLambdaNat.HappyAbsSyn>_R
+                    ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn)
+                   w
+                   w1
+                   w3
+                   ww1
+                   ww2 }) -}
+72ce6d28576782e6a48cf3e17dcae22e
+  happyReduce_34 ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 5,
+     Strictness: <S,1*U><L,U><L,A><L,1*U(A,1*U(U,U))><S,1*U(U,1*U(U,U))>,
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: LexLambdaNat.Token)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: ParLambdaNat.Happy_IntList)
+                   (w4 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w4 of ww { ParLambdaNat.HappyStk ww1 ww2 ->
+                 ParLambdaNat.$whappySpecReduce_2
+                   10#
+                   (ParLambdaNat.happyReduce_2 @ ParLambdaNat.HappyAbsSyn)
+                     `cast`
+                   (<ParLambdaNat.HappyAbsSyn>_R
+                    ->_R <ParLambdaNat.HappyAbsSyn>_R
+                    ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn)
+                   w
+                   w1
+                   w3
+                   ww1
+                   ww2 }) -}
+f0f857c184af73cd4affd6ba8d02481f
+  happyReduce_35 ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 5, Strictness: <S,1*U><L,U><L,A><L,1*U(U,U)><S,1*U(U,U)>,
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: LexLambdaNat.Token)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: ParLambdaNat.Happy_IntList)
+                   (w4 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w4 of ww { ParLambdaNat.HappyStk ww1 ww2 ->
+                 ParLambdaNat.$whappySpecReduce_1
+                   10#
+                   ParLambdaNat.happyReduce_1
+                   w
+                   w1
+                   w3
+                   ww1
+                   ww2 }) -}
+d3548b211b513ccd619e04fd8d406e11
+  happyReduce_36 ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 5, Strictness: <S,1*U><L,U><L,A><L,1*U(U,U)><S,1*U(U,U)>,
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: LexLambdaNat.Token)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: ParLambdaNat.Happy_IntList)
+                   (w4 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w4 of ww { ParLambdaNat.HappyStk ww1 ww2 ->
+                 ParLambdaNat.$whappySpecReduce_1
+                   11#
+                   AbsLambdaNat.EVar
+                     `cast`
+                   (UnsafeCo representational AbsLambdaNat.Id ParLambdaNat.HappyAbsSyn
+                    ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn)
+                   w
+                   w1
+                   w3
+                   ww1
+                   ww2 }) -}
+8a48b91f516f01a139fc5feec287d813
+  happyReduce_37 ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 5,
+     Strictness: <S,1*U><L,U><L,A><L,1*U(A,1*U(A,1*U(U,U)))><S,1*U(U,1*U(U,1*U(U,U)))>,
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: LexLambdaNat.Token)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: ParLambdaNat.Happy_IntList)
+                   (w4 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w4 of ww { ParLambdaNat.HappyStk ww1 ww2 ->
+                 ParLambdaNat.$whappySpecReduce_3
+                   11#
+                   (ParLambdaNat.happyReduction_37
+                      @ ParLambdaNat.HappyAbsSyn
+                      @ ParLambdaNat.HappyAbsSyn)
+                   w
+                   w1
+                   w3
+                   ww1
+                   ww2 }) -}
+67c187eddfb87fdc6c89bbc3950a7629
+  happyReduce_38 ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 5, Strictness: <S,1*U><L,U><L,A><L,1*U(U,U)><S,1*U(U,U)>,
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: LexLambdaNat.Token)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: ParLambdaNat.Happy_IntList)
+                   (w4 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w4 of ww { ParLambdaNat.HappyStk ww1 ww2 ->
+                 ParLambdaNat.$whappySpecReduce_1
+                   12#
+                   ParLambdaNat.happyReduce_1
+                   w
+                   w1
+                   w3
+                   ww1
+                   ww2 }) -}
+1e0e11ea9cecde39633b2ecf77a4a24e
+  happyReduce_39 ::
+    GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 5, Strictness: <S,1*U><L,U><L,A><L,1*U(U,U)><S,1*U(U,U)>,
+     Unfolding: (\ (w :: GHC.Prim.Int#)
+                   (w1 :: LexLambdaNat.Token)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: ParLambdaNat.Happy_IntList)
+                   (w4 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w4 of ww { ParLambdaNat.HappyStk ww1 ww2 ->
+                 ParLambdaNat.$whappySpecReduce_1
+                   13#
+                   ParLambdaNat.happyReduce_1
+                   w
+                   w1
+                   w3
+                   ww1
+                   ww2 }) -}
+0535c7d8afc49b48a6e48a552c31c033
+  happyReduce_4 ::
+    ParLambdaNat.HappyAbsSyn
+    -> p -> ParLambdaNat.HappyAbsSyn -> AbsLambdaNat.Exp
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,A><L,U>m10,
+     Unfolding: InlineRule (3, True, True)
+                (\ @ p
+                   (happy_x_3 :: ParLambdaNat.HappyAbsSyn)
+                   (happy_x_2 :: p)
+                   (happy_x_1 :: ParLambdaNat.HappyAbsSyn) ->
+                 AbsLambdaNat.ECons
+                   happy_x_1
+                     `cast`
+                   (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp)
+                   happy_x_3
+                     `cast`
+                   (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp)) -}
+b308e148f29b0298f3864feb85b3e7aa
+  happyReduce_5 :: p -> AbsLambdaNat.Exp
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ p (happy_x_1 :: p) -> AbsLambdaNat.ENil) -}
+d136b326ac8ac72466a07e6d58aed773
+  happyReduce_6 ::
+    ParLambdaNat.HappyAbsSyn
+    -> ParLambdaNat.HappyAbsSyn -> AbsLambdaNat.Exp
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>m8,
+     Unfolding: InlineRule (2, True, True)
+                (\ (happy_x_2 :: ParLambdaNat.HappyAbsSyn)
+                   (happy_x_1 :: ParLambdaNat.HappyAbsSyn) ->
+                 AbsLambdaNat.EApp
+                   happy_x_1
+                     `cast`
+                   (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp)
+                   happy_x_2
+                     `cast`
+                   (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp)) -}
+e6880cfceadc4c38a6dd5b9d2f1fd267
+  happyReduce_7 :: ParLambdaNat.HappyAbsSyn -> p -> AbsLambdaNat.Exp
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,A>m7,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ p (happy_x_2 :: ParLambdaNat.HappyAbsSyn) (happy_x_1 :: p) ->
+                 AbsLambdaNat.EMinusOne
+                   happy_x_2
+                     `cast`
+                   (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp)) -}
+b91d764655d5c0533f5a8cb1fc298b9b
+  happyReduce_8 :: ParLambdaNat.HappyAbsSyn -> p -> AbsLambdaNat.Exp
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,A>m6,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ p (happy_x_2 :: ParLambdaNat.HappyAbsSyn) (happy_x_1 :: p) ->
+                 AbsLambdaNat.ETl
+                   happy_x_2
+                     `cast`
+                   (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp)) -}
+1cc60bdc6be1f25f20f89485ed2bee60
+  happyReduce_9 :: ParLambdaNat.HappyAbsSyn -> p -> AbsLambdaNat.Exp
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,A>m5,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ p (happy_x_2 :: ParLambdaNat.HappyAbsSyn) (happy_x_1 :: p) ->
+                 AbsLambdaNat.EHd
+                   happy_x_2
+                     `cast`
+                   (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp)) -}
+0d244ee8987478785ddf6bb27b14e5a4
+  happyReduce_happyReduce ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> (ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+        -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn)
+    -> GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 8,
+     Strictness: <S,U><S,U><L,1*C1(U(U,U))><S,1*U><L,U><L,A><L,U><L,U(U,U)>,
+     Inline: [2],
+     Unfolding: InlineRule (8, True, True)
+                (\ (w :: GHC.Prim.Int#)
+                   (w1 :: GHC.Prim.Int#)
+                   (w2 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+                          -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn)
+                   (w3 :: GHC.Prim.Int#)
+                   (w4 :: LexLambdaNat.Token)
+                   (w5 :: GHC.Prim.Int#)
+                   (w6 :: ParLambdaNat.Happy_IntList)
+                   (w7 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 ParLambdaNat.$whappyReduce w w1 w2 w3 w4 w6 w7) -}
+954053004215ca3f0297ad25f92f11a7
+  happyReduction_1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("src\\ParLambdaNat.hs:(186,13)-(189,10)|case"#) -}
+1196b3b83020572fe6c0230caf9e9578
+  happyReduction_13 ::
+    ParLambdaNat.HappyAbsSyn -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (happy_x_1 :: ParLambdaNat.HappyAbsSyn) ->
+                 case happy_x_1
+                        `cast`
+                      (UnsafeCo representational ParLambdaNat.HappyAbsSyn LexLambdaNat.Token) of wild {
+                   LexLambdaNat.PT ds ds1
+                   -> case ds1 of wild1 {
+                        DEFAULT
+                        -> Control.Exception.Base.patError
+                             @ 'GHC.Types.LiftedRep
+                             @ ParLambdaNat.HappyAbsSyn
+                             ParLambdaNat.happyReduction_1
+                        LexLambdaNat.T_Id happy_var_1
+                        -> happy_var_1
+                             `cast`
+                           (Sym (AbsLambdaNat.N:Id[0]) ; UnsafeCo representational AbsLambdaNat.Id ParLambdaNat.HappyAbsSyn) }
+                   LexLambdaNat.Err ipv
+                   -> Control.Exception.Base.patError
+                        @ 'GHC.Types.LiftedRep
+                        @ ParLambdaNat.HappyAbsSyn
+                        ParLambdaNat.happyReduction_1 }) -}
+c181bdd7815fee2b175a6b05f14621ec
+  happyReduction_14 ::
+    ParLambdaNat.HappyAbsSyn -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m,
+     Unfolding: InlineRule (0, True, True)
+                AbsLambdaNat.Prog
+                  `cast`
+                (UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn
+                 ->_R UnsafeCo representational AbsLambdaNat.Program ParLambdaNat.HappyAbsSyn) -}
+c8c71bfd1adc965861207183b5e2d423
+  happyReduction_15 ::
+    ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LS(LS(LS))),1*U(U,1*U(A,1*U(U,1*U(A,U))))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case ds of wild { ParLambdaNat.HappyStk happy_x_4 ds1 ->
+                 case ds1 of wild1 { ParLambdaNat.HappyStk happy_x_3 ds2 ->
+                 case ds2 of wild2 { ParLambdaNat.HappyStk happy_x_2 ds3 ->
+                 case ds3 of wild3 { ParLambdaNat.HappyStk happy_x_1 happyRest ->
+                 ParLambdaNat.HappyStk
+                   @ ParLambdaNat.HappyAbsSyn
+                   (AbsLambdaNat.EAbs
+                      happy_x_2
+                        `cast`
+                      (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Id)
+                      happy_x_4
+                        `cast`
+                      (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp))
+                     `cast`
+                   (UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn)
+                   happyRest } } } }) -}
+221d64fb668cf72ecfc1abac2001dd38
+  happyReduction_16 ::
+    ParLambdaNat.HappyAbsSyn -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (happy_x_1 :: ParLambdaNat.HappyAbsSyn) -> happy_x_1) -}
+bd175de84ef58e2e1e39f0406daeeb9c
+  happyReduction_17 ::
+    ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LS(LS(LS(LS(LS(LS(LS))))))),1*U(U,1*U(A,1*U(U,1*U(A,1*U(U,1*U(A,1*U(U,1*U(A,U))))))))>m,
+     Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w of ww { ParLambdaNat.HappyStk ww1 ww2 ->
+                 case ww2 of ww3 { ParLambdaNat.HappyStk ww4 ww5 ->
+                 case ww5 of ww6 { ParLambdaNat.HappyStk ww7 ww8 ->
+                 case ww8 of ww9 { ParLambdaNat.HappyStk ww10 ww11 ->
+                 case ww11 of ww12 { ParLambdaNat.HappyStk ww13 ww14 ->
+                 case ww14 of ww15 { ParLambdaNat.HappyStk ww16 ww17 ->
+                 case ww17 of ww18 { ParLambdaNat.HappyStk ww19 ww20 ->
+                 case ww20 of ww21 { ParLambdaNat.HappyStk ww22 ww23 ->
+                 ParLambdaNat.HappyStk
+                   @ ParLambdaNat.HappyAbsSyn
+                   (AbsLambdaNat.EIf
+                      ww19
+                        `cast`
+                      (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp)
+                      ww13
+                        `cast`
+                      (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp)
+                      ww7
+                        `cast`
+                      (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp)
+                      ww1
+                        `cast`
+                      (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp))
+                     `cast`
+                   (UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn)
+                   ww23 } } } } } } } }) -}
+f9767609e644e44d82135ce100bcfa06
+  happyReduction_18 ::
+    ParLambdaNat.HappyAbsSyn -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (happy_x_1 :: ParLambdaNat.HappyAbsSyn) -> happy_x_1) -}
+d7efb836af621467ace20c7b5db3d5c6
+  happyReduction_19 ::
+    ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LS(LS(LS(LS(LS))))),1*U(U,1*U(A,1*U(U,1*U(A,1*U(U,1*U(A,U))))))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case ds of wild { ParLambdaNat.HappyStk happy_x_6 ds1 ->
+                 case ds1 of wild1 { ParLambdaNat.HappyStk happy_x_5 ds2 ->
+                 case ds2 of wild2 { ParLambdaNat.HappyStk happy_x_4 ds3 ->
+                 case ds3 of wild3 { ParLambdaNat.HappyStk happy_x_3 ds4 ->
+                 case ds4 of wild4 { ParLambdaNat.HappyStk happy_x_2 ds5 ->
+                 case ds5 of wild5 { ParLambdaNat.HappyStk happy_x_1 happyRest ->
+                 ParLambdaNat.HappyStk
+                   @ ParLambdaNat.HappyAbsSyn
+                   (AbsLambdaNat.ELet
+                      happy_x_2
+                        `cast`
+                      (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Id)
+                      happy_x_4
+                        `cast`
+                      (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp)
+                      happy_x_6
+                        `cast`
+                      (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp))
+                     `cast`
+                   (UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn)
+                   happyRest } } } } } }) -}
+bc641bf32c1293cd92a3545a341f4c01
+  happyReduction_20 ::
+    ParLambdaNat.HappyAbsSyn -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (happy_x_1 :: ParLambdaNat.HappyAbsSyn) -> happy_x_1) -}
+764b5635c0bcc68e4b81c7ab11ce3149
+  happyReduction_21 ::
+    ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LS(LS(LS(LS(LS))))),1*U(U,1*U(A,1*U(U,1*U(A,1*U(U,1*U(A,U))))))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case ds of wild { ParLambdaNat.HappyStk happy_x_6 ds1 ->
+                 case ds1 of wild1 { ParLambdaNat.HappyStk happy_x_5 ds2 ->
+                 case ds2 of wild2 { ParLambdaNat.HappyStk happy_x_4 ds3 ->
+                 case ds3 of wild3 { ParLambdaNat.HappyStk happy_x_3 ds4 ->
+                 case ds4 of wild4 { ParLambdaNat.HappyStk happy_x_2 ds5 ->
+                 case ds5 of wild5 { ParLambdaNat.HappyStk happy_x_1 happyRest ->
+                 ParLambdaNat.HappyStk
+                   @ ParLambdaNat.HappyAbsSyn
+                   (AbsLambdaNat.ERec
+                      happy_x_2
+                        `cast`
+                      (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Id)
+                      happy_x_4
+                        `cast`
+                      (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp)
+                      happy_x_6
+                        `cast`
+                      (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp))
+                     `cast`
+                   (UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn)
+                   happyRest } } } } } }) -}
+2399e7b86029e71657f8c919f8ca2530
+  happyReduction_22 ::
+    ParLambdaNat.HappyAbsSyn -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (happy_x_1 :: ParLambdaNat.HappyAbsSyn) -> happy_x_1) -}
+f1afe19e1a0c445c1e504b9a370991ba
+  happyReduction_23 ::
+    ParLambdaNat.HappyAbsSyn -> p -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,A>m5,
+     Unfolding: InlineRule (0, True, True)
+                ParLambdaNat.happyReduce_9
+                  `cast`
+                (forall (p :: <*>_N).
+                 <ParLambdaNat.HappyAbsSyn>_R
+                 ->_R <p>_R
+                 ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn) -}
+ecf0663ba4c9be8bec29ca1b65ce39be
+  happyReduction_24 ::
+    ParLambdaNat.HappyAbsSyn -> p -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,A>m6,
+     Unfolding: InlineRule (0, True, True)
+                ParLambdaNat.happyReduce_8
+                  `cast`
+                (forall (p :: <*>_N).
+                 <ParLambdaNat.HappyAbsSyn>_R
+                 ->_R <p>_R
+                 ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn) -}
+29778600652950f36485cbcc94a8a516
+  happyReduction_25 ::
+    ParLambdaNat.HappyAbsSyn -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (happy_x_1 :: ParLambdaNat.HappyAbsSyn) -> happy_x_1) -}
+de4c9750a864f2591355ef9723ef113b
+  happyReduction_26 ::
+    ParLambdaNat.HappyAbsSyn -> p -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,A>m7,
+     Unfolding: InlineRule (0, True, True)
+                ParLambdaNat.happyReduce_7
+                  `cast`
+                (forall (p :: <*>_N).
+                 <ParLambdaNat.HappyAbsSyn>_R
+                 ->_R <p>_R
+                 ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn) -}
+89a8a83140e80debf6982c4054231d7e
+  happyReduction_27 ::
+    ParLambdaNat.HappyAbsSyn -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (happy_x_1 :: ParLambdaNat.HappyAbsSyn) -> happy_x_1) -}
+c99730750e5386ea90465c87dff91c6e
+  happyReduction_28 ::
+    ParLambdaNat.HappyAbsSyn
+    -> ParLambdaNat.HappyAbsSyn -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>m8,
+     Unfolding: InlineRule (0, True, True)
+                ParLambdaNat.happyReduce_6
+                  `cast`
+                (<ParLambdaNat.HappyAbsSyn>_R
+                 ->_R <ParLambdaNat.HappyAbsSyn>_R
+                 ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn) -}
+0e165894b7355afa0659541134d6a11b
+  happyReduction_29 ::
+    ParLambdaNat.HappyAbsSyn -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (happy_x_1 :: ParLambdaNat.HappyAbsSyn) -> happy_x_1) -}
+e36d30de3a6a99257c7911339cb56ec6
+  happyReduction_30 :: p -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (0, True, True)
+                ParLambdaNat.happyReduce_5
+                  `cast`
+                (forall (p :: <*>_N).
+                 <p>_R
+                 ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn) -}
+c8531a93e3a2b50715f2d7ce3ef75b16
+  happyReduction_31 ::
+    ParLambdaNat.HappyAbsSyn
+    -> p -> ParLambdaNat.HappyAbsSyn -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,A><L,U>m10,
+     Unfolding: InlineRule (0, True, True)
+                ParLambdaNat.happyReduce_4
+                  `cast`
+                (forall (p :: <*>_N).
+                 <ParLambdaNat.HappyAbsSyn>_R
+                 ->_R <p>_R
+                 ->_R <ParLambdaNat.HappyAbsSyn>_R
+                 ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn) -}
+0518640fe38bc502c977836967194653
+  happyReduction_32 ::
+    ParLambdaNat.HappyAbsSyn -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (happy_x_1 :: ParLambdaNat.HappyAbsSyn) -> happy_x_1) -}
+bfbf6e18b9a8e3cde54c637a4e06e75e
+  happyReduction_33 :: p -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (0, True, True)
+                ParLambdaNat.happyReduce_3
+                  `cast`
+                (forall (p :: <*>_N).
+                 <p>_R
+                 ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn) -}
+dc25d0cd889d2525a8a4ce944c1fac6d
+  happyReduction_34 ::
+    ParLambdaNat.HappyAbsSyn -> p -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,A>m12,
+     Unfolding: InlineRule (0, True, True)
+                ParLambdaNat.happyReduce_2
+                  `cast`
+                (forall (p :: <*>_N).
+                 <ParLambdaNat.HappyAbsSyn>_R
+                 ->_R <p>_R
+                 ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn) -}
+443551abca6d08d5281aa007cd3af34c
+  happyReduction_35 ::
+    ParLambdaNat.HappyAbsSyn -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (happy_x_1 :: ParLambdaNat.HappyAbsSyn) -> happy_x_1) -}
+9197a73ced091ee38c466ba260ef2005
+  happyReduction_36 ::
+    ParLambdaNat.HappyAbsSyn -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m13,
+     Unfolding: InlineRule (0, True, True)
+                AbsLambdaNat.EVar
+                  `cast`
+                (UnsafeCo representational AbsLambdaNat.Id ParLambdaNat.HappyAbsSyn
+                 ->_R UnsafeCo representational AbsLambdaNat.Exp ParLambdaNat.HappyAbsSyn) -}
+58410b06b94b16783d6a2bb04b1dc051
+  happyReduction_37 ::
+    p1 -> ParLambdaNat.HappyAbsSyn -> p2 -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,A><S,1*U><L,A>,
+     Unfolding: InlineRule (3, True, True)
+                (\ @ p
+                   @ p1
+                   (happy_x_3 :: p)
+                   (happy_x_2 :: ParLambdaNat.HappyAbsSyn)
+                   (happy_x_1 :: p1) ->
+                 happy_x_2) -}
+55ac2245e264f699b19b16e9ed2db51b
+  happyReduction_38 ::
+    ParLambdaNat.HappyAbsSyn -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (happy_x_1 :: ParLambdaNat.HappyAbsSyn) -> happy_x_1) -}
+5b60bab0ee24c4cb54424e0c7153120f
+  happyReduction_39 ::
+    ParLambdaNat.HappyAbsSyn -> ParLambdaNat.HappyAbsSyn
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (happy_x_1 :: ParLambdaNat.HappyAbsSyn) -> happy_x_1) -}
+3add11bcbe2f9e4bb3fe10c7862c4e42
+  happyReturn :: a -> ErrM.Err a
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m1,
+     Unfolding: InlineRule (0, True, True) ErrM.Ok -}
+02c47e2b8dee36cb7d52b54e32973a84
+  happyReturn1 :: a -> b -> ErrM.Err a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,A>m1,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a @ b (a1 :: a) (tks :: b) -> ErrM.Ok @ a a1) -}
+91863a64836e71fc44695c45c39cd98c
+  happySeq :: a -> b -> b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U>,
+     Unfolding: InlineRule (0, True, True) ParLambdaNat.happyDontSeq -}
+d736653d0e17a3eaa1494358daeb54f4
+  happyShift ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 6, Strictness: <S,U><S,1*U><L,U><L,U><L,U><L,U(U,U)>,
+     Inline:,
+     Unfolding: InlineRule (0, True, True)
+                ParLambdaNat.happyShift_happyShift -}
+5937e989389f102a57bf128f80263f3f
+  happyShift_happyShift ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 6, Strictness: <S,U><S,1*U><L,U><L,U><L,U><L,U(U,U)>,
+     Unfolding: (\ (new_state :: GHC.Prim.Int#)
+                   (ds :: GHC.Prim.Int#)
+                   (tk :: LexLambdaNat.Token)
+                   (st :: GHC.Prim.Int#)
+                   (sts :: ParLambdaNat.Happy_IntList)
+                   (stk :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case ds of ds1 {
+                   DEFAULT
+                   -> ParLambdaNat.happyNewToken
+                        new_state
+                        (ParLambdaNat.HappyCons st sts)
+                        (ParLambdaNat.HappyStk
+                           @ ParLambdaNat.HappyAbsSyn
+                           tk
+                             `cast`
+                           (UnsafeCo representational LexLambdaNat.Token ParLambdaNat.HappyAbsSyn)
+                           stk)
+                   0#
+                   -> case stk of wild { ParLambdaNat.HappyStk x ds2 ->
+                      case x `cast`
+                           (UnsafeCo representational ParLambdaNat.HappyAbsSyn GHC.Types.Int) of wild1 { GHC.Types.I# i ->
+                      ParLambdaNat.happyDoAction_happyDoAction
+                        i
+                        tk
+                        new_state
+                        (ParLambdaNat.HappyCons st sts)
+                        wild } } }) -}
+d1fb01f30c18c98ee9806db569cc2b70
+  happySpecReduce_0 ::
+    GHC.Prim.Int#
+    -> ParLambdaNat.HappyAbsSyn
+    -> GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 7,
+     Strictness: <L,U><L,U><S,1*U><L,U><S,U><L,U><L,U(U,U)>, Inline: -}
+dfb3ee3f3bede0d83cfb1119bba47fb8
+  happySpecReduce_1 ::
+    GHC.Prim.Int#
+    -> (ParLambdaNat.HappyAbsSyn -> ParLambdaNat.HappyAbsSyn)
+    -> GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 7,
+     Strictness: <S,U><L,1*C1(U)><S,1*U><L,U><L,A><L,1*U(U,U)><S,1*U(U,U)>,
+     Inline:,
+     Unfolding: InlineRule (0, True, True)
+                ParLambdaNat.happySpecReduce_1_happySpecReduce_1 -}
+d77b7b289ad58e5fa4870ae3cd5630c2
+  happySpecReduce_1_happySpecReduce_1 ::
+    GHC.Prim.Int#
+    -> (ParLambdaNat.HappyAbsSyn -> ParLambdaNat.HappyAbsSyn)
+    -> GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 7,
+     Strictness: <S,U><L,1*C1(U)><S,1*U><L,U><L,A><L,1*U(U,U)><S,1*U(U,U)>,
+     Inline: [2],
+     Unfolding: InlineRule (7, True, False)
+                (\ (w :: GHC.Prim.Int#)
+                   (w1 :: ParLambdaNat.HappyAbsSyn -> ParLambdaNat.HappyAbsSyn)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: LexLambdaNat.Token)
+                   (w4 :: GHC.Prim.Int#)
+                   (w5 :: ParLambdaNat.Happy_IntList)
+                   (w6 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w6 of ww { ParLambdaNat.HappyStk ww1 ww2 ->
+                 ParLambdaNat.$whappySpecReduce_1 w w1 w2 w3 w5 ww1 ww2 }) -}
+bc38f8c4bd0ec9841139cf6cd34a604f
+  happySpecReduce_2 ::
+    GHC.Prim.Int#
+    -> (ParLambdaNat.HappyAbsSyn
+        -> ParLambdaNat.HappyAbsSyn -> ParLambdaNat.HappyAbsSyn)
+    -> GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 7,
+     Strictness: <S,U><L,1*C1(C1(U))><S,1*U><L,U><L,A><L,1*U(A,1*U(U,U))><S,1*U(U,1*U(U,U))>,
+     Inline:,
+     Unfolding: InlineRule (0, True, True)
+                ParLambdaNat.happySpecReduce_2_happySpecReduce_2 -}
+b09d354bb603df105084fd450da719e5
+  happySpecReduce_2_happySpecReduce_2 ::
+    GHC.Prim.Int#
+    -> (ParLambdaNat.HappyAbsSyn
+        -> ParLambdaNat.HappyAbsSyn -> ParLambdaNat.HappyAbsSyn)
+    -> GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 7,
+     Strictness: <S,U><L,1*C1(C1(U))><S,1*U><L,U><L,A><L,1*U(A,1*U(U,U))><S,1*U(U,1*U(U,U))>,
+     Inline: [2],
+     Unfolding: InlineRule (7, True, False)
+                (\ (w :: GHC.Prim.Int#)
+                   (w1 :: ParLambdaNat.HappyAbsSyn
+                          -> ParLambdaNat.HappyAbsSyn -> ParLambdaNat.HappyAbsSyn)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: LexLambdaNat.Token)
+                   (w4 :: GHC.Prim.Int#)
+                   (w5 :: ParLambdaNat.Happy_IntList)
+                   (w6 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w6 of ww { ParLambdaNat.HappyStk ww1 ww2 ->
+                 ParLambdaNat.$whappySpecReduce_2 w w1 w2 w3 w5 ww1 ww2 }) -}
+f97e938809200f88b75e7111390f6c2e
+  happySpecReduce_3 ::
+    GHC.Prim.Int#
+    -> (ParLambdaNat.HappyAbsSyn
+        -> ParLambdaNat.HappyAbsSyn
+        -> ParLambdaNat.HappyAbsSyn
+        -> ParLambdaNat.HappyAbsSyn)
+    -> GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 7,
+     Strictness: <S,U><L,1*C1(C1(C1(U)))><S,1*U><L,U><L,A><L,1*U(A,1*U(A,1*U(U,U)))><S,1*U(U,1*U(U,1*U(U,U)))>,
+     Inline:,
+     Unfolding: InlineRule (0, True, True)
+                ParLambdaNat.happySpecReduce_3_happySpecReduce_3 -}
+4333c1856c30c7c28e86bb7b53da0ded
+  happySpecReduce_3_happySpecReduce_3 ::
+    GHC.Prim.Int#
+    -> (ParLambdaNat.HappyAbsSyn
+        -> ParLambdaNat.HappyAbsSyn
+        -> ParLambdaNat.HappyAbsSyn
+        -> ParLambdaNat.HappyAbsSyn)
+    -> GHC.Prim.Int#
+    -> LexLambdaNat.Token
+    -> GHC.Prim.Int#
+    -> ParLambdaNat.Happy_IntList
+    -> ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn
+    -> [LexLambdaNat.Token]
+    -> ErrM.Err ParLambdaNat.HappyAbsSyn
+  {- Arity: 7,
+     Strictness: <S,U><L,1*C1(C1(C1(U)))><S,1*U><L,U><L,A><L,1*U(A,1*U(A,1*U(U,U)))><S,1*U(U,1*U(U,1*U(U,U)))>,
+     Inline: [2],
+     Unfolding: InlineRule (7, True, False)
+                (\ (w :: GHC.Prim.Int#)
+                   (w1 :: ParLambdaNat.HappyAbsSyn
+                          -> ParLambdaNat.HappyAbsSyn
+                          -> ParLambdaNat.HappyAbsSyn
+                          -> ParLambdaNat.HappyAbsSyn)
+                   (w2 :: GHC.Prim.Int#)
+                   (w3 :: LexLambdaNat.Token)
+                   (w4 :: GHC.Prim.Int#)
+                   (w5 :: ParLambdaNat.Happy_IntList)
+                   (w6 :: ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn) ->
+                 case w6 of ww { ParLambdaNat.HappyStk ww1 ww2 ->
+                 ParLambdaNat.$whappySpecReduce_3 w w1 w2 w3 w5 ww1 ww2 }) -}
+74d24fb7d522641eb6a425e5ce731b4e
+  happyTable :: ParLambdaNat.HappyAddr
+  {- HasNoCafRefs, Strictness: m, Inline: -}
+0b7d77c15b0ad78b86372dd23ce21d27
+  happyTcHack :: GHC.Prim.Int# -> a -> a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, True)
+                (\ @ a (x :: GHC.Prim.Int#) (y :: a) -> y) -}
+719fae476342aa7b19a762a14c36df3c
+  happyThen :: ErrM.Err a -> (a -> ErrM.Err b) -> ErrM.Err b
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*C1(U)>,
+     Unfolding: InlineRule (0, True, True) ErrM.$fMonadErr_$c>>= -}
+e7b4a5517a08da314e6c486a153f78c0
+  happyThen1 ::
+    ErrM.Err t1 -> (t1 -> t2 -> ErrM.Err b) -> t2 -> ErrM.Err b
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,1*U><L,1*C1(C1(U))><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ t
+                   @ t1
+                   @ b
+                   (m :: ErrM.Err t)
+                   (k :: t -> t1 -> ErrM.Err b)
+                   (tks :: t1) ->
+                 case m of wild {
+                   ErrM.Ok a1 -> k a1 tks ErrM.Bad s -> ErrM.Bad @ b s }) -}
+deee0628f8fee296b4dfc0ffba75cb3c
+  happy_n_nonterms :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 14#) -}
+cbd504ffc02820cfb4753b489c9739bb
+  happy_n_terms :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 22#) -}
+9c8fabf3ea439381844e483883147a89
+  indexShortOffAddr ::
+    ParLambdaNat.HappyAddr -> GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: ParLambdaNat.HappyAddr) (off :: GHC.Prim.Int#) ->
+                 case ds of wild { ParLambdaNat.HappyA# arr ->
+                 let {
+                   off' :: GHC.Prim.Int# = GHC.Prim.*# off 2#
+                 } in
+                 case GHC.Prim.indexCharOffAddr# arr off' of wild1 { DEFAULT ->
+                 case GHC.Prim.indexCharOffAddr#
+                        arr
+                        (GHC.Prim.+# off' 1#) of wild2 { DEFAULT ->
+                 GHC.Prim.narrow16Int#
+                   (GHC.Prim.word2Int#
+                      (GHC.Prim.or#
+                         (GHC.Prim.uncheckedShiftL#
+                            (GHC.Prim.int2Word# (GHC.Prim.ord# wild2))
+                            8#)
+                         (GHC.Prim.int2Word# (GHC.Prim.ord# wild1)))) } } }) -}
+7d8d13ce32db92e055d01266d7eb3bf1
+  myLexer :: GHC.Base.String -> [LexLambdaNat.Token]
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True) LexLambdaNat.tokens -}
+4f7c20fc9f08d787d5a0617051a4ef54
+  notHappyAtAll :: a
+  {- Strictness: x -}
+4b9eca366b779b68cb06854dd197bae7
+  pExp :: [LexLambdaNat.Token] -> ErrM.Err AbsLambdaNat.Exp
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (tks :: [LexLambdaNat.Token]) ->
+                 case ParLambdaNat.happyNewToken
+                        12#
+                        (ParLambdaNat.notHappyAtAll @ ParLambdaNat.Happy_IntList)
+                        (ParLambdaNat.notHappyAtAll
+                           @ (ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn))
+                        tks of wild {
+                   ErrM.Ok a1
+                   -> ErrM.Ok
+                        @ AbsLambdaNat.Exp
+                        a1
+                          `cast`
+                        (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp)
+                   ErrM.Bad s -> ErrM.Bad @ AbsLambdaNat.Exp s }) -}
+15f2e0382d4f7f9cc454c55eafc13cb3
+  pExp1 :: [LexLambdaNat.Token] -> ErrM.Err AbsLambdaNat.Exp
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (tks :: [LexLambdaNat.Token]) ->
+                 case ParLambdaNat.happyNewToken
+                        1#
+                        (ParLambdaNat.notHappyAtAll @ ParLambdaNat.Happy_IntList)
+                        (ParLambdaNat.notHappyAtAll
+                           @ (ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn))
+                        tks of wild {
+                   ErrM.Ok a1
+                   -> ErrM.Ok
+                        @ AbsLambdaNat.Exp
+                        a1
+                          `cast`
+                        (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp)
+                   ErrM.Bad s -> ErrM.Bad @ AbsLambdaNat.Exp s }) -}
+5626bbeb7e724d8af2efbf2d3a22f322
+  pExp10 :: [LexLambdaNat.Token] -> ErrM.Err AbsLambdaNat.Exp
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (tks :: [LexLambdaNat.Token]) ->
+                 case ParLambdaNat.happyNewToken
+                        9#
+                        (ParLambdaNat.notHappyAtAll @ ParLambdaNat.Happy_IntList)
+                        (ParLambdaNat.notHappyAtAll
+                           @ (ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn))
+                        tks of wild {
+                   ErrM.Ok a1
+                   -> ErrM.Ok
+                        @ AbsLambdaNat.Exp
+                        a1
+                          `cast`
+                        (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp)
+                   ErrM.Bad s -> ErrM.Bad @ AbsLambdaNat.Exp s }) -}
+57abcc5e62cf9a3530cc400d722281cc
+  pExp11 :: [LexLambdaNat.Token] -> ErrM.Err AbsLambdaNat.Exp
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (tks :: [LexLambdaNat.Token]) ->
+                 case ParLambdaNat.happyNewToken
+                        10#
+                        (ParLambdaNat.notHappyAtAll @ ParLambdaNat.Happy_IntList)
+                        (ParLambdaNat.notHappyAtAll
+                           @ (ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn))
+                        tks of wild {
+                   ErrM.Ok a1
+                   -> ErrM.Ok
+                        @ AbsLambdaNat.Exp
+                        a1
+                          `cast`
+                        (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp)
+                   ErrM.Bad s -> ErrM.Bad @ AbsLambdaNat.Exp s }) -}
+e42fe0a0fe7aa58a2a13936a66fe56aa
+  pExp2 :: [LexLambdaNat.Token] -> ErrM.Err AbsLambdaNat.Exp
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (tks :: [LexLambdaNat.Token]) ->
+                 case ParLambdaNat.happyNewToken
+                        2#
+                        (ParLambdaNat.notHappyAtAll @ ParLambdaNat.Happy_IntList)
+                        (ParLambdaNat.notHappyAtAll
+                           @ (ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn))
+                        tks of wild {
+                   ErrM.Ok a1
+                   -> ErrM.Ok
+                        @ AbsLambdaNat.Exp
+                        a1
+                          `cast`
+                        (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp)
+                   ErrM.Bad s -> ErrM.Bad @ AbsLambdaNat.Exp s }) -}
+2d3470dcc1e92d246520ff281893af47
+  pExp3 :: [LexLambdaNat.Token] -> ErrM.Err AbsLambdaNat.Exp
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (tks :: [LexLambdaNat.Token]) ->
+                 case ParLambdaNat.happyNewToken
+                        3#
+                        (ParLambdaNat.notHappyAtAll @ ParLambdaNat.Happy_IntList)
+                        (ParLambdaNat.notHappyAtAll
+                           @ (ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn))
+                        tks of wild {
+                   ErrM.Ok a1
+                   -> ErrM.Ok
+                        @ AbsLambdaNat.Exp
+                        a1
+                          `cast`
+                        (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp)
+                   ErrM.Bad s -> ErrM.Bad @ AbsLambdaNat.Exp s }) -}
+918a2b39f4cda600c6a35d2fe13f47c0
+  pExp4 :: [LexLambdaNat.Token] -> ErrM.Err AbsLambdaNat.Exp
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (tks :: [LexLambdaNat.Token]) ->
+                 case ParLambdaNat.happyNewToken
+                        4#
+                        (ParLambdaNat.notHappyAtAll @ ParLambdaNat.Happy_IntList)
+                        (ParLambdaNat.notHappyAtAll
+                           @ (ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn))
+                        tks of wild {
+                   ErrM.Ok a1
+                   -> ErrM.Ok
+                        @ AbsLambdaNat.Exp
+                        a1
+                          `cast`
+                        (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp)
+                   ErrM.Bad s -> ErrM.Bad @ AbsLambdaNat.Exp s }) -}
+1ca7f587f9c927a1f10f2cd1948947eb
+  pExp5 :: [LexLambdaNat.Token] -> ErrM.Err AbsLambdaNat.Exp
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (tks :: [LexLambdaNat.Token]) ->
+                 case ParLambdaNat.happyNewToken
+                        11#
+                        (ParLambdaNat.notHappyAtAll @ ParLambdaNat.Happy_IntList)
+                        (ParLambdaNat.notHappyAtAll
+                           @ (ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn))
+                        tks of wild {
+                   ErrM.Ok a1
+                   -> ErrM.Ok
+                        @ AbsLambdaNat.Exp
+                        a1
+                          `cast`
+                        (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp)
+                   ErrM.Bad s -> ErrM.Bad @ AbsLambdaNat.Exp s }) -}
+180f980ced738a91bbd1581023584056
+  pExp6 :: [LexLambdaNat.Token] -> ErrM.Err AbsLambdaNat.Exp
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (tks :: [LexLambdaNat.Token]) ->
+                 case ParLambdaNat.happyNewToken
+                        5#
+                        (ParLambdaNat.notHappyAtAll @ ParLambdaNat.Happy_IntList)
+                        (ParLambdaNat.notHappyAtAll
+                           @ (ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn))
+                        tks of wild {
+                   ErrM.Ok a1
+                   -> ErrM.Ok
+                        @ AbsLambdaNat.Exp
+                        a1
+                          `cast`
+                        (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp)
+                   ErrM.Bad s -> ErrM.Bad @ AbsLambdaNat.Exp s }) -}
+5a16e0951505129a9c3b33a16edc4d1a
+  pExp7 :: [LexLambdaNat.Token] -> ErrM.Err AbsLambdaNat.Exp
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (tks :: [LexLambdaNat.Token]) ->
+                 case ParLambdaNat.happyNewToken
+                        6#
+                        (ParLambdaNat.notHappyAtAll @ ParLambdaNat.Happy_IntList)
+                        (ParLambdaNat.notHappyAtAll
+                           @ (ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn))
+                        tks of wild {
+                   ErrM.Ok a1
+                   -> ErrM.Ok
+                        @ AbsLambdaNat.Exp
+                        a1
+                          `cast`
+                        (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp)
+                   ErrM.Bad s -> ErrM.Bad @ AbsLambdaNat.Exp s }) -}
+eee53d6da8724531c499825fab8b4d68
+  pExp8 :: [LexLambdaNat.Token] -> ErrM.Err AbsLambdaNat.Exp
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (tks :: [LexLambdaNat.Token]) ->
+                 case ParLambdaNat.happyNewToken
+                        7#
+                        (ParLambdaNat.notHappyAtAll @ ParLambdaNat.Happy_IntList)
+                        (ParLambdaNat.notHappyAtAll
+                           @ (ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn))
+                        tks of wild {
+                   ErrM.Ok a1
+                   -> ErrM.Ok
+                        @ AbsLambdaNat.Exp
+                        a1
+                          `cast`
+                        (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp)
+                   ErrM.Bad s -> ErrM.Bad @ AbsLambdaNat.Exp s }) -}
+e9fbd033c81652d63a8b4b3caa60cdd4
+  pExp9 :: [LexLambdaNat.Token] -> ErrM.Err AbsLambdaNat.Exp
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (tks :: [LexLambdaNat.Token]) ->
+                 case ParLambdaNat.happyNewToken
+                        8#
+                        (ParLambdaNat.notHappyAtAll @ ParLambdaNat.Happy_IntList)
+                        (ParLambdaNat.notHappyAtAll
+                           @ (ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn))
+                        tks of wild {
+                   ErrM.Ok a1
+                   -> ErrM.Ok
+                        @ AbsLambdaNat.Exp
+                        a1
+                          `cast`
+                        (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Exp)
+                   ErrM.Bad s -> ErrM.Bad @ AbsLambdaNat.Exp s }) -}
+07f342fc429d4857d9ef9a51691bef9d
+  pProgram :: [LexLambdaNat.Token] -> ErrM.Err AbsLambdaNat.Program
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (tks :: [LexLambdaNat.Token]) ->
+                 case ParLambdaNat.happyNewToken
+                        0#
+                        (ParLambdaNat.notHappyAtAll @ ParLambdaNat.Happy_IntList)
+                        (ParLambdaNat.notHappyAtAll
+                           @ (ParLambdaNat.HappyStk ParLambdaNat.HappyAbsSyn))
+                        tks of wild {
+                   ErrM.Ok a1
+                   -> ErrM.Ok
+                        @ AbsLambdaNat.Program
+                        a1
+                          `cast`
+                        (UnsafeCo representational ParLambdaNat.HappyAbsSyn AbsLambdaNat.Program)
+                   ErrM.Bad s -> ErrM.Bad @ AbsLambdaNat.Program s }) -}
+700314d2c8cba05e44f83f90167f3147
+  readArrayBit ::
+    ParLambdaNat.HappyAddr -> GHC.Types.Int -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S(S),1*U(U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (arr :: ParLambdaNat.HappyAddr) (bit :: GHC.Types.Int) ->
+                 case bit of wild { GHC.Types.I# x ->
+                 case arr of wild1 { ParLambdaNat.HappyA# arr1 ->
+                 let {
+                   off' :: GHC.Prim.Int#
+                   = GHC.Prim.*# (GHC.Prim.uncheckedIShiftRA# x 4#) 2#
+                 } in
+                 case GHC.Prim.indexCharOffAddr# arr1 off' of wild2 { DEFAULT ->
+                 case GHC.Prim.indexCharOffAddr#
+                        arr1
+                        (GHC.Prim.+# off' 1#) of wild3 { DEFAULT ->
+                 let {
+                   i# :: GHC.Prim.Int# = GHC.Prim.andI# x 15#
+                 } in
+                 case GHC.Prim.>=# i# 64# of lwild {
+                   DEFAULT
+                   -> case GHC.Prim.andI#
+                             (GHC.Prim.narrow16Int#
+                                (GHC.Prim.word2Int#
+                                   (GHC.Prim.or#
+                                      (GHC.Prim.uncheckedShiftL#
+                                         (GHC.Prim.int2Word# (GHC.Prim.ord# wild3))
+                                         8#)
+                                      (GHC.Prim.int2Word# (GHC.Prim.ord# wild2)))))
+                             (GHC.Prim.uncheckedIShiftL# 1# i#) of wild4 {
+                        DEFAULT -> GHC.Types.True 0# -> GHC.Types.False }
+                   1# -> GHC.Types.False } } } } }) -}
+a7888a79b2a689087f24b19f9e610138
+  returnM :: a -> ErrM.Err a
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m1,
+     Unfolding: InlineRule (0, True, True) ErrM.Ok -}
+25aa0ab1e26c309bca6ee1a59b682288
+  thenM :: ErrM.Err a -> (a -> ErrM.Err b) -> ErrM.Err b
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*C1(U)>,
+     Unfolding: InlineRule (0, True, True) ErrM.$fMonadErr_$c>>= -}
+trusted: none
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+
