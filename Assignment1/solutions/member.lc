@@ -1,3 +1,7 @@
-let rec member = \x. \l.
-	if Hd(l)=x then S -- if the value of the first object in the list is equal to the value we are looking for, return 1 
-	else member( tl(l) ) -- if the value of the first object in the list is not equal to the value we are searching for, then call the member function on the remainder of the list
+let check = \i.\j. if i = j then S 0 else 0 in
+let rec member = \x.\l. if hd l = # then 0 else if check x (hd l) = S 0 then S 0 else member x (tl l) in member S 0 S 0:0:#
+
+
+/*
+let rec member = \x. \l. if hd(l) = x then S 0 else 0 (member( tl(l) ) ) in member ( A1  A1:B2:# )
+*/
