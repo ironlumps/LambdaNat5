@@ -1,1 +1,1 @@
-let rec even = \l. if Hd(l)= Nil then 0 else minusOne (S even Tl(l) ) in (f S S 0)
+let rec even = \l. if Hd(l)= Nil then 0 else minus_one (S even Tl(l) ) in (f S S 0)

@@ -3,7 +3,7 @@
 // stack exec LambdaNat-exe test/test-interpreter.lc
 // after uncommenting exactly one of the lines below:
 
-minus_one S S S S 0
+//minus_one S S S S 0
 //let f = \x. if x=0 then a else S (minus_one x) in (f 0)
 //let f = \x. if x=0 then a else S (minus_one x) in (f S S 0)
 //let identity = \x. if x=0 then 0 else S ( identity (minus_one x)) in identity 0
