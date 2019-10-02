@@ -1,15 +1,4 @@
 let rec flip = \n. if n = 0 then S 0 else 0 in
 let rec even = \l. if l = # then S 0 else flip(even(tl l)) in even a:b:c:#
 
-/*We take that an empty list is of size 0 therefore it is even
-So every element counting from the end of the list will flip
-the binary value S 0 to 0 and vice versa until the list is traversed
-even # = S 0
-even a:b:c:# = flip(even(b:c:#))
-               flip(flip(even(c:#)))
-               flip(flip(flip(even(#))))
-               flip(flip(flip(S O)))
-               flip(flip(0))
-               flip(S 0)
-               0
-*/
+
