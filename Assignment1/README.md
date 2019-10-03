@@ -1,4 +1,5 @@
-# README
+# README For group:
+# Charlie Story, Ryan Kassab, Corey McCrea, Haley Anderson
 
 ## Assignment 1
 

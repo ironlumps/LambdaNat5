@@ -1,2 +1,2 @@
 let rec flip = \n. if n = 0 then S 0 else 0 in
-let rec even = \l. if l = # then S 0 else flip(even(tl l)) in even a:b:c:#
+let rec even = \l. if l = # then S 0 else flip(even(tl l)) in even a:b:#
