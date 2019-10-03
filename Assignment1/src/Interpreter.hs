@@ -39,7 +39,7 @@ evalCBN (ETl e6) = case (evalCBN e6) of
     ENil -> ENil
     (ECons e1 e2) -> e2
 --evalCBN ENil = ENil --I doubt this is right
---evalCBN (ECons e9 e10) = ECons (evalCBN e10) (evalCBN e9)
+evalCBN (ECons e9 e10) = ECons (evalCBN e9) (evalCBN e10)
 evalCBN (EMinusOne e) = case (evalCBN e) of
     ENat0 -> ENat0
     (ENatS e) -> e
