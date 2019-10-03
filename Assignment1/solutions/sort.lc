@@ -12,6 +12,7 @@ let rec insert = \i.\l. if l = # then i:#
 let rec sort = \m. if m = # then #
                else insert (hd m) (sort (tl m)) in sort S S 0:S 0:0:#
 
+
 /*
 sort S S 0: S 0:# returns S 0:S S 0:#
 sort S S 0: S 0:0:# returns S 0:0:S S 0:#
