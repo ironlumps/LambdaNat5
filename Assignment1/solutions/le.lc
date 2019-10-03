@@ -1,7 +1,7 @@
-let not = \k. if k = 0 then 0 else S 0 in
-let rec sub = \x.\y. if y = 0 then x else  minus_one (sub x (minus_one y)) in
-let le = \a.\b. if not (sub a b) = 0 then S 0
-                else if not (sub a b) = S 0 then 0
+let not_in = \k. if k = 0 then 0 else S 0 in
+let rec subtract = \x.\y. if y = 0 then x else  minus_one (subtract x (minus_one y)) in
+let le = \a.\b. if not (subtract a b) = 0 then S 0
+                else if not_in (sub a b) = S 0 then 0
                 else if a = b then S 0
                 else S 0 in le S S 0 S 0
 
