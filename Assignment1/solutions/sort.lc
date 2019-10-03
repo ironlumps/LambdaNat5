@@ -1,5 +1,5 @@
 let not_in = \k. if k = 0 then 0 else S 0 in
-let rec subtract = \x.\y. if y = 0 then x else  minus_one (sub x (minus_one y)) in
+let rec subtract = \x.\y. if y = 0 then x else  minus_one (subtract x (minus_one y)) in
 let le = \a.\b. if not_in (subtract a b) = 0 then S 0
                 else if not_in (subtract a b) = S 0 then 0
                 else if a = b then S 0
