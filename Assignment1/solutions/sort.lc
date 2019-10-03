@@ -16,7 +16,7 @@ let rec sort = \m. if m = # then #
 // We wrote earlier.
 // If the list is empty, return what you have.
 // It works by first calling insert, which calls le, which can call append or insert again
-// Le can call sub.
+// Le can call subtract.
 // These work to reorder the elements in order to sort them
 // It does thus by comparing the values and then moving them with the sorting helper functions
 // At the end of all the calls it reconstructs the list
