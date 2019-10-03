@@ -1,11 +1,11 @@
 let not_in = \k. if k = 0 then 0 else S 0 in
 let rec subtract = \x.\y. if y = 0 then x else  minus_one (subtract x (minus_one y)) in
-let le = \a.\b. if not (subtract a b) = 0 then S 0
-                else if not_in (sub a b) = S 0 then 0
+let le = \a.\b. if not_in (subtract a b) = 0 then S 0
+                else if not_in (subtract a b) = S 0 then 0
                 else if a = b then S 0
                 else S 0 in le S S 0 S 0
 
-// Not and sub are the helper functions to le. Sub is not recursive
+// Not_in and subtract are the helper functions to le. Subtract is recursive
 // Le is a size comparison between the two numbers
 // First it subtracts a from b, if the result is 0 they are equal
 // If not it will compare the numbers again.
