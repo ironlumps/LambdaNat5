@@ -1,0 +1,697 @@
+
+==================== FINAL INTERFACE ====================
+2019-10-02 23:59:40.8363926 UTC
+
+interface LambdaNat-0.1.0.0-2kfAZLS9jVXK0OvNqCZE1W:PrintLambdaNat 8064
+  interface hash: 0e116e87e208e8c8d1c9087a92437043
+  ABI hash: 7837347bbebb8aebfbf16ca512fecddf
+  export-list hash: a4200cb39ff3818400fe02d70344b304
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 14c2cc79705a4419f265d275e12b2327
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  PrintLambdaNat.concatD
+  PrintLambdaNat.concatS
+  PrintLambdaNat.doc
+  PrintLambdaNat.mkEsc
+  PrintLambdaNat.parenth
+  PrintLambdaNat.prPrec
+  PrintLambdaNat.printTree
+  PrintLambdaNat.render
+  PrintLambdaNat.replicateS
+  PrintLambdaNat.Doc
+  PrintLambdaNat.Print{PrintLambdaNat.prt PrintLambdaNat.prtList}
+module dependencies: AbsLambdaNat
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  AbsLambdaNat 178a9cc653dd36fa76d6d95a625074d6
+  exports: f4356a3ee98ac6a6811849de911eb54a
+  EAbs 9d9f10a93317f41f7f9a8552b2e2b40a
+  EApp 0938e0a280fdba35216b6732d4dea303
+  ECons a3fd34f0f6a430353937f8a925c85ade
+  EFix 1e61a274da8076b4db7de55cd4675f14
+  EHd a5c165b979937f0b4f43f6681b547009
+  EIf f599091be846ccea41a12480d9f1a6d0
+  ELet fe332d63780e721e54b8b91c936d3d0f
+  EMinusOne 5ef16d9b4050d6d89bcb5eb9ec67afcf
+  ENat0 a918d1f65941b5cdb6e3eed2653225e9
+  ENatS af5800ec08aa30daa5bf2118c13bcf73
+  ENil 01ee979875d0df7a46382276affd0ee7
+  ERec b2f42da595379ee367d05bf861ac6bbc
+  ETl 42e320b9437cd1d58b0543c7c88e4695
+  EVar 5a79a8b244cf665e764a6034e875851d
+  Exp d329577efdc698dc9750b5cdb192e262
+  Id 8f0ece0b1f6a584aa8e25f5efe448193
+  Id 8c90b5b8ba7785e159bb6b00f7c7f125
+  Prog 870663b393bd734b4e7ade847c3f3fd6
+  Program 36f2641f44157e75a69dd21835071009
+import  -/  base-4.12.0.0:Data.Char 2904a5c9a61cd1905998d0ede824665e
+import  -/  base-4.12.0.0:Data.Foldable 6673f41a7644ecd4dda455d741d47ef8
+import  -/  base-4.12.0.0:GHC.Base 954f4c258d193fab7048a63bfeb56dcf
+import  -/  base-4.12.0.0:GHC.List 63f1dc438c14c2ecfce50219fbb7ff35
+import  -/  base-4.12.0.0:GHC.Num 009f4fca9200daff9e3ffbe2d7676a2f
+import  -/  base-4.12.0.0:GHC.Show 48dce8b8129312101170e57c24f3ecbd
+import  -/  base-4.12.0.0:GHC.Unicode c752a09a0fd61071e8c9c84d904e3f7e
+import  -/  base-4.12.0.0:Prelude aea9afd24db8aed3563d7d850ea453c0
+import  -/  ghc-prim-0.5.3:GHC.Classes 6002495dc43e58d28c87e5e5e058752a
+import  -/  integer-gmp-1.0.2.0:GHC.Integer.Type 34234e515bc4cbda6d7cda923884fd3f
+02d8f34107e99625f79109ae267947b0
+  $dmprtList ::
+    PrintLambdaNat.Print a =>
+    GHC.Types.Int -> [a] -> PrintLambdaNat.Doc
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U(1*C1(C(C(U))),A)><L,U>,
+     Unfolding: InlineRule (0, True, False)
+                (\ @ a ($dPrint :: PrintLambdaNat.Print a) (i :: GHC.Types.Int) ->
+                 let {
+                   g :: a -> PrintLambdaNat.Doc = PrintLambdaNat.prt @ a $dPrint i
+                 } in
+                 \ (x :: [a]) ->
+                 GHC.Base.foldr
+                   @ a
+                   @ ([GHC.Show.ShowS] -> [GHC.Show.ShowS])
+                   (GHC.Base.mapFB
+                      @ ([GHC.Show.ShowS] -> [GHC.Show.ShowS])
+                      @ ([GHC.Show.ShowS] -> [GHC.Show.ShowS])
+                      @ a
+                      (GHC.Base..
+                         @ [GHC.Show.ShowS]
+                         @ [GHC.Show.ShowS]
+                         @ [GHC.Show.ShowS])
+                      g)
+                   (GHC.Base.id @ [GHC.Show.ShowS])
+                   x) -}
+02d8f34107e99625f79109ae267947b0
+  $fPrintChar :: PrintLambdaNat.Print GHC.Types.Char
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ GHC.Types.Char
+                  PrintLambdaNat.$fPrintChar_$cprt
+                  PrintLambdaNat.$fPrintChar_$cprtList -}
+51fa06f9903275f96304fd566c545e31
+  $fPrintChar1 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# '"'#) -}
+62bba901e679517639e1d51ea636863c
+  $fPrintChar2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   PrintLambdaNat.$fPrintChar3) -}
+b601e390d2795121d12764dc79385725
+  $fPrintChar3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("\\\\"#) -}
+1103891107c60e561dba49c48ade9853
+  $fPrintChar4 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# '\\'#) -}
+9ddf522f8457b2bef6e3aa620e8737de
+  $fPrintChar5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   PrintLambdaNat.$fPrintChar6) -}
+607016335a7810c0affcb22410e406d9
+  $fPrintChar6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("\\n"#) -}
+16444d4ec7c83485c69f3024dec1f99f
+  $fPrintChar7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   PrintLambdaNat.$fPrintChar8) -}
+a721624ed6928837509b3fb3867a8d15
+  $fPrintChar8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("\\t"#) -}
+85bff6b5dd015794c400d850d2d6272a
+  $fPrintChar9 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# '\''#) -}
+e8202cc05e96388b183a7c0a445277c2
+  $fPrintChar_$cprt ::
+    GHC.Types.Int -> GHC.Types.Char -> PrintLambdaNat.Doc
+  {- Arity: 3, Strictness: <L,A><L,U(U)><L,U>m2, Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: GHC.Types.Char)
+                   (w2 :: [GHC.Show.ShowS]) ->
+                 case PrintLambdaNat.$w$cprt w1 w2 of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.: @ GHC.Show.ShowS ww1 ww2 }) -}
+5f0398831aee9747116932fd1d23755d
+  $fPrintChar_$cprtList ::
+    GHC.Types.Int -> [GHC.Types.Char] -> PrintLambdaNat.Doc
+  {- Arity: 3, Strictness: <L,A><L,U><L,U>m2, Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: [GHC.Types.Char])
+                   (w2 :: [GHC.Show.ShowS]) ->
+                 GHC.Types.:
+                   @ GHC.Show.ShowS
+                   (\ (x :: GHC.Base.String) ->
+                    GHC.Types.:
+                      @ GHC.Types.Char
+                      PrintLambdaNat.$fPrintChar1
+                      (PrintLambdaNat.$fPrintChar_go
+                         w1
+                         (GHC.Types.: @ GHC.Types.Char PrintLambdaNat.$fPrintChar1 x)))
+                   w2) -}
+606aad9dee3e5ca31701c6ab691b8903
+  $fPrintChar_go ::
+    [GHC.Types.Char] -> [GHC.Types.Char] -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <S,1*U><L,1*U> -}
+02d8f34107e99625f79109ae267947b0
+  $fPrintDouble :: PrintLambdaNat.Print GHC.Types.Double
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ GHC.Types.Double
+                  PrintLambdaNat.$fPrintDouble_$cprt
+                  PrintLambdaNat.$fPrintDouble_$cprtList -}
+ed2ec01eede322f98c86c25052195527
+  $fPrintDouble_$cprt ::
+    GHC.Types.Int -> GHC.Types.Double -> PrintLambdaNat.Doc
+  {- Arity: 2, Strictness: <L,A><L,1*U(U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: GHC.Types.Int) (x :: GHC.Types.Double) ->
+                 GHC.Types.:
+                   @ GHC.Show.ShowS
+                   (case x of ww { GHC.Types.D# ww1 ->
+                    GHC.Float.$w$sshowSignedFloat
+                      GHC.Float.$fShowDouble2
+                      GHC.Show.$fShow(,)1
+                      ww1 })) -}
+f536d0d2d41dbf08f4757e6dc1d42957
+  $fPrintDouble_$cprtList ::
+    GHC.Types.Int -> [GHC.Types.Double] -> PrintLambdaNat.Doc
+  {- Arity: 2, Strictness: <L,A><S,1*U>, Inline: [2],
+     Unfolding: InlineRule (2, True, True)
+                (\ (w :: GHC.Types.Int) (w1 :: [GHC.Types.Double]) ->
+                 PrintLambdaNat.$fPrintDouble_go w1) -}
+110fef82fd8b9efb578da1293b95f402
+  $fPrintDouble_go ::
+    [GHC.Types.Double] -> [GHC.Show.ShowS] -> [GHC.Show.ShowS]
+  {- Arity: 1, Strictness: <S,1*U> -}
+02d8f34107e99625f79109ae267947b0
+  $fPrintExp :: PrintLambdaNat.Print AbsLambdaNat.Exp
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ AbsLambdaNat.Exp
+                  PrintLambdaNat.$fPrintExp_$cprt
+                  PrintLambdaNat.$fPrintExp_$cprtList -}
+6a6276dbbd8fbab3df0836a45992308c
+  $fPrintExp_$cprt ::
+    GHC.Types.Int -> AbsLambdaNat.Exp -> PrintLambdaNat.Doc
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U><L,U>, Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: AbsLambdaNat.Exp)
+                   (w2 :: [GHC.Show.ShowS]) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 PrintLambdaNat.$w$cprt1 ww1 w1 w2 }) -}
+d8d11893173792b3c487caa1ef381202
+  $fPrintExp_$cprtList ::
+    GHC.Types.Int -> [AbsLambdaNat.Exp] -> PrintLambdaNat.Doc
+  {- Arity: 3, Strictness: <L,U(U)><S,1*U><L,1*U>,
+     Unfolding: (\ (i :: GHC.Types.Int)
+                   (eta :: [AbsLambdaNat.Exp])
+                   (eta1 :: [GHC.Show.ShowS]) ->
+                 letrec {
+                   go :: [AbsLambdaNat.Exp] -> [GHC.Show.ShowS] -> [GHC.Show.ShowS]
+                     {- Arity: 2, Strictness: <S,1*U><L,1*U> -}
+                   = \ (ds :: [AbsLambdaNat.Exp]) (eta2 :: [GHC.Show.ShowS]) ->
+                     case ds of wild {
+                       [] -> eta2
+                       : y ys
+                       -> case i of ww { GHC.Types.I# ww1 ->
+                          PrintLambdaNat.$w$cprt1 ww1 y (go ys eta2) } }
+                 } in
+                 go eta eta1) -}
+02d8f34107e99625f79109ae267947b0
+  $fPrintId :: PrintLambdaNat.Print AbsLambdaNat.Id
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ AbsLambdaNat.Id
+                  PrintLambdaNat.$fPrintId_$cprt
+                  PrintLambdaNat.$fPrintId_$cprtList -}
+22ba250ada9663cac3a8837c31cbe5af
+  $fPrintId_$cprt ::
+    GHC.Types.Int -> AbsLambdaNat.Id -> PrintLambdaNat.Doc
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,A><L,U><L,U>m2,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: GHC.Types.Int)
+                   (ds1 :: AbsLambdaNat.Id)
+                   (eta :: [GHC.Show.ShowS]) ->
+                 GHC.Types.:
+                   @ GHC.Show.ShowS
+                   (GHC.Base.++ @ GHC.Types.Char ds1 `cast` (AbsLambdaNat.N:Id[0]))
+                   eta) -}
+fd140cda64f2821344cea8b06b0454cb
+  $fPrintId_$cprtList ::
+    GHC.Types.Int -> [AbsLambdaNat.Id] -> PrintLambdaNat.Doc
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,A><S,1*U><L,1*U>,
+     Inline: [2],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: [AbsLambdaNat.Id])
+                   (w2 :: [GHC.Show.ShowS]) ->
+                 PrintLambdaNat.$fPrintId_go w1 w2) -}
+840998263a0a193b9af4198563290788
+  $fPrintId_go ::
+    [AbsLambdaNat.Id] -> [GHC.Show.ShowS] -> [GHC.Show.ShowS]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+02d8f34107e99625f79109ae267947b0
+  $fPrintInteger :: PrintLambdaNat.Print GHC.Integer.Type.Integer
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ GHC.Integer.Type.Integer
+                  PrintLambdaNat.$fPrintInteger_$cprt
+                  PrintLambdaNat.$fPrintInteger_$cprtList -}
+d8512ea845774acb37f4e2364fed669c
+  $fPrintInteger_$cprt ::
+    GHC.Types.Int -> GHC.Integer.Type.Integer -> PrintLambdaNat.Doc
+  {- Arity: 3, Strictness: <L,A><L,U><L,U>m2,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: GHC.Types.Int)
+                   (x :: GHC.Integer.Type.Integer)
+                   (eta :: [GHC.Show.ShowS]) ->
+                 GHC.Types.:
+                   @ GHC.Show.ShowS
+                   (\ (w2 :: GHC.Base.String) ->
+                    case GHC.Show.$w$cshowsPrec4 0# x w2 of ww2 { (#,#) ww3 ww4 ->
+                    GHC.Types.: @ GHC.Types.Char ww3 ww4 })
+                   eta) -}
+71a24bce3786c94f75467ebfdebd48b1
+  $fPrintInteger_$cprtList ::
+    GHC.Types.Int -> [GHC.Integer.Type.Integer] -> PrintLambdaNat.Doc
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: [2],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: [GHC.Integer.Type.Integer])
+                   (w2 :: [GHC.Show.ShowS]) ->
+                 PrintLambdaNat.$fPrintInteger_go w1 w2) -}
+ac907fbaaf1d307498e035b0d6f2325d
+  $fPrintInteger_go ::
+    [GHC.Integer.Type.Integer] -> [GHC.Show.ShowS] -> [GHC.Show.ShowS]
+  {- Arity: 2, Strictness: <S,1*U><L,1*U> -}
+02d8f34107e99625f79109ae267947b0
+  $fPrintProgram :: PrintLambdaNat.Print AbsLambdaNat.Program
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ AbsLambdaNat.Program
+                  PrintLambdaNat.$fPrintProgram_$cprt
+                  PrintLambdaNat.$fPrintProgram_$cprtList -}
+2cf238e0693609e46e5f4830d6ff67b4
+  $fPrintProgram1 :: [GHC.Types.Char] -> [GHC.Types.Char]
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   PrintLambdaNat.$fPrintProgram2) -}
+5202caf21b0df1552b1149b16f5d88cd
+  $fPrintProgram2 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# ')'#) -}
+5ab947e45bf66ee027966e1613438afb
+  $fPrintProgram3 :: [GHC.Types.Char] -> [GHC.Types.Char]
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   PrintLambdaNat.$fPrintProgram4) -}
+310be5dc78a66399579bd5e0437f1e65
+  $fPrintProgram4 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# '('#) -}
+b764d12b9bb8f065e618da8555757467
+  $fPrintProgram_$cprt ::
+    GHC.Types.Int -> AbsLambdaNat.Program -> PrintLambdaNat.Doc
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U(1*U)><L,U>,
+     Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: AbsLambdaNat.Program)
+                   (w2 :: [GHC.Show.ShowS]) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { AbsLambdaNat.Prog ww3 ->
+                 PrintLambdaNat.$w$cprt2 ww1 ww3 w2 } }) -}
+f83a1906275179f90db24c32a8b7b978
+  $fPrintProgram_$cprtList ::
+    GHC.Types.Int -> [AbsLambdaNat.Program] -> PrintLambdaNat.Doc
+  {- Arity: 3, Strictness: <L,U(U)><S,1*U><L,1*U>,
+     Unfolding: (\ (i :: GHC.Types.Int)
+                   (eta :: [AbsLambdaNat.Program])
+                   (eta1 :: [GHC.Show.ShowS]) ->
+                 letrec {
+                   go :: [AbsLambdaNat.Program]
+                         -> [GHC.Show.ShowS] -> [GHC.Show.ShowS]
+                     {- Arity: 2, Strictness: <S,1*U><L,1*U> -}
+                   = \ (ds :: [AbsLambdaNat.Program]) (eta2 :: [GHC.Show.ShowS]) ->
+                     case ds of wild {
+                       [] -> eta2
+                       : y ys
+                       -> case i of ww { GHC.Types.I# ww1 ->
+                          case y of ww2 { AbsLambdaNat.Prog ww3 ->
+                          PrintLambdaNat.$w$cprt2 ww1 ww3 (go ys eta2) } } }
+                 } in
+                 go eta eta1) -}
+02d8f34107e99625f79109ae267947b0
+  $fPrint[] :: PrintLambdaNat.Print a => PrintLambdaNat.Print [a]
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(A,U)>m,
+     Inline: CONLIKE,
+     Unfolding: DFun: @ a (v :: PrintLambdaNat.Print a).
+                  @ [a]
+                  (PrintLambdaNat.prtList @ a v)
+                  (PrintLambdaNat.$fPrint[]_$cprtList @ a v) -}
+02d8f34107e99625f79109ae267947b0
+  $fPrint[]_$cprtList ::
+    PrintLambdaNat.Print a =>
+    GHC.Types.Int -> [[a]] -> PrintLambdaNat.Doc
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U(A,1*C1(C(C(U))))><L,U>,
+     Unfolding: (\ @ a
+                   ($dPrint :: PrintLambdaNat.Print a)
+                   (i :: GHC.Types.Int) ->
+                 let {
+                   g :: [a] -> PrintLambdaNat.Doc
+                   = PrintLambdaNat.prtList @ a $dPrint i
+                 } in
+                 letrec {
+                   go :: [[a]] -> [GHC.Show.ShowS] -> [GHC.Show.ShowS]
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [[a]]) ->
+                     case ds of wild {
+                       [] -> GHC.Base.id @ [GHC.Show.ShowS]
+                       : y ys
+                       -> let {
+                            ys1 :: [GHC.Show.ShowS] -> [GHC.Show.ShowS] = go ys
+                          } in
+                          let {
+                            f57 :: [GHC.Show.ShowS] -> [GHC.Show.ShowS] = g y
+                          } in
+                          \ (x :: [GHC.Show.ShowS]) -> f57 (ys1 x) }
+                 } in
+                 \ (x :: [[a]]) -> go x) -}
+e33c25ffbdaed3297b0dd89f8301efb8
+  $tc'C:Print :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13644345579809677784##
+                   9499210801230305721##
+                   PrintLambdaNat.$trModule
+                   PrintLambdaNat.$tc'C:Print2
+                   1#
+                   PrintLambdaNat.$tc'C:Print1) -}
+89edf8395a76b52e6bad93598e957d7a
+  $tc'C:Print1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+678af188c8a9fcd57b8356374d5ec7bc
+  $tc'C:Print2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS PrintLambdaNat.$tc'C:Print3) -}
+61b844b82825bf62e40fa6425f35418f
+  $tc'C:Print3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'C:Print"#) -}
+ec947586fbaded429ad2807cd09079c1
+  $tcPrint :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5040073144118323963##
+                   17565196883609911539##
+                   PrintLambdaNat.$trModule
+                   PrintLambdaNat.$tcPrint2
+                   0#
+                   PrintLambdaNat.$tcPrint1) -}
+3dfdc7969015e25a486b17739bd9d3d7
+  $tcPrint1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+89647225f4051a1a01435396f1168c62
+  $tcPrint2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS PrintLambdaNat.$tcPrint3) -}
+a89a96fbec17dd9348ac91bf2318ad2c
+  $tcPrint3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Print"#) -}
+d1b1c0fd0c8b17e6b5e86b1784b2e285
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   PrintLambdaNat.$trModule3
+                   PrintLambdaNat.$trModule1) -}
+63a6f3c5176f0fc911c16fa95ec7a6dd
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS PrintLambdaNat.$trModule2) -}
+4c26694697049adc84bf7c3aac5c5f0e
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("PrintLambdaNat"#) -}
+b6e2b545a7e09b68baa2ef92b2752fc3
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS PrintLambdaNat.$trModule4) -}
+5505da5bd4eef4797525a6ab919c932c
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("LambdaNat-0.1.0.0-2kfAZLS9jVXK0OvNqCZE1W"#) -}
+a588caa82a8d35f0434e1ec7e41e2f2d
+  $w$cprt ::
+    GHC.Types.Char
+    -> [GHC.Show.ShowS] -> (# GHC.Show.ShowS, [GHC.Show.ShowS] #)
+  {- Arity: 2, Strictness: <L,U(U)><L,U>, Inline: [2],
+     Unfolding: (\ (w :: GHC.Types.Char) (w1 :: [GHC.Show.ShowS]) ->
+                 (# \ (x :: GHC.Base.String) ->
+                    GHC.Types.:
+                      @ GHC.Types.Char
+                      PrintLambdaNat.$fPrintChar9
+                      (case w of wild { GHC.Types.C# x1 ->
+                       case x1 of wild1 {
+                         DEFAULT
+                         -> GHC.Types.:
+                              @ GHC.Types.Char
+                              wild
+                              (GHC.Types.: @ GHC.Types.Char PrintLambdaNat.$fPrintChar9 x)
+                         '\t'#
+                         -> GHC.Base.++
+                              @ GHC.Types.Char
+                              PrintLambdaNat.$fPrintChar7
+                              (GHC.Types.: @ GHC.Types.Char PrintLambdaNat.$fPrintChar9 x)
+                         '\n'#
+                         -> GHC.Base.++
+                              @ GHC.Types.Char
+                              PrintLambdaNat.$fPrintChar5
+                              (GHC.Types.: @ GHC.Types.Char PrintLambdaNat.$fPrintChar9 x)
+                         '\''#
+                         -> GHC.Types.:
+                              @ GHC.Types.Char
+                              PrintLambdaNat.$fPrintChar4
+                              (GHC.Types.:
+                                 @ GHC.Types.Char
+                                 wild
+                                 (GHC.Types.: @ GHC.Types.Char PrintLambdaNat.$fPrintChar9 x))
+                         '\\'#
+                         -> GHC.Base.++
+                              @ GHC.Types.Char
+                              PrintLambdaNat.$fPrintChar2
+                              (GHC.Types.: @ GHC.Types.Char PrintLambdaNat.$fPrintChar9 x) } }),
+                    w1 #)) -}
+484ba29ea44eedab956b8e3cc7ed3f7e
+  $w$cprt1 ::
+    GHC.Prim.Int#
+    -> AbsLambdaNat.Exp -> [GHC.Show.ShowS] -> [GHC.Show.ShowS]
+  {- Arity: 3, Strictness: <S,U><S,1*U><L,U>, Inline: [2] -}
+b59e6166627e84fc7cf48c43e36c88ef
+  $w$cprt2 ::
+    GHC.Prim.Int#
+    -> AbsLambdaNat.Exp -> [GHC.Show.ShowS] -> [GHC.Show.ShowS]
+  {- Arity: 3, Strictness: <S,U><L,1*U><L,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: AbsLambdaNat.Exp)
+                   (w :: [GHC.Show.ShowS]) ->
+                 case GHC.Prim.<# 0# ww of lwild {
+                   DEFAULT -> PrintLambdaNat.$w$cprt1 0# ww1 w
+                   1#
+                   -> GHC.Types.:
+                        @ GHC.Show.ShowS
+                        PrintLambdaNat.$fPrintProgram3
+                        (PrintLambdaNat.$w$cprt1
+                           0#
+                           ww1
+                           (GHC.Types.:
+                              @ GHC.Show.ShowS
+                              PrintLambdaNat.$fPrintProgram1
+                              w)) }) -}
+5a0dc9d0ea51eabaf74326ba0775d8bb
+  $wmkEsc ::
+    GHC.Prim.Char#
+    -> GHC.Prim.Char# -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 3, Strictness: <S,U><S,U><L,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Char#)
+                   (ww1 :: GHC.Prim.Char#)
+                   (w :: GHC.Base.String) ->
+                 case GHC.Prim.eqChar# ww1 ww of lwild {
+                   DEFAULT
+                   -> case ww1 of ds {
+                        DEFAULT -> GHC.Types.: @ GHC.Types.Char (GHC.Types.C# ds) w
+                        '\t'# -> GHC.Base.++ @ GHC.Types.Char PrintLambdaNat.$fPrintChar7 w
+                        '\n'# -> GHC.Base.++ @ GHC.Types.Char PrintLambdaNat.$fPrintChar5 w
+                        '\\'#
+                        -> GHC.Base.++ @ GHC.Types.Char PrintLambdaNat.$fPrintChar2 w }
+                   1#
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        PrintLambdaNat.$fPrintChar4
+                        (GHC.Types.: @ GHC.Types.Char (GHC.Types.C# ww1) w) }) -}
+beed431b21639d97adc7704674e59569
+  $wreplicateS ::
+    GHC.Prim.Int#
+    -> GHC.Show.ShowS -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,U><L,C(U)><L,U>,
+     Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (w :: GHC.Show.ShowS)
+                   (w1 :: GHC.Base.String) ->
+                 case GHC.Prim.<# 0# ww of lwild {
+                   DEFAULT -> w1
+                   1#
+                   -> letrec {
+                        $wxs1 :: GHC.Prim.Int# -> [GHC.Types.Char] -> [GHC.Types.Char]
+                          {- Arity: 2, Strictness: <S,1*U><L,U>, Inline: [2] -}
+                        = \ (ww1 :: GHC.Prim.Int#) (w2 :: [GHC.Types.Char]) ->
+                          case ww1 of ds1 {
+                            DEFAULT -> w ($wxs1 (GHC.Prim.-# ds1 1#) w2) 1# -> w w2 }
+                      } in
+                      $wxs1 ww w1 }) -}
+b63e546ae878fa8d45413772c0e3ea63
+  type Doc = [GHC.Show.ShowS] -> [GHC.Show.ShowS]
+02d8f34107e99625f79109ae267947b0
+  class Print a where
+    prt :: GHC.Types.Int -> a -> PrintLambdaNat.Doc
+    prtList :: GHC.Types.Int -> [a] -> PrintLambdaNat.Doc
+    {-# MINIMAL prt #-}
+d4ef402055fcd2f0e3689a1f1cb97468
+  concatD :: [PrintLambdaNat.Doc] -> PrintLambdaNat.Doc
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+e707c99595d8fc6178366b5d9eec0eb7
+  concatS :: [GHC.Show.ShowS] -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+fcf9a7d02e84d178937f4b6415b3c7d7
+  doc :: GHC.Show.ShowS -> PrintLambdaNat.Doc
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>m2,
+     Unfolding: InlineRule (0, True, True)
+                (GHC.Types.: @ GHC.Show.ShowS) -}
+621f497bc59843927925558804f9be19
+  mkEsc :: GHC.Types.Char -> GHC.Types.Char -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S(S),1*U(U)><L,U>,
+     Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Char)
+                   (w1 :: GHC.Types.Char)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.C# ww1 ->
+                 case w1 of ww2 { GHC.Types.C# ww3 ->
+                 PrintLambdaNat.$wmkEsc ww1 ww3 w2 } }) -}
+7e95461d95c2505e5bb703dd5fa3f10f
+  parenth :: PrintLambdaNat.Doc -> PrintLambdaNat.Doc
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*C1(U)><L,U>m2,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ss :: PrintLambdaNat.Doc) (eta :: [GHC.Show.ShowS]) ->
+                 GHC.Types.:
+                   @ GHC.Show.ShowS
+                   PrintLambdaNat.$fPrintProgram3
+                   (ss
+                      (GHC.Types.:
+                         @ GHC.Show.ShowS
+                         PrintLambdaNat.$fPrintProgram1
+                         eta))) -}
+16f9baf3094d75ac17214180863e8218
+  prPrec ::
+    GHC.Types.Int
+    -> GHC.Types.Int -> PrintLambdaNat.Doc -> PrintLambdaNat.Doc
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (i :: GHC.Types.Int)
+                   (j :: GHC.Types.Int)
+                   (eta :: PrintLambdaNat.Doc) ->
+                 case j of wild { GHC.Types.I# x ->
+                 case i of wild1 { GHC.Types.I# y ->
+                 case GHC.Prim.<# x y of lwild {
+                   DEFAULT -> eta 1# -> PrintLambdaNat.parenth eta } } }) -}
+81c0cbd00caa7fbed1762b39673a064e
+  printTree :: PrintLambdaNat.Print a => a -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,1*U(1*C1(C(C1(U))),A)>,
+     Unfolding: (\ @ a ($dPrint :: PrintLambdaNat.Print a) ->
+                 let {
+                   g :: a -> PrintLambdaNat.Doc
+                   = PrintLambdaNat.prt @ a $dPrint PrintLambdaNat.printTree2
+                 } in
+                 \ (x :: a) ->
+                 PrintLambdaNat.printTree_rend
+                   PrintLambdaNat.printTree2
+                   (GHC.Base.map
+                      @ ([GHC.Types.Char] -> GHC.Base.String)
+                      @ [GHC.Types.Char]
+                      PrintLambdaNat.printTree1
+                      (g x (GHC.Types.[] @ GHC.Show.ShowS)))
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+d3ad0fba209e9bb0d6de7a2248c12ed7
+  printTree1 ::
+    ([GHC.Types.Char] -> GHC.Base.String) -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <C(S),1*C1(U)>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: [GHC.Types.Char] -> GHC.Base.String) ->
+                 ds (GHC.Types.[] @ GHC.Types.Char)) -}
+6ed545d701060f9497d2f9d9d1f4ec62
+  printTree2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+773dcb9fd745d1b9474b456bc874fb57
+  printTree_rend ::
+    GHC.Types.Int
+    -> [[GHC.Types.Char]] -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U(U)><S,1*U><L,1*U> -}
+3404b92fde59f70a968c5813b2ab5594
+  render :: PrintLambdaNat.Doc -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <C(S),1*C1(U)>,
+     Unfolding: (\ (d :: PrintLambdaNat.Doc) ->
+                 PrintLambdaNat.printTree_rend
+                   PrintLambdaNat.printTree2
+                   (GHC.Base.map
+                      @ ([GHC.Types.Char] -> GHC.Base.String)
+                      @ [GHC.Types.Char]
+                      PrintLambdaNat.printTree1
+                      (d (GHC.Types.[] @ GHC.Show.ShowS)))
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+5fb3b1edc87d4662d67cc6f0c42bc040
+  replicateS :: GHC.Types.Int -> GHC.Show.ShowS -> GHC.Show.ShowS
+  {- Arity: 3, HasNoCafRefs, Strictness: <S(S),1*U(U)><L,C(U)><L,U>,
+     Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: GHC.Show.ShowS)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 PrintLambdaNat.$wreplicateS ww1 w1 w2 }) -}
+instance [safe] PrintLambdaNat.Print [GHC.Types.Char]
+  = PrintLambdaNat.$fPrintChar
+instance [safe] PrintLambdaNat.Print [GHC.Types.Double]
+  = PrintLambdaNat.$fPrintDouble
+instance [safe] PrintLambdaNat.Print [AbsLambdaNat.Exp]
+  = PrintLambdaNat.$fPrintExp
+instance [safe] PrintLambdaNat.Print [AbsLambdaNat.Id]
+  = PrintLambdaNat.$fPrintId
+instance [safe] PrintLambdaNat.Print [GHC.Integer.Type.Integer]
+  = PrintLambdaNat.$fPrintInteger
+instance [safe] PrintLambdaNat.Print [AbsLambdaNat.Program]
+  = PrintLambdaNat.$fPrintProgram
+instance [safe] PrintLambdaNat.Print [[]]
+  = PrintLambdaNat.$fPrint[]
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

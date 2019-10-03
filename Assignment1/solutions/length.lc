@@ -1,9 +1,1 @@
-let rec length = \l. if l=# then 0 else S(length(tl l)) in length a:b:c:d:e:f:#
-
-
-/*length # = 0
-length l = S length((tl l))
-ex. length a:b:# = S length(b:#)
-                   S S length(#)
-                   S S 0
-*/
+let rec length = \l. if l=# then 0 else S(length(tl l)) in length a:b:c:d:#
