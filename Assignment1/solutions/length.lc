@@ -1,1 +1,4 @@
-let rec length = \l. if l=# then 0 else S(length(tl l)) in length a:b:c:d:#
+let rec length = \l. if l = # then 0 else S( length( tl l ) ) in length a:b:c:d:#
+
+// If the list is empty, return 0. If not add 1 for every time length is called again
+// Each time calling length with the first element removed

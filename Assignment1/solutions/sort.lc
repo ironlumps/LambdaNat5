@@ -11,3 +11,12 @@ let rec insert = \i.\l. if l = # then i:#
                 else (hd l):(insert i (tl l)) in
 let rec sort = \m. if m = # then #
                else insert (hd m) (sort (tl m)) in sort S S 0:S 0:0:#
+
+// Sort was a difficult one which needed several helper functions and also needed to use the append function
+// We wrote earlier.
+// If the list is empty, return what you have.
+// It works by first calling insert, which calls le, which can call append or insert again
+// Le can call sub.
+// These work to reorder the elements in order to sort them
+// It does thus by comparing the values and then moving them with the sorting helper functions
+// At the end of all the calls it reconstructs the list

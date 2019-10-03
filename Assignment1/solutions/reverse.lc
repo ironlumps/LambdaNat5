@@ -2,3 +2,8 @@ let rec append = \l1.\l2. if l1 = # then l2
                           else if l2 = # then l1
                           else (hd l1):(append (tl l1) (l2)) in
 let rec reverse = \l. if l = # then # else append (reverse(tl l)) (hd l):# in reverse a:b:c:d:e:#
+
+// Using the function append which we previously wrote to help this function.
+// Take the head of the list, which is the first element, and append the tail of the list in front of it
+// The tail is every element except for the first element.
+// When the end of the list is reached return

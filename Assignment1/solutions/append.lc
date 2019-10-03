@@ -1,2 +1,5 @@
 let rec append = \l1.\l2. if l1 = # then l2
                           else (hd l1):(append(tl l1) (l2)) in append a:b:# c:d:#
+
+// One by one add each element of the first list to the second
+// When the first list runs out, add the rest of the second list to the end

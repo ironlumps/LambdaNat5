@@ -1,2 +1,6 @@
 let rec flip = \n. if n = 0 then S 0 else 0 in
-let rec even = \l. if l = # then S 0 else flip(even(tl l)) in even a:b:#
+let rec even = \l. if l = # then S 0 else flip( even( tl l ) ) in even a:b:#
+
+// Flip is the helper function to even
+// If l is empty then return 1 because an empty list is even
+// If it isnt return 1 and then alternate between 0 and 1 until the list ends

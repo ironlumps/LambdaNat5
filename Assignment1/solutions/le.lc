@@ -4,3 +4,8 @@ let le = \a.\b. if not (sub a b) = 0 then S 0
                 else if not (sub a b) = S 0 then 0
                 else if a = b then S 0
                 else S 0 in le S S 0 S 0
+
+// Not and sub are the helper functions to le. Sub is not recursive
+// Le is a size comparison between the two numbers
+// First it subtracts a from b, if the result is 0 they are equal
+// If not it will compare the numbers again.
